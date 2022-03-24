@@ -1,0 +1,245 @@
+.masuk {
+    background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width: 1360px;
+    height: 666px;
+    position: absolute;
+}
+
+.header_container {
+    width: 1360px;
+    height: 130px;
+    position: absolute;
+    left: 0px;
+    top: 12px;
+}
+
+.logo {
+    width: 100px;
+    height: 101px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    background-image: url(../logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teks_koperasi {
+    color: rgba(0, 0, 0, 1);
+    width: 315px;
+    height: 18px;
+    position: absolute;
+    left: 136px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.teks_nama_koperasi {
+    color: rgba(0, 0, 0, 1);
+    width: 363px;
+    height: 54px;
+    position: absolute;
+    left: 136px;
+    top: 14px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 0;
+}
+
+.teks_alamat_koperasi {
+    color: rgba(0, 0, 0, 1);
+    width: 364px;
+    height: 32px;
+    position: absolute;
+    left: 136px;
+    top: 69px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0;
+}
+
+.garis_header {
+    background-color: rgba(30.07760524749756, 167.87500709295273, 167.87500709295273, 1);
+    width: 1360px;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    top: 115px;
+}
+
+.form_container {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 428px;
+    top: 277px;
+}
+
+.container_background {
+    background-color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.teks_masuk {
+    color: rgba(0, 0, 0, 1);
+    width: 101px;
+    height: 34px;
+    position: absolute;
+    left: 203px;
+    top: 9px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 29px;
+    letter-spacing: 0;
+}
+
+.nip {
+    width: 301px;
+    height: 49.666656494140625px;
+    position: absolute;
+    left: 102px;
+    top: 52.333343505859375px;
+}
+
+.kolom_nip {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 33px;
+    position: absolute;
+    left: 0px;
+    top: 16.666656494140625px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.teks_nip {
+    color: rgba(0, 0, 0, 1);
+    width: 133.3333282470703px;
+    height: 16.66666603088379px;
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.kata_sandi {
+    width: 301px;
+    height: 47.666656494140625px;
+    position: absolute;
+    left: 102px;
+    top: 114px;
+}
+
+.kolom_kata_sandi {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 33px;
+    position: absolute;
+    left: 0px;
+    top: 14.666656494140625px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.teks_kata_sandi {
+    color: rgba(0, 0, 0, 1);
+    width: 106.66666412353516px;
+    height: 15px;
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.tombol_masuk {
+    width: 140.41543579101562px;
+    height: 28.918100357055664px;
+    position: absolute;
+    left: 182px;
+    top: 181px;
+}
+
+.tombol_masuk_background {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 140.41543579101562px;
+    height: 28.918100357055664px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.teks_tombol_masuk {
+    color: rgba(0, 0, 0, 1);
+    width: 83.03412628173828px;
+    height: 22.59226417541504px;
+    position: absolute;
+    left: 28.33333396911621px;
+    top: 3.4641520977020264px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.belum_punya_akun {
+    width: 181.3333282470703px;
+    height: 16.66666603088379px;
+    position: absolute;
+    left: 161px;
+    top: 222px;
+}
+
+.teks_belum_punya_akun {
+    color: rgba(0, 0, 0, 1);
+    width: 148px;
+    height: 16px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0;
+}
+
+.teks_di_sini {
+    color: rgba(21.568752229213715, 178.49999696016312, 178.49999696016312, 1);
+    width: 33.33333206176758px;
+    height: 16.66666603088379px;
+    position: absolute;
+    left: 148px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0;
+}
