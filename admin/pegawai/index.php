@@ -1,5 +1,5 @@
 <?php
-include('../config.php');
+include('../../config.php');
 session_start();
 if(isset($_SESSION['nip'])){} else {header('location:'.$siteurl); }
 $fullName = explode(" ", $_SESSION['nama']);
@@ -24,27 +24,25 @@ $nick = $fullName[0];
 
     <!-- style -->
     <link href="<?php echo $siteurl; ?>assets/css/main.css" rel="stylesheet">
-    <link href="<?php echo $siteurl; ?>assets/css/admin/beranda.css" rel="stylesheet">
+    <link href="<?php echo $siteurl; ?>assets/css/admin/pegawai.css" rel="stylesheet">
 
 </head>
 <body>
-<div class=beranda>
+<div class=melihat_daftar_pengguna>
   <div class=header_container>
-    <div class="logo"></div>
-    <span  class="teks_koperasi">KOPERASI PEGAWAI REPUBLIK INDONESIA</span>
-    <span  class="teks_nama_koperasi">WIYATA USAHA</span>
-    <span  class="teks_alamat_koperasi">Jl. Krakatau No.216, Kencong, Kabupaten Jember, Jawa Timur 68167 Telepon: (0336) 321386</span>
+    <div class="logo"></div><span  class="teks_koperasi">KOPERASI PEGAWAI REPUBLIK INDONESIA</span><span  class="teks_nama_koperasi">WIYATA USAHA</span><span  class="teks_alamat_koperasi">Jl. Krakatau No.216, Kencong, Kabupaten Jember, Jawa Timur 68167
+Telepon: (0336) 321386</span>
     <div class="garis_header"></div>
   </div>
   <div class=side_menu>
     <div class="side_menu_background"></div>
     <div class=beranda_menu>
-      <div class="menu menu_beranda aktif">
+      <div class="menu menu_beranda">
           <span  class="teks_beranda" onclick="menu('beranda')">Beranda</span>
         </div>
     </div>
     <div class=pegawai_menu>
-      <div class="menu menu_pegawai" onclick="menu('pegawai')">
+      <div class="menu menu_pegawai aktif" onclick="menu('pegawai')">
       <span  class="teks_pegawai">Pegawai</span>
       </div>
     </div>
@@ -80,54 +78,39 @@ $nick = $fullName[0];
     </div>
     <span  class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
   </div>
-  <div class=main_container>
-    <div class="container_background"></div>
-    <div class=seacrh_bar_container>
-      <div class=cari_container>
-        <input class="kolom_nama cari" type="text" name="cari-nama" onkeyup="filt('tabel-transaksi', 'cari-nama', 2)" id="cari-nama" placeholder="Cari Nama">
-      </div>
-      <div class=filter_container>
-        <span  class="teks_filter">Tampilkan berdasarkan bulan</span>
-        <input class="kolom_bulan" <?php if(isset($_GET['m'])){echo 'value="'.$_GET['m'].'"'; } ?> type="month" onchange="bulan(this.value)" placeholder="Pilih Bulan">
-        <button class="tombol tombol_reset" onclick="reset('beranda')">
-        Reset
-        </button>
-      </div>
+  <div class=search_bar_container>
+    <div class=tambah_pengguna>
+      <div class="tombol_tambah_background"></div><span  class="teks_tombol_tambah">MENAMBAH DATA PENGGUNA</span>
     </div>
+    <div class=cari>
+      <input class="kolom_cari cari" type="text" name="cari-nama" onkeyup="filt('tabel-pegawai', 'cari-nama', 1)" id="cari-nama" placeholder="Cari Nama">
+    </div>
+  </div>
+  <div class=main_container>
+    <div class="container_background">
+    <span  class="main_teks">DAFTAR PEGAWAI</span>
     <div class=tabel_container>
-      <span  class="main_teks">DAFTAR TRANSAKSI</span>
-      <table class="tabel_transaksi" id="tabel-transaksi">
+      <table class="tabel_pegawai" id="tabel-pegawai">
           <thead>
               <tr>
-                  <th class="pojok-kiri-atas">No.</th>
-                  <th>Tanggal</th>
+                  <th class="pojok-kiri-atas">NIP</th>
                   <th>Nama</th>
                   <th>Instansi</th>
+                  <th>Status</th>
               </tr>
           </thead>
           <tbody>
               <?php if(isset($_GET['m'])){
                   $_GET['m'] = $_GET['m'];
-                  include('get/get-data-beranda.php');
-              } else { include('get/get-data-beranda.php'); } ?>
+                  include('../get/get-data-pegawai.php');
+              } else { include('../get/get-data-pegawai.php'); } ?>
           </tbody>
       </table>
     </div>
-    <div class=tombol_container>
-      <div class=tombol_laporan>
-        <button class="tombol_laporan_background">
-            <span  class="teks_tombol_laporan">BUAT LAPORAN</span>
-        </button>  
-      </div>
-      <div class=tombol_tambah_simpanan>
-        <button class="tombol_tambah_simpanan_background" onclick="addSetoran()">
-        <span  class="teks_tambah_simpanan">TAMBAH SETORAN</span>
-    </button>
-      </div>
     </div>
   </div>
 </div>
-</body>
+
 <script src="<?php echo $siteurl; ?>config.js"></script>
 <script src="<?php echo $siteurl; ?>assets/js/admin.js"></script>
-</html>
+</body>

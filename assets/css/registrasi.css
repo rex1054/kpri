@@ -1,0 +1,643 @@
+.registrasi { 
+	background-color:rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+	width:1360px;
+	height:793px;
+	position:absolute;
+}
+.header_container { 
+	width:1360px;
+	height:130px;
+	position:absolute;
+	left:0px;
+	top:12px;
+}
+.logo { 
+	width:100px;
+	height:101px;
+	position:absolute;
+	left:16px;
+	top:0px;
+	background-image:url(../logo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.teks_koperasi { 
+	color:rgba(0, 0, 0, 1);
+	width:315px;
+	height:18px;
+	position:absolute;
+	left:136px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.teks_nama_koperasi { 
+	color:rgba(0, 0, 0, 1);
+	width:363px;
+	height:54px;
+	position:absolute;
+	left:136px;
+	top:14px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:50px;
+	letter-spacing:0;
+}
+.teks_alamat_koperasi { 
+	color:rgba(0, 0, 0, 1);
+	width:364px;
+	height:32px;
+	position:absolute;
+	left:136px;
+	top:69px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+.garis_header { 
+	background-color:rgba(30.07760524749756, 167.87500709295273, 167.87500709295273, 1);
+	width:1360px;
+	height:15px;
+	position:absolute;
+	left:0px;
+	top:115px;
+}
+.form_container { 
+	width:1110px;
+	height:603px;
+	position:absolute;
+	left:125px;
+	top:162px;
+}
+.form_1_container { 
+	width:500px;
+	height:603px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.container_1_background { 
+	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+	width:500px;
+	height:603px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+.text_registrasi { 
+	color:rgba(0, 0, 0, 1);
+	width:500px;
+	height:19px;
+	position:absolute;
+	left:0px;
+	top:11px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:22px;
+	letter-spacing:0;
+}
+.nama_pengguna { 
+	width:301px;
+	height:58.22435760498047px;
+	position:absolute;
+	left:100px;
+	top:75px;
+}
+.teks_nama { 
+	color:rgba(0, 0, 0, 1);
+	width:133.3333282470703px;
+	height:19.538379669189453px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_nama { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:19.538347244262695px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kata_sandi { 
+	width:301px;
+	height:56.49261474609375px;
+	position:absolute;
+	left:100px;
+	top:144.23092651367188px;
+}
+.teks_kata_sandi { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_kata_sandi { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:17.806623458862305px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.jenis_kelamin { 
+	width:278px;
+	height:44.2764892578125px;
+	position:absolute;
+	left:113px;
+	top:211.72354125976562px;
+}
+.teks_jenis_kelamin { 
+	color:rgba(0, 0, 0, 1);
+	width:133.3333282470703px;
+	height:19.538379669189453px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kelamin { 
+	width:278px;
+	height:14px;
+	position:absolute;
+	left:0px;
+	top:19.2764892578125px;
+}
+.laki_laki { 
+	color:rgba(0, 0, 0, 1);
+	width:14px;
+	height:14px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.perempuan { 
+	color:rgba(0, 0, 0, 1);
+	width:14px;
+	height:14px;
+	position:absolute;
+	left:94px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.nip { 
+	width:301px;
+	height:56.879756927490234px;
+	position:absolute;
+	left:100px;
+	top:266.49261474609375px;
+}
+.teks_nip { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.899229049682617px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_nip { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:39.378299713134766px;
+	position:absolute;
+	left:0px;
+	top:17.501480102539062px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tempat_lahir { 
+	width:301px;
+	height:56.879756927490234px;
+	position:absolute;
+	left:100px;
+	top:334.37237548828125px;
+}
+.teks_tempat_lahir { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.899229049682617px;
+	position:absolute;
+	left:10px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_tempat_lahir { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:39.378299713134766px;
+	position:absolute;
+	left:0px;
+	top:17.50141716003418px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tanggal_lahir { 
+	width:301px;
+	height:59.152095794677734px;
+	position:absolute;
+	left:100px;
+	top:402.25213623046875px;
+}
+.teks_tanggal_lahir { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:5px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_tanggal_lahir { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:20.466115951538086px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.alamat_rumah { 
+	width:301px;
+	height:59.152095794677734px;
+	position:absolute;
+	left:100px;
+	top:472.40423583984375px;
+}
+.kolom_alamat_rumah { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:20.466115951538086px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.form_2_container { 
+	width:500px;
+	height:603px;
+	position:absolute;
+	left:610px;
+	top:0px;
+}
+.container_2_background { 
+	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+	width:500px;
+	height:603px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+.kode_pos { 
+	width:301px;
+	height:57.15211868286133px;
+	position:absolute;
+	left:100px;
+	top:18px;
+}
+.teks_kode_pos { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_kode_pos { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:18.46612548828125px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.nomor_hp { 
+	width:301px;
+	height:55.879756927490234px;
+	position:absolute;
+	left:100px;
+	top:86.15213012695312px;
+}
+.teks_nomor_hp { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_nomer_hp { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:17.19378662109375px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.nama_instansi { 
+	width:301px;
+	height:58.22435760498047px;
+	position:absolute;
+	left:100px;
+	top:153.03189086914062px;
+}
+.teks_nama_instansi { 
+	color:rgba(0, 0, 0, 1);
+	width:133.3333282470703px;
+	height:19.538379669189453px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_nama_instansi { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:19.538360595703125px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.alamat_instansi { 
+	width:301px;
+	height:58.22435760498047px;
+	position:absolute;
+	left:100px;
+	top:222.25625610351562px;
+}
+.teks_alamat_instansi { 
+	color:rgba(0, 0, 0, 1);
+	width:133.3333282470703px;
+	height:19.538379669189453px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_alamat_instansi { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:19.538360595703125px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.foto_ktp_suami { 
+	width:301px;
+	height:55.879756927490234px;
+	position:absolute;
+	left:100px;
+	top:291.4805908203125px;
+}
+.teks_ktp_suami { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_ktp_suami { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:17.193756103515625px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.foto_ktp_istri { 
+	width:301px;
+	height:55.879756927490234px;
+	position:absolute;
+	left:100px;
+	top:358.3603515625px;
+}
+.teks_ktp_istri { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_ktp_istri { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:17.193756103515625px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.foto_3x4 { 
+	width:301px;
+	height:55.879756927490234px;
+	position:absolute;
+	left:100px;
+	top:425.2401123046875px;
+}
+.teks_foto_3x4 { 
+	color:rgba(0, 0, 0, 1);
+	width:106.66666412353516px;
+	height:17.584543228149414px;
+	position:absolute;
+	left:13px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:0;
+}
+.kolom_foto_3x4 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:38.68599319458008px;
+	position:absolute;
+	left:0px;
+	top:17.19377899169922px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.teks_persyaratan { 
+	color:rgba(0, 0, 0, 1);
+	width:128px;
+	height:13px;
+	position:absolute;
+	left:100px;
+	top:496.119873046875px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:11px;
+	letter-spacing:0;
+}
+.teks_punya_akun { 
+	color:rgba(0, 0, 0, 1);
+	width:166px;
+	height:18px;
+	position:absolute;
+	left:100px;
+	top:520.119873046875px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:11px;
+	letter-spacing:0;
+}
+.tombol_registrasi { 
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:280px;
+	top:553px;
+}
+.tombol_registrasi_background { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.teks_registrasi { 
+	color:rgba(0, 0, 0, 1);
+	width:102.38461303710938px;
+	height:17.875px;
+	position:absolute;
+	left:9px;
+	top:8.125px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:11px;
+	letter-spacing:0;
+}
+
+.special {
+    padding: 0 10px;
+    width: 281px;
+}
+
+.input-file {
+    height: auto;
+    padding: 10px;
+}

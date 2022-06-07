@@ -109,7 +109,7 @@
 .teks_beranda {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -139,7 +139,7 @@
 .teks_pegawai {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -169,7 +169,7 @@
 .teks_anggota {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -199,7 +199,7 @@
 .teks_pinjaman {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -229,7 +229,7 @@
 .teks_simpanan {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 1px;
@@ -259,7 +259,7 @@
 .teks_profil {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -289,11 +289,12 @@
 .teks_main_menu {
     color: rgba(0, 0, 0, 1);
     width: 169px;
-    height: 36px;
+    padding-top: 8px;
     position: absolute;
     left: 0px;
     top: 0px;
     font-family: Roboto;
+    font-weight: bold;
     text-align: center;
     font-size: 15px;
     letter-spacing: 0;
@@ -413,7 +414,6 @@
 .data_nip {
     color: rgba(0, 0, 0, 1);
     width: 634px;
-    padding-top: 11px;
     position: absolute;
     left: 86px;
     top: 0px;
@@ -447,7 +447,6 @@
 .data_nama {
     color: rgba(0, 0, 0, 1);
     width: 634px;
-    padding-top: 11px;
     position: absolute;
     left: 86px;
     top: 0px;
@@ -481,7 +480,6 @@
 .data_bulan {
     color: rgba(0, 0, 0, 1);
     width: 634px;
-    padding-top: 11px;
     position: absolute;
     left: 86px;
     top: 0px;
@@ -489,6 +487,38 @@
     text-align: left;
     font-size: 20px;
     letter-spacing: 0;
+}
+
+.tanggal_transaksi { 
+	width:813px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:105px;
+}
+.teks_tanggal_transaksi { 
+	color:rgba(0, 0, 0, 1);
+	width:179px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.data_tanggal_transaksi { 
+	color:rgba(0, 0, 0, 1);
+	width:634px;
+	height:23px;
+	position:absolute;
+	left:179px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
 }
 
 .tabel_setoran {
@@ -1887,7 +1917,7 @@
 .teks_usp {
     color: rgba(0, 0, 0, 1);
     width: 151px;
-    padding-top: 11px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -2314,7 +2344,7 @@
 .teks_bke {
     color: rgba(0, 0, 0, 1);
     width: 151px;
-    padding-top: 11px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -2741,7 +2771,7 @@
 .teks_ekstra {
     color: rgba(0, 0, 0, 1);
     width: 151px;
-    padding-top: 11px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -3168,7 +3198,7 @@
 .teks_toko {
     color: rgba(0, 0, 0, 1);
     width: 151px;
-    padding-top: 11px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -3207,7 +3237,7 @@
 .teks_haji {
     color: rgba(0, 0, 0, 1);
     width: 151px;
-    padding-top: 11px;
+    padding-top: 30px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -4126,26 +4156,25 @@
     letter-spacing: 0;
 }
 
-.tombol {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 169px;
-    height: 34px;
-    position: absolute;
-    left: 916px;
-    top: 939px;
+.tombol { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:916px;
+	top:976px;
 }
-
-.tombol_simpan {
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
-    height: 34px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.tombol_simpan { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .teks_simpan {
@@ -4159,4 +4188,8 @@
     text-align: left;
     font-size: 20px;
     letter-spacing: 0;
+}
+
+#jumlah-keterangan {
+    border-bottom-right-radius: 50px !important;
 }

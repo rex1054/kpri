@@ -1,15 +1,6 @@
-body {
-    margin: 0;
-}
-
 a {
     color: inherit;
     text-decoration: none;
-}
-
-input {
-    border: none;
-    padding-left: 10px;
 }
 
 button {
@@ -88,4 +79,337 @@ table tr:last-child td:last-child {
 
 .even {
     background-color: #6CF4F4;
+}
+
+.menu:hover {
+    background-color: rgb(30 168 168);
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: rgba(30 168 168, 0.8);
+    cursor: pointer;
+}
+
+.menu-teks {
+    padding-top: 8px;
+    height: auto !important;
+}
+
+body{
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: absolute;
+    width: 1360px;
+    height: 666px;
+    max-width: 1360px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: lightpink;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.kpri-input {
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 38.68599319458008px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+:focus-visible {
+    outline: none;
+}
+.kpri-input-file{
+    width: 294px !important;
+    height: fit-content !important;
+    box-shadow: none !important;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 0;
+}
+input[type="file" i] {
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+    line-height: 42px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(0, 75, 136, 0.836);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kpri-submit {
+    background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 0);
+    width:100%;
+    height:26px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.kpri-submit :hover {
+    cursor: pointer;
+}
+
+.kpri-show {
+    display: block;
+}
+
+.kpri-hide {
+    display: none;
+}
+
+.kolom_header { 
+    width:484px;
+    height:101px;
+    position:absolute;
+    left:0px;
+    top:2px;
+}
+
+.uppercased {
+    text-transform:uppercase;
+}
+.kpri-main-container {
+    margin-left: 197px;
+    margin-top: 194px;
+    width: 1080px;
+    height: 404px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.halaman_utama_1_250 { 
+    background-color:rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width:1360px;
+    height:666px;
+    position:absolute;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #2E9BBD;
+    text-decoration: underline;
+}
+
+#aksi img {
+    width:25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.kpri-main-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.kpri-profile-show-icon {
+    width:25px;
+    margin-left: 10px;
+    position:absolute;
+}
+
+.kpri-search-bar-container {
+    position: absolute;
+    width: 1190px;
+    height: 25px;
+    top: 152px;
+    left: 169px;
+}
+
+.kpri-search-bar {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kpri-search-button {
+    width: 75px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2E9BBD;
+}
+
+.table-sort:hover {
+    cursor: pointer;
+}
+
+.modal-footer {
+    display: flex;
+}
+
+.modal-footer-left {
+    width: 50%;
+}
+
+.modal-footer-right {
+    width: 50%;
+}
+
+.kpri-tombol-ubah {
+    width: 123px;
+    height: 31px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(35, 92, 167);
+    margin-top: 13px;
+    font-weight: bold;
+}
+
+.kpri-tombol-ubah:hover {
+    background-color: rgb(88, 86, 230);
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 1360px;
+    height: 793px; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-body img {
+    width: 300px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+.modal-body img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.rpassword {
+    width: 263px;
+}
+
+.logout {
+    top: 55px !important;
+    text-decoration: underline !important;
 }

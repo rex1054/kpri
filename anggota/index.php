@@ -24,7 +24,7 @@ $nick = $fullName[0];
 
     <!-- style -->
     <link href="<?php echo $siteurl; ?>assets/css/main.css" rel="stylesheet">
-    <link href="<?php echo $siteurl; ?>assets/css/admin/beranda.css" rel="stylesheet">
+    <link href="<?php echo $siteurl; ?>assets/css/anggota/beranda.css" rel="stylesheet">
 
 </head>
 <body>
@@ -40,33 +40,28 @@ $nick = $fullName[0];
     <div class="side_menu_background"></div>
     <div class=beranda_menu>
       <div class="menu menu_beranda aktif">
-          <span  class="teks_beranda" onclick="menu('beranda')">Beranda</span>
+          <span  class="teks_beranda" onclick="menu('anggotaBeranda')">Beranda</span>
         </div>
     </div>
     <div class=pegawai_menu>
-      <div class="menu menu_pegawai" onclick="menu('pegawai')">
-      <span  class="teks_pegawai">Pegawai</span>
+      <div class="menu menu_pegawai" onclick="menu('rekening')">
+      <span  class="teks_pegawai">Rekening</span>
       </div>
     </div>
     <div class=anggota_menu>
-      <div class="menu menu_daftar_nasabah" onclick="menu('anggota')">
-      <span  class="teks_anggota">Anggota</span>
+      <div class="menu menu_daftar_nasabah" onclick="menu('anggotaPinjaman')">
+      <span  class="teks_anggota">Pinjaman</span>
       </div>
     </div>
     <div class=pinjaman_menu>
-      <div class="menu menu_pinjaman" onclick="menu('pinjaman')">
-      <span  class="teks_pinjaman">Pinjaman</span>
+      <div class="menu menu_pinjaman" onclick="menu('anggotaSimpanan')">
+      <span  class="teks_pinjaman">Simpanan</span>
       </div>
     </div>
     <div class=simpanan_menu>
-      <div class="menu menu_simpanan" onclick="menu('simpanan')">
-      <span  class="teks_simpanan">Simpanan</span>
+      <div class="menu menu_simpanan" onclick="menu('profil')">
+      <span  class="teks_simpanan">Profil</span>
       </div>
-    </div>
-    <div class=profil_menu>
-      <div class="menu menu_profil" onclick="menu('profil')">
-      <span  class="teks_profil">Profil</span>
-    </div>
     </div>
     <div class=main_menu>
       <div class="main_menu_background">
@@ -83,9 +78,6 @@ $nick = $fullName[0];
   <div class=main_container>
     <div class="container_background"></div>
     <div class=seacrh_bar_container>
-      <div class=cari_container>
-        <input class="kolom_nama cari" type="text" name="cari-nama" onkeyup="filt('tabel-transaksi', 'cari-nama', 2)" id="cari-nama" placeholder="Cari Nama">
-      </div>
       <div class=filter_container>
         <span  class="teks_filter">Tampilkan berdasarkan bulan</span>
         <input class="kolom_bulan" <?php if(isset($_GET['m'])){echo 'value="'.$_GET['m'].'"'; } ?> type="month" onchange="bulan(this.value)" placeholder="Pilih Bulan">
@@ -114,11 +106,6 @@ $nick = $fullName[0];
       </table>
     </div>
     <div class=tombol_container>
-      <div class=tombol_laporan>
-        <button class="tombol_laporan_background">
-            <span  class="teks_tombol_laporan">BUAT LAPORAN</span>
-        </button>  
-      </div>
       <div class=tombol_tambah_simpanan>
         <button class="tombol_tambah_simpanan_background" onclick="addSetoran()">
         <span  class="teks_tambah_simpanan">TAMBAH SETORAN</span>
@@ -129,5 +116,5 @@ $nick = $fullName[0];
 </div>
 </body>
 <script src="<?php echo $siteurl; ?>config.js"></script>
-<script src="<?php echo $siteurl; ?>assets/js/admin.js"></script>
+<script src="<?php echo $siteurl; ?>assets/js/anggota.js"></script>
 </html>

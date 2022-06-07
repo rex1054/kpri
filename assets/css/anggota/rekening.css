@@ -1,4 +1,4 @@
-.beranda {
+.rekening {
     background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
     width: 1360px;
     height: 666px;
@@ -349,327 +349,199 @@
     letter-spacing: 0;
 }
 
-.main_container {
-    width: 1153px;
-    height: 489px;
-    position: absolute;
-    left: 185px;
-    top: 156px;
-}
-
-.container_background {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
-    width: 1153px;
-    height: 489px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.seacrh_bar_container {
-    width: 446px;
-    height: 71px;
-    position: absolute;
-    left: 227px;
-    top: 12px;
-}
-
-.cari_container {
-    width: 411px;
-    height: 36px;
-    position: absolute;
-    left: 14px;
-    top: 0px;
-}
-
-.kolom_nama {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(255, 255, 255, 1);
-    width: 411px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.teks_cari {
-    color: rgba(0, 0, 0, 1);
-    width: 139.27574157714844px;
-    height: 27px;
-    position: absolute;
-    left: 136.5448455810547px;
-    top: 5px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 23px;
-    letter-spacing: 0;
-}
-
-.filter_container {
-    width: 446px;
-    height: 25px;
-    position: absolute;
-    left: 0px;
-    top: 46px;
-}
-
-.teks_filter {
-    color: rgba(0, 0, 0, 1);
-    width: 262px;
-    height: 23px;
-    position: absolute;
-    left: 0px;
-    top: 2px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 20px;
-    letter-spacing: 0;
-}
-
-.kolom_bulan {
-    background-color: rgba(255, 255, 255, 1);
-    width: 150px;
-    height: 24px;
-    position: absolute;
-    left: 275px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.teks_bulan {
-    color: rgba(0, 0, 0, 1);
-    width: 38px;
-    height: 18px;
-    position: absolute;
-    left: 250px;
-    top: 3px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.kolom_tahun {
-    background-color: rgba(255, 255, 255, 1);
-    width: 109px;
-    height: 24px;
-    position: absolute;
-    left: 337px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.teks_tahun {
-    color: rgba(0, 0, 0, 1);
-    width: 42px;
-    height: 18px;
-    position: absolute;
-    left: 371px;
-    top: 3px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.drop_bulan {
-    transform: rotate(-180deg);
-    background-color: rgba(0, 0, 0, 1);
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    left: 312px;
-    top: 16px;
-}
-
-.drop_tahun {
-    transform: rotate(-180deg);
-    background-color: rgba(0, 0, 0, 1);
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    left: 437px;
-    top: 16px;
-}
-
-.tombol_reset { 
-	background-color:rgba(30.07760524749756, 167.87500709295273, 167.87500709295273, 1);
-	width:80px;
-	height:24px;
+.main_container { 
+	width:1101px;
+	height:474px;
 	position:absolute;
-	left:450px;
+	left:209px;
+	top:159px;
+}
+.container_background { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+	width:1101px;
+	height:474px;
+	position:absolute;
+	left:0px;
 	top:0px;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
 }
-.teks_reset { 
-	color:rgba(0, 0, 0, 1);
-	width:38px;
-	height:18px;
+.simpanan_pokok_container { 
+	width:411px;
+	height:175px;
 	position:absolute;
-	left:416px;
-	top:3px;
-	font-family:Roboto;
+	left:84px;
+	top:30px;
+}
+.simpanan_pokok_background { 
+	background-color:rgba(255, 166.8125081062317, 166.8125081062317, 1);
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+.simpanan_pokok_text { 
+	color:rgba(0, 0, 0, 1);
+	width:367px;
+	height:58px;
+	position:absolute;
+	left:20px;
+	top:5px;
+	font-family:Inter;
 	text-align:left;
-	font-size:15px;
+	font-size:24px;
 	letter-spacing:0;
 }
-
-.tabel_container {
-    width: 877px;
-    height: 376px;
-    position: absolute;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    left: 21px;
-    top: 90px;
+.simpanan_pokok_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:375px;
+	height:89px;
+	position:absolute;
+	left:20px;
+	top:63px;
+	font-family:Inter;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+    font-weight: bold;
 }
-
-.tabel_transaksi {
-    position: absolute;
-    top: 35px;
-    width: 100%;
+.simpanan_wajib_container { 
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:600px;
+	top:30px;
 }
-
-.main_teks {
-    color: rgba(0, 0, 0, 1);
-    width: 877px;
-    height: 29px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 0;
+.simpanan_wajib_background { 
+	background-color:rgba(237.36250162124634, 255, 166.8125081062317, 1);
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
 }
-
-.tombol_container {
-    width: 220.97222900390625px;
-    height: 133px;
-    position: absolute;
-    left: 918px;
-    top: 280px;
+.simpanan_wajib_text { 
+	color:rgba(0, 0, 0, 1);
+	width:367px;
+	height:58px;
+	position:absolute;
+	left:20px;
+	top:5px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
 }
-
-.tombol_laporan {
-    width: 220.97222900390625px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+.simpanan_wajib_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:375px;
+	height:89px;
+	position:absolute;
+	left:20px;
+	top:63px;
+	font-family:Inter;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+    font-weight: bold;
 }
-
-.tombol_laporan_background {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 220.97222900390625px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.simpanan_sukarela_container { 
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:84px;
+	top:255px;
 }
-
-.teks_tombol_laporan {
-    color: rgba(0, 0, 0, 1);
-    width: 144.9166717529297px;
-    height: 18.5px;
-    position: absolute;
-    left: 54px;
-    top: 9px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 0;
+.simpanan_sukarela_background { 
+	background-color:rgba(166.8125081062317, 255, 175.6312420964241, 1);
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
 }
-
-.tombol_tambah_simpanan {
-    width: 220.97222900390625px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 48px;
+.simpanan_sukarela_text { 
+	color:rgba(0, 0, 0, 1);
+	width:367px;
+	height:58px;
+	position:absolute;
+	left:20px;
+	top:5px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
 }
-
-.tombol_tambah_simpanan_background {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 220.97222900390625px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.simpanan_sukarela_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:375px;
+	height:89px;
+	position:absolute;
+	left:20px;
+	top:63px;
+	font-family:Inter;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+    font-weight: bold;
 }
-
-.teks_tambah_simpanan {
-    color: rgba(0, 0, 0, 1);
-    width: 144.9166717529297px;
-    height: 18.5px;
-    position: absolute;
-    left: 38.02783203125px;
-    top: 9.25px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 0;
+.tabungan_container { 
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:600px;
+	top:255px;
 }
-
-.tombol_tambah_pinjaman {
-    width: 220.97222900390625px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 96px;
+.tabungan_background { 
+	background-color:rgba(166.8125081062317, 191.50499671697617, 255, 1);
+	width:411px;
+	height:175px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
 }
-
-.tombol_tambah_pinjaman_background {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 220.97222900390625px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.tabungan_text { 
+	color:rgba(0, 0, 0, 1);
+	width:367px;
+	height:58px;
+	position:absolute;
+	left:22px;
+	top:7px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
 }
-
-.teks_tambah_pinjaman {
-    color: rgba(0, 0, 0, 1);
-    width: 144.9166717529297px;
-    height: 18.5px;
-    position: absolute;
-    left: 38.02783203125px;
-    top: 9.25px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 15px;
-    letter-spacing: 0;
+.simpanan_tabungan_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:375px;
+	height:89px;
+	position:absolute;
+	left:20px;
+	top:63px;
+	font-family:Inter;
+	text-align:center;
+	font-size:24px;
+	letter-spacing:0;
+    font-weight: bold;
 }

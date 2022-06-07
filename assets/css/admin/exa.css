@@ -1,0 +1,3843 @@
+.melihat_detail_transaksi { 
+	background-color:rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+	width:1360px;
+	height:1215px;
+	position:absolute;
+}
+.header_container { 
+	width:1360px;
+	height:130px;
+	position:absolute;
+	left:0px;
+	top:9px;
+}
+.logo { 
+	width:100px;
+	height:101px;
+	position:absolute;
+	left:16px;
+	top:0px;
+	background-image:url(../../logo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.teks_koperasi { 
+	color:rgba(0, 0, 0, 1);
+	width:315px;
+	height:18px;
+	position:absolute;
+	left:136px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.teks_nama_koperasi { 
+	color:rgba(0, 0, 0, 1);
+	width:363px;
+	height:54px;
+	position:absolute;
+	left:136px;
+	top:14px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:50px;
+	letter-spacing:0;
+}
+.teks_alamat_koperasi { 
+	color:rgba(0, 0, 0, 1);
+	width:364px;
+	height:32px;
+	position:absolute;
+	left:136px;
+	top:69px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+.garis_header { 
+	background-color:rgba(30.07760524749756, 167.87500709295273, 167.87500709295273, 1);
+	width:1360px;
+	height:15px;
+	position:absolute;
+	left:0px;
+	top:115px;
+}
+.side_menu { 
+	width:169px;
+	height:527px;
+	position:absolute;
+	left:0px;
+	top:139px;
+}
+.side_menu_background { 
+	background-color:rgba(55.00000052154064, 189.00000393390656, 189.00000393390656, 0.6000000238418579);
+	width:169px;
+	height:527px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.beranda_menu { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:130px;
+}
+.menu_beranda { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_beranda { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.pegawai_menu { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:166px;
+}
+.menu_pegawai { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_pegawai { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.anggota_menu { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:202px;
+}
+.menu_daftar_nasabah { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_anggota { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.pinjaman_menu { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:238px;
+}
+.menu_pinjaman { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_pinjaman { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.simpanan_menu { 
+	width:169px;
+	height:37px;
+	position:absolute;
+	left:0px;
+	top:274px;
+}
+.menu_simpanan { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:35.250003814697266px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_simpanan { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:1px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.profil_menu { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:309px;
+}
+.menu_profil { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:35.250003814697266px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_profil { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.main_menu { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:95px;
+}
+.main_menu_background { 
+	background-color:rgba(145.56249797344208, 144.3494814634323, 144.3494814634323, 1);
+	width:169px;
+	height:35.250003814697266px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_main_menu { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.user_container { 
+	width:159px;
+	height:84px;
+	position:absolute;
+	left:6px;
+	top:6px;
+}
+.teks_selamat { 
+	color:rgba(0, 0, 0, 1);
+	width:159px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.teks_user { 
+	color:rgba(0, 0, 0, 1);
+	width:159px;
+	height:61px;
+	position:absolute;
+	left:0px;
+	top:23px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.teks_menu { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:498px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:12px;
+	letter-spacing:0;
+}
+.main_container { 
+	width:1131px;
+	height:1029px;
+	position:absolute;
+	left:199px;
+	top:156px;
+}
+.container_background { 
+	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+	width:1131px;
+	height:1029px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.teks_judul { 
+	color:rgba(0, 0, 0, 1);
+	width:451px;
+	height:29px;
+	position:absolute;
+	left:352px;
+	top:9px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:25px;
+	letter-spacing:0;
+}
+.user_data_container { 
+	width:813px;
+	height:128px;
+	position:absolute;
+	left:192px;
+	top:60px;
+}
+.nip { 
+	width:813px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_nip { 
+	color:rgba(0, 0, 0, 1);
+	width:179px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.data_nip { 
+	color:rgba(0, 0, 0, 1);
+	width:634px;
+	height:23px;
+	position:absolute;
+	left:179px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.nama { 
+	width:813px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:35px;
+}
+.teks_nama { 
+	color:rgba(0, 0, 0, 1);
+	width:179px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.data_nama { 
+	color:rgba(0, 0, 0, 1);
+	width:634px;
+	height:23px;
+	position:absolute;
+	left:179px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.bulan { 
+	width:813px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:70px;
+}
+.teks_bulan { 
+	color:rgba(0, 0, 0, 1);
+	width:179px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.data_bulan { 
+	color:rgba(0, 0, 0, 1);
+	width:634px;
+	height:23px;
+	position:absolute;
+	left:179px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.tanggal_transaksi { 
+	width:813px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:105px;
+}
+.teks_tanggal_transaksi { 
+	color:rgba(0, 0, 0, 1);
+	width:179px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.data_tanggal_transaksi { 
+	color:rgba(0, 0, 0, 1);
+	width:634px;
+	height:23px;
+	position:absolute;
+	left:179px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.tabel_setoran { 
+	width:1038px;
+	height:720px;
+	position:absolute;
+	left:47px;
+	top:221px;
+}
+.tabel_header { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_no { 
+    border: 1px solid black;
+	background-color:rgba(46.000001057982445, 155.00000596046448, 189.00000393390656, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+    border-top-left-radius: 50px;
+}
+.teks_no { 
+	color:rgba(0, 0, 0, 1);
+    width: 60px;
+    padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_jenis { 
+    border: 1px solid black;
+	background-color:rgba(46.000001057982445, 155.00000596046448, 189.00000393390656, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:327px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_ke { 
+    border: 1px solid black;
+	background-color:rgba(46.000001057982445, 155.00000596046448, 189.00000393390656, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_dr { 
+    border: 1px solid black;
+	background-color:rgba(46.000001057982445, 155.00000596046448, 189.00000393390656, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_nominal { 
+    border: 1px solid black;
+	background-color:rgba(46.000001057982445, 155.00000596046448, 189.00000393390656, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(46.000001057982445, 155.00000596046448, 189.00000393390656, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_sp { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:40px;
+}
+.sp_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_sp_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_sp_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sp_jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_sp_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_sp_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:319px;
+	padding-top: 11px;
+	position:absolute;
+	left:8px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sp_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_sp_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sp_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sp_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_sp_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sp_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sp_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_sp_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sp_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sp_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_sp_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sp_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_sw { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:80px;
+}
+.sw_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_sw_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_sw_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sw_jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_sw_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_sw_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:319px;
+	padding-top: 11px;
+	position:absolute;
+	left:8px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sw_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_sw_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sw_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sw_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_sw_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sw_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sw_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_sw_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sw_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sw_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_sw_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sw_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_tab { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:120px;
+}
+.tab_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_tab_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_tab_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.tab_jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_tab_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_tab_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:319px;
+	padding-top: 11px;
+	position:absolute;
+	left:8px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.tab_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_tab_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_tab_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.tab_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_tab_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_tab_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.tab_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_tab_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_tab_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.tab_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_tab_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_tab_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_sr { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:160px;
+}
+.sr_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_sr_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_sr_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sr_jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_sr_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_sr_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:319px;
+	padding-top: 11px;
+	position:absolute;
+	left:8px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sr_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_sr_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sr_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sr_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_sr_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sr_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sr_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_sr_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sr_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.sr_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_sr_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_sr_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_usp { 
+	width:1038px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:200px;
+}
+.row_usp_pokok { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.usp_pokok_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_usp_pokok_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_usp_pokok_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_pokok_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_usp_pokok_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_usp_pokok_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_pokok_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_usp_pokok_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_pokok_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_pokok_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_usp_pokok_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_pokok_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_pokok_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_usp_pokok_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_pokok_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_pokok_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_usp_pokok_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_pokok_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_usp_jasa { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:40px;
+}
+.usp_jasa_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_usp_jasa_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_usp_jasa_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_jasa_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_usp_jasa_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_usp_jasa_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_jasa_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_usp_jasa_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_jasa_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_jasa_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_usp_jasa_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_jasa_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_jasa_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_usp_jasa_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_jasa_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.usp_jasa_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_usp_jasa_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_usp_jasa_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ros_usp_merge_cell { 
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:236px;
+	top:0px;
+}
+.cell_usp { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_usp { 
+	color:rgba(0, 0, 0, 1);
+	width:151px;
+	padding-top: 30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_bke { 
+	width:1038px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:280px;
+}
+.row_bke_pokok { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.bke_pokok_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_bke_pokok_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_bke_pokok_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_pokok_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_bke_pokok_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_bke_pokok_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_pokok_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_bke_pokok_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_pokok_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_pokok_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_bke_pokok_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_pokok_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_pokok_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_bke_pokok_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_pokok_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_pokok_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_bke_pokok_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_pokok_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_bke_jasa { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:40px;
+}
+.bke_jasa_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_bke_jasa_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_bke_jasa_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_jasa_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_bke_jasa_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_bke_jasa_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_jasa_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_bke_jasa_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_jasa_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_jasa_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_bke_jasa_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_jasa_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_jasa_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_bke_jasa_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_jasa_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.bke_jasa_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_bke_jasa_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_bke_jasa_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_bke_merge_cell { 
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:236px;
+	top:0px;
+}
+.cell_bke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_bke { 
+	color:rgba(0, 0, 0, 1);
+	width:151px;
+	padding-top: 30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_ekstra { 
+	width:1038px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:360px;
+}
+.row_ekstra_pokok { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ekstra_pokok_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_ekstra_pokok_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_ekstra_pokok_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_pokok_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_ekstra_pokok_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_ekstra_pokok_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_pokok_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_ekstra_pokok_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_pokok_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_pokok_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_ekstra_pokok_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_pokok_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_pokok_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_ekstra_pokok_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_pokok_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_pokok_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_ekstra_pokok_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_pokok_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_ekstra_jasa { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:40px;
+}
+.ekstra_jasa_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_ekstra_jasa_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_ekstra_jasa_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_jasa_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_ekstra_jasa_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_ekstra_jasa_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_jasa_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_ekstra_jasa_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_jasa_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_jasa_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_ekstra_jasa_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_jasa_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_jasa_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_ekstra_jasa_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_jasa_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.ekstra_jasa_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_ekstra_jasa_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_ekstra_jasa_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_ekstra_merge_cell { 
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:236px;
+	top:0px;
+}
+.cell_ekstra { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_ekstra { 
+	color:rgba(0, 0, 0, 1);
+	width:151px;
+	padding-top: 30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_toko { 
+	width:1038px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:440px;
+}
+.row_toko_pokok { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.toko_pokok_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_toko_pokok_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_toko_pokok_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_pokok_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_toko_pokok_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_toko_pokok_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_pokok_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_toko_pokok_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_pokok_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_pokok_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_toko_pokok_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_pokok_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_pokok_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_toko_pokok_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_pokok_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_pokok_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_toko_pokok_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_pokok_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_toko_jasa { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:40px;
+}
+.toko_jasa_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_toko_jasa_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_toko_jasa_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_jasa_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_toko_jasa_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_toko_jasa_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_jasa_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_toko_jasa_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_jasa_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_jasa_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_toko_jasa_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_jasa_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_jasa_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_toko_jasa_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_jasa_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.toko_jasa_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_toko_jasa_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_toko_jasa_ketarangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_toko_merge_cell { 
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:236px;
+	top:0px;
+}
+.cell_toko { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_toko { 
+	color:rgba(0, 0, 0, 1);
+	width:151px;
+	padding-top: 30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_haji { 
+	width:1038px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:520px;
+}
+.row_haji_merge_cell { 
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:236px;
+	top:0px;
+}
+.cell_haji { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:151px;
+	height:80px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_haji { 
+	color:rgba(0, 0, 0, 1);
+	width:151px;
+	padding-top: 30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_haji_pokok { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.haji_pokok_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_haji_pokok_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_haji_pokok_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_pokok_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_haji_pokok_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_haji_pokok_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_pokok_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_haji_pokok_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_pokok_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_pokok_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_haji_pokok_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_pokok_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_pokok_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_haji_pokok_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_pokok_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_pokok_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_haji_pokok_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_pokok_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_haji_jasa { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:40px;
+}
+.haji_jasa_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_haji_jasa_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_haji_jasa_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_jasa_jenis { 
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_haji_jasa_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:176px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_haji_jasa_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:171.69418334960938px;
+	padding-top: 11px;
+	position:absolute;
+	left:4.305810451507568px;
+	top:2.2737367544323206e-13px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_jasa_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_haji_jasa_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_jasa_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_jasa_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_haji_jasa_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_jasa_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_jasa_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_haji_jasa_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_jasa_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.haji_jasa_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_haji_jasa_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_haji_jasa_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_arisan { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:600px;
+}
+.arisan_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_arisan_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_arisan_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.arisan_jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_arisan_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_arisan_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:319px;
+	padding-top: 11px;
+	position:absolute;
+	left:8px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.arisan_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_arisan_ke { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_arisan_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.arisan_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_arisan_dr { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_arisan_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.arisan_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_arisan_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_arisan_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.arisan_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_arisan_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_arisan_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_seragam { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:640px;
+}
+.seragam_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_seragam_no { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_seragam_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.seragam_jenis { 
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_seragam_jenis { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:327px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_seragam_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:319px;
+	padding-top: 11px;
+	position:absolute;
+	left:8px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.seragam_ke { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:387px;
+	top:0px;
+}
+.cell_seragam_ke { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_seragam_ke { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.seragam_dr { 
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:467px;
+	top:0px;
+}
+.cell_seragam_dr { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:80px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_seragam_dr { 
+	color:rgba(0, 0, 0, 1);
+	width:80px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.seragam_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_seragam_nominal { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_seragam_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.seragam_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_seragam_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(108.00000116229057, 244.0000006556511, 244.0000006556511, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_seragam_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.row_jumlah { 
+	width:1038px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:680px;
+}
+.jumlah_no { 
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.cell_jumlah_no { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:60px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_jumlah_no { 
+	color:rgba(0, 0, 0, 1);
+	width:60px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.jumlah_jenis { 
+	width:487px;
+	height:40px;
+	position:absolute;
+	left:60px;
+	top:0px;
+}
+.cell_jumlah_jenis { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:487px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.teks_jumlah_jenis { 
+	color:rgba(0, 0, 0, 1);
+	width:487px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.jumlah_nominal { 
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:547px;
+	top:0px;
+}
+.cell_jumlah_nominal { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:177px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.data_jumlah_nominal { 
+	color:rgba(0, 0, 0, 1);
+	width:177px;
+	padding-top: 11px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.jumlah_keterangan { 
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:724px;
+	top:0px;
+}
+.cell_jumlah_keterangan { 
+    border: 1px solid black;
+	background-color:rgba(200.00000327825546, 233.00000131130219, 240.00000089406967, 1);
+	width:314px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+    border-bottom-right-radius: 50px;
+}
+.data_jumlah_keterangan { 
+	color:rgba(0, 0, 0, 1);
+	padding-top: 11px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.tombol { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:916px;
+	top:976px;
+}
+.tombol_simpan { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.teks_simpan { 
+	color:rgba(0, 0, 0, 1);
+	width:75px;
+	height:23px;
+	position:absolute;
+	left:43px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.tombol-kembali { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:725px;
+	top:976px;
+}
+.tombol_kembali { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.teks_kembali { 
+	color:rgba(0, 0, 0, 1);
+	width:75px;
+	height:23px;
+	position:absolute;
+	left:43px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+
+#jumlah-keterangan {
+    border-bottom-right-radius: 50px !important;
+}
+
+.ajuan-input {
+	position: absolute;
+    left: 188px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tombol-cari {
+	position: absolute;
+    left: 398px;
+    height: 28px;
+    background: rgb(167 167 167);
+    border-radius: 4px;
+}
+
+.tombol-cari:hover {
+	background-color: rgb(30 168 168);
+}

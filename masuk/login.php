@@ -18,25 +18,23 @@ if(isset($_POST['nip']) && isset($_POST['sandi'])) {
   <?php
 }
 
-$sql = "SELECT akun.`nip`, 
-akun.`nama`,
-jenis_kelamin.`jenis_kelamin`,
-akun.`kata_sandi`,
-akun.`tempat_lahir`,
-akun.`tanggal_lahir`,
-akun.`alamat_rumah`,
-akun.`kode_pos`,
-akun.`nomor_hp`,
-instansi.nama_instansi, 
-instansi.alamat_instansi,
-akun.`ktp_suami`,
-akun.`ktp_istri`,
-akun.`foto_3x4`,
-akun.`tanggal_registrasi`,
-akun.`foto_profil`,
-status_akun.`status`,
-level.`level` 
-FROM `akun` join jenis_kelamin on akun.jenis_kelamin=jenis_kelamin.`id_jenis_kelamin` join status_akun on akun.`status`=status_akun.id_status join `level` on `akun`.`level`=`level`.`id_level` join instansi on akun.instansi = instansi.id_instansi where nip =".$nip;
+$sql = "SELECT akun.nip, 
+akun.nama,
+kelamin.kelamin,
+akun.sandi,
+akun.tempat_lahir,
+akun.tanggal_lahir,
+akun.alamat,
+akun.pos,
+akun.hp,
+instansi.instansi, 
+instansi.alamat as 'alamat_instansi',
+akun.ktp_suami,
+akun.ktp_istri,
+akun.foto_3x4,
+status_akun.status,
+jabatan.jabatan 
+FROM akun join kelamin on akun.kelamin = kelamin.id join status_akun on akun.status = status_akun.id join jabatan on akun.jabatan = jabatan.id join instansi on akun.instansi = instansi.id where akun.nip =".$nip;
 $query = $con->query($sql);
 $hasil = $query->fetch_assoc();
 if($query->num_rows == 0) {
@@ -53,7 +51,7 @@ if($query->num_rows == 0) {
   </script>
   <?php
 } else {
-  if($sandi <> $hasil['kata_sandi']) {
+  if($sandi <> $hasil['sandi']) {
     ?>
     <script>
     console.log("Kata sandi salah, silahkan periksa ulang data anda.");
@@ -70,36 +68,34 @@ if($query->num_rows == 0) {
     session_start();
     $_SESSION['nama'] = $hasil['nama'];
     $_SESSION['nip'] = $hasil['nip'];
-    $_SESSION['jenis-kelamin'] = $hasil['jenis_kelamin'];
+    $_SESSION['jenis-kelamin'] = $hasil['kelamin'];
     $_SESSION['tempat-lahir'] = $hasil['tempat_lahir'];
     $_SESSION['tanggal-lahir'] = $hasil['tanggal_lahir'];
-    $_SESSION['alamat-rumah'] = $hasil['alamat_rumah'];
-    $_SESSION['kode-pos'] = $hasil['kode_pos'];
-    $_SESSION['no-hp'] = $hasil['nomor_hp'];
-    $_SESSION['instansi'] = $hasil['nama_instansi'];
+    $_SESSION['alamat-rumah'] = $hasil['alamat'];
+    $_SESSION['kode-pos'] = $hasil['pos'];
+    $_SESSION['no-hp'] = $hasil['hp'];
+    $_SESSION['instansi'] = $hasil['instansi'];
     $_SESSION['alamat-instansi'] = $hasil['alamat_instansi'];
     $_SESSION['ktp-suami'] = $hasil['ktp_suami'];
     $_SESSION['ktp-istri'] = $hasil['ktp_istri'];
     $_SESSION['ft3x4'] = $hasil['foto_3x4'];
-    $_SESSION['foto-profil'] = $hasil['foto_profil'];
-    $_SESSION['tgl-registrasi'] = $hasil['tanggal_registrasi'];
-    $_SESSION['level'] = $hasil['level'];
+    $_SESSION['jabatan'] = $hasil['jabatan'];
     
-    switch($hasil['level']){
-        case 'Admin':
-            header('location:'.$siteurl.'admin/');
+    switch($hasil['jabatan']){
+      case 'Admin':
+        header('location:'.$siteurl.'admin/');
+        break;
+        case 'Anggota':
+          header('location:'.$siteurl.'anggota/');
+          break;
+          case 'Pimpinan':
+            header('location:'.$siteurl.'pimpinan/');
             break;
-            case 'Anggota':
-                header('location:'.$siteurl.'anggota/');
-                break;
-                case 'Pimpinan':
-                    header('location:'.$siteurl.'pimpinan/');
-                    break;
-                    default:
-                    header('location:'.$siteurl);
-                    break;
-    }
-    
-  }
-}
-?>
+            default:
+            
+            break;
+          }
+          
+        }
+      }
+      ?>

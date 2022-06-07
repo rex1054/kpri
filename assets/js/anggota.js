@@ -1,13 +1,13 @@
 function menu(menu) {
-    if (menu == 'beranda') {
-        window.open(siteurl + 'admin', '_SELF');
+    if (menu == 'anggotaBeranda') {
+        window.open(siteurl + 'anggota', '_SELF');
     } else {
-        window.open(siteurl + 'admin/' + menu, '_SELF');
+        window.open(siteurl + 'anggota/' + menu, '_SELF');
     }
 }
 
 function addSetoran(){
-    window.open(siteurl + 'admin/tambah/setoran.php', '_SELF');
+    window.open(siteurl + 'anggota/tambah/setoran.php', '_SELF');
 }
 
 function filt(tabel, nama,x) {
@@ -33,12 +33,12 @@ function filt(tabel, nama,x) {
 }
 
 function bulan(bulan) {
-    window.open(siteurl+'admin/?m='+bulan, "_SELF");
+    window.open(siteurl+'anggota/?m='+bulan, "_SELF");
 }
 
 function reset(page) {
     if(page == 'beranda') {
-        window.open(siteurl+'admin/', '_SELF');
+        window.open(siteurl+'anggota/', '_SELF');
     }
 }
 
@@ -110,18 +110,5 @@ function sortTable(id, n) {
             }
         }
     }
-}
-
-function fetch_akun(id, val) {
-    $.ajax({
-        type: 'post',
-        url: 'getAkun.php',
-        data: {
-            get_option: val
-        },
-        success: function(response) {
-            document.getElementById(id).innerHTML = response;
-        }
-    });
 }
 

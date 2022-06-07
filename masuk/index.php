@@ -12,7 +12,7 @@ include('../config.php');
 
     <!-- meta -->
     <meta name="description" content="Sistem Informasi Simpan Pinjam">
-    <meta name="author" content="REXYST">
+    <meta name="author" content="<?php echo $author; ?>">
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -36,11 +36,11 @@ Telepon: (0336) 321386</span>
     <div class="container_background"></div>
     <span  class="teks_masuk">MASUK</span>
     <div class=nip>
-    <input type="number" class="kolom_nip" name="nip" required placeholder="199805012016011003">
+    <input type="number" class="kolom_nip text-center" name="nip" required autofocus placeholder="199805012016011003">
       <span  class="teks_nip">NIP</span>
     </div>
     <div class=kata_sandi>
-    <input type="password" class="kolom_kata_sandi" name="sandi" required placeholder="Kata Sandi Anda">
+    <input type="password" class="kolom_kata_sandi text-center" name="sandi" required placeholder="Kata Sandi Anda">
       <span  class="teks_kata_sandi">KATA SANDI</span>
     </div>
     <div class=tombol_masuk>

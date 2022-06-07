@@ -12,7 +12,7 @@ include('../config.php');
 
     <!-- meta -->
     <meta name="description" content="Sistem Informasi Simpan Pinjam">
-    <meta name="author" content="REXYST">
+    <meta name="author" content="<?php echo $author; ?>">
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">

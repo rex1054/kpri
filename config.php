@@ -2,8 +2,9 @@
 $host = "127.0.0.1";
 $username = "root";
 $pass = "";
-$db = "kpri_wiyata";
-$siteurl = "http://127.0.0.1:80/kpri/";
+$db = "kpri";
+$siteurl = "http://127.0.0.1/kpri/";
+$author = "RAMA";
 
 $con = mysqli_connect($host, $username, $pass, $db);
 
