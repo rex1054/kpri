@@ -6,11 +6,15 @@ function menu(menu) {
     }
 }
 
-function addSetoran(){
-    window.open(siteurl + 'admin/tambah/setoran.php', '_SELF');
+function addSetoran() {
+    window.open(siteurl + 'admin/tambah/setoran/', '_SELF');
 }
 
-function filt(tabel, nama,x) {
+function laporan() {
+    window.open(siteurl + 'admin/function/lapor-bulan.php', '_SELF');
+}
+
+function filt(tabel, nama, x) {
     console.log("nama = " + filter);
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById(nama);
@@ -33,12 +37,26 @@ function filt(tabel, nama,x) {
 }
 
 function bulan(bulan) {
-    window.open(siteurl+'admin/?m='+bulan, "_SELF");
+    window.open(siteurl + 'admin/?m=' + bulan, "_SELF");
+}
+
+function tahun(tahun) {
+    window.open(siteurl + 'admin/?y=' + tahun, "_SELF");
 }
 
 function reset(page) {
-    if(page == 'beranda') {
-        window.open(siteurl+'admin/', '_SELF');
+    if (page == 'beranda') {
+        window.open(siteurl + 'admin/', '_SELF');
+    }
+}
+
+function getYear(year) {
+    for (i = new Date().getFullYear(); i > 1970; i--) {
+        if (year == i) {
+            $('#yearpicker').append($('<option />').val(i).attr("selected", "selected").html(i));
+        } else {
+            $('#yearpicker').append($('<option />').val(i).html(i));
+        }
     }
 }
 
@@ -125,3 +143,32 @@ function fetch_akun(id, val) {
     });
 }
 
+$(document).ready(function() {
+    $('#tabel-transaksi').DataTable({
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/id.json'
+        },
+        dom: 'Bfrtip',
+        paging: true,
+        "pageLength": 7,
+        buttons: [
+            'excelHtml5',
+            'pdfHtml5'
+        ]
+    });
+});
+
+$(document).ready(function() {
+    $('#tabel-pegawai').DataTable({
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/id.json'
+        },
+        dom: 'Bfrtip',
+        paging: true,
+        "pageLength": 7,
+        buttons: [
+            'excelHtml5',
+            'pdfHtml5'
+        ]
+    });
+});

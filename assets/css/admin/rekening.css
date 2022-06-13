@@ -1,0 +1,317 @@
+.rekening {
+    background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width: 1360px;
+    height: 666px;
+    position: absolute;
+    font-family: Roboto;
+}
+
+.main_container {
+    width: 1101px;
+    height: 474px;
+    position: absolute;
+    left: 209px;
+    top: 159px;
+}
+
+.container_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 1101px;
+    height: 474px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.detil_container {
+    width: 481px;
+    height: 57px;
+    position: absolute;
+    left: 34px;
+    top: 6px;
+}
+
+.nomor_rekening_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 133px;
+    height: 19px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.nomor_rekening_value {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 348px;
+    height: 19px;
+    position: absolute;
+    left: 133px;
+    top: 0px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.nip_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 133px;
+    height: 19px;
+    position: absolute;
+    left: 0px;
+    top: 19px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.nip_value {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 348px;
+    height: 19px;
+    position: absolute;
+    left: 133px;
+    top: 19px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.nama_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 133px;
+    height: 19px;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.nama_value {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 348px;
+    height: 19px;
+    position: absolute;
+    left: 133px;
+    top: 38px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.simpanan_pokok_container {
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 84px;
+    top: 81px;
+}
+
+.simpanan_pokok_background {
+    background-color: rgba(255, 166.8125081062317, 166.8125081062317, 1);
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.simpanan_pokok_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 367px;
+    height: 58px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.simpanan_pokok_nominal {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 375px;
+    height: 89px;
+    position: absolute;
+    left: 20px;
+    top: 63px;
+    font-family: Inter;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.simpanan_wajib_container {
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 600px;
+    top: 81px;
+}
+
+.simpanan_wajib_background {
+    background-color: rgba(237.36250162124634, 255, 166.8125081062317, 1);
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.simpanan_wajib_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 367px;
+    height: 58px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.simpanan_wajib_nominal {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 375px;
+    height: 89px;
+    position: absolute;
+    left: 20px;
+    top: 63px;
+    font-family: Inter;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.simpanan_sukarela_container {
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 84px;
+    top: 282px;
+}
+
+.simpanan_sukarela_background {
+    background-color: rgba(166.8125081062317, 255, 175.6312420964241, 1);
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.simpanan_sukarela_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 367px;
+    height: 58px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.simpanan_sukarela_nominal {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 375px;
+    height: 89px;
+    position: absolute;
+    left: 20px;
+    top: 63px;
+    font-family: Inter;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.tabungan_container {
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 600px;
+    top: 282px;
+}
+
+.tabungan_background {
+    background-color: rgba(166.8125081062317, 191.50499671697617, 255, 1);
+    width: 411px;
+    height: 175px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tabungan_text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 367px;
+    height: 58px;
+    position: absolute;
+    left: 22px;
+    top: 7px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.simpanan_tabungan_nominal {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    width: 375px;
+    height: 89px;
+    position: absolute;
+    left: 20px;
+    top: 63px;
+    font-family: Inter;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0;
+}

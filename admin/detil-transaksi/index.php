@@ -27,8 +27,8 @@ include('getData.php');
 
 <!-- style -->
 <link href="<?php echo $siteurl; ?>assets/css/main.css" rel="stylesheet">
-<!-- <link href=" echo $siteurl; ?>assets/css/admin/detail.css" rel="stylesheet"> -->
-<link href="<?php echo $siteurl;?>assets/css/admin/exa.css" rel="stylesheet">
+<link href="<?php echo $siteurl;?>assets/css/admin/main.css" rel="stylesheet">
+<link href="<?php echo $siteurl;?>assets/css/admin/detil-transaksi.css" rel="stylesheet">
 </head>
 <body>
 <div class=melihat_detail_transaksi>

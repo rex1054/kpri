@@ -1,447 +1,121 @@
-.melihat_daftar_pengguna { 
-	background-color:rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
-	width:1360px;
-	height:666px;
-	position:absolute;
+.melihat_daftar_pengguna {
+    background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width: 1360px;
+    height: 666px;
+    position: absolute;
 }
-.header_container { 
-	width:1360px;
-	height:130px;
-	position:absolute;
-	left:0px;
-	top:9px;
-}
-.logo { 
-	width:100px;
-	height:101px;
-	position:absolute;
-	left:16px;
-	top:0px;
-	background-image:url(../../logo.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.teks_koperasi { 
-	color:rgba(0, 0, 0, 1);
-	width:315px;
-	height:18px;
-	position:absolute;
-	left:136px;
-	top:0px;
-	font-family:Roboto;
-	text-align:left;
-	font-size:15px;
-	letter-spacing:0;
-}
-.teks_nama_koperasi { 
-	color:rgba(0, 0, 0, 1);
-	width:363px;
-	height:54px;
-	position:absolute;
-	left:136px;
-	top:14px;
-	font-family:Roboto;
-	text-align:left;
-	font-size:50px;
-	letter-spacing:0;
-}
-.teks_alamat_koperasi { 
-	color:rgba(0, 0, 0, 1);
-	width:364px;
-	height:32px;
-	position:absolute;
-	left:136px;
-	top:69px;
-	font-family:Roboto;
-	text-align:left;
-	font-size:10px;
-	letter-spacing:0;
-}
-.garis_header { 
-	background-color:rgba(30.07760524749756, 167.87500709295273, 167.87500709295273, 1);
-	width:1360px;
-	height:15px;
-	position:absolute;
-	left:0px;
-	top:115px;
-}
-.side_menu { 
-	width:169px;
-	height:527px;
-	position:absolute;
-	left:0px;
-	top:139px;
-}
-.side_menu_background { 
-	background-color:rgba(55.00000052154064, 189.00000393390656, 189.00000393390656, 0.6000000238418579);
-	width:169px;
-	height:527px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.beranda_menu { 
-	width:169px;
-	height:36px;
-	position:absolute;
-	left:0px;
-	top:130px;
-}
-.menu_beranda {
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
+
+.search_bar_container {
+    width: 699px;
     height: 36px;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 411px;
+    top: 165px;
 }
 
-.teks_beranda {
-    color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
+.tambah_pengguna {
+    width: 254px;
+    height: 34px;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.pegawai_menu {
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 166px;
-}
-
-.menu_pegawai {
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.teks_pegawai {
-    color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.anggota_menu {
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 202px;
-}
-
-.menu_daftar_nasabah {
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.teks_anggota {
-    color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.pinjaman_menu {
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 238px;
-}
-
-.menu_pinjaman {
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.teks_pinjaman {
-    color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.simpanan_menu {
-    width: 169px;
-    height: 37px;
-    position: absolute;
-    left: 0px;
-    top: 274px;
-}
-
-.menu_simpanan {
-    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
-    height: 35.250003814697266px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.teks_simpanan {
-    color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
-    position: absolute;
-    left: 0px;
+    left: 445px;
     top: 1px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0;
 }
 
-.profil_menu {
-    width: 169px;
-    height: 36px;
-    position: absolute;
-    left: 0px;
-    top: 309px;
-}
-
-.menu_profil {
+.tombol_tambah_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-    width: 169px;
-    height: 35.250003814697266px;
+    width: 254px;
+    height: 34px;
     position: absolute;
     left: 0px;
     top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.teks_profil {
+.teks_tombol_tambah {
     color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
+    width: 211px;
+    height: 18px;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 22px;
+    top: 8px;
     font-family: Roboto;
-    text-align: center;
+    text-align: left;
     font-size: 15px;
     letter-spacing: 0;
 }
 
-.main_menu {
-    width: 169px;
+.cari {
+    width: 411px;
     height: 36px;
     position: absolute;
     left: 0px;
-    top: 95px;
-}
-
-.main_menu_background {
-    background-color: rgba(145.56249797344208, 144.3494814634323, 144.3494814634323, 1);
-    width: 169px;
-    height: 35.250003814697266px;
-    position: absolute;
-    left: 0px;
     top: 0px;
 }
 
-.teks_main_menu {
+.kolom_cari {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 411px;
+    height: 36px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.teks_cari {
     color: rgba(0, 0, 0, 1);
-    width: 169px;
-    padding-top: 8px;
+    width: 139.27574157714844px;
+    height: 27px;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    font-family: Roboto;
-    font-weight: bold;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0;
-}
-
-.user_container {
-    width: 159px;
-    height: 84px;
-    position: absolute;
-    left: 6px;
-    top: 6px;
-}
-
-.teks_selamat {
-    color: rgba(0, 0, 0, 1);
-    width: 159px;
-    height: 23px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 136.5448455810547px;
+    top: 5px;
     font-family: Roboto;
     text-align: left;
-    font-size: 15px;
+    font-size: 23px;
     letter-spacing: 0;
 }
 
-.teks_user {
-    color: rgba(0, 0, 0, 1);
-    width: 159px;
-    height: 61px;
+.main_container {
+    width: 1101px;
+    height: 417px;
     position: absolute;
-    left: 0px;
-    top: 23px;
-    font-family: Roboto;
-    text-align: left;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: px;
+    left: 209px;
+    top: 216px;
 }
 
-.teks_menu {
-    color: rgba(0, 0, 0, 1);
-    width: 169px;
-    height: 23px;
+.container_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 1101px;
+    height: 417px;
     position: absolute;
     left: 0px;
-    top: 498px;
-    font-family: Roboto;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 0;
-}
-.search_bar_container { 
-	width:699px;
-	height:36px;
-	position:absolute;
-	left:411px;
-	top:165px;
-}
-.tambah_pengguna { 
-	width:254px;
-	height:34px;
-	position:absolute;
-	left:445px;
-	top:1px;
-}
-.tombol_tambah_background { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
-	width:254px;
-	height:34px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-}
-.teks_tombol_tambah { 
-	color:rgba(0, 0, 0, 1);
-	width:211px;
-	height:18px;
-	position:absolute;
-	left:22px;
-	top:8px;
-	font-family:Roboto;
-	text-align:left;
-	font-size:15px;
-	letter-spacing:0;
-}
-.cari { 
-	width:411px;
-	height:36px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.kolom_cari { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(255, 255, 255, 1);
-	width:411px;
-	height:36px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
-}
-.teks_cari { 
-	color:rgba(0, 0, 0, 1);
-	width:139.27574157714844px;
-	height:27px;
-	position:absolute;
-	left:136.5448455810547px;
-	top:5px;
-	font-family:Roboto;
-	text-align:left;
-	font-size:23px;
-	letter-spacing:0;
-}
-.main_container { 
-	width:1101px;
-	height:417px;
-	position:absolute;
-	left:209px;
-	top:216px;
-}
-.container_background { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
-	width:1101px;
-	height:417px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:20px;
-	border-top-right-radius:20px;
-	border-bottom-left-radius:20px;
-	border-bottom-right-radius:20px;
+    top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .tabel_container {
     width: 96%;
-    height: 345px;
+    height: 365px;
     position: absolute;
-    overflow-y: scroll;
     overflow-x: hidden;
     left: 21px;
-    top: 52px;
+    top: 40px;
 }
 
 .tabel_pegawai {
     position: absolute;
-    top: 35px;
     width: 100%;
 }
 

@@ -10,7 +10,12 @@ button {
 button:hover {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    background-color: rgb(30 168 168);
+    background-color: rgb(30 168 168) !important;
+}
+
+.paginate_button:hover {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    background-color: rgb(30 168 168) !important;
 }
 
 .aktif {
@@ -22,27 +27,33 @@ button:hover {
 }
 
 table {
+    width: 100%;
+    top: 90px;
     border-spacing: 0;
 }
 
 table td,
 table th {
     border: 1px solid black !important;
-    height: 26px;
-    font-size: 11pt;
-    padding: 3px;
+    height: 26px !important;
+    font-size: 11pt !important;
+    padding: 3px !important;
+}
+
+table th div {
+    height: 26px !important;
 }
 
 table th {
-    background-color: #2E9BBD;
+    background-color: #2E9BBD !important;
 }
 
 table tr:nth-child(even) {
-    background-color: #6CF4F4;
+    background-color: #6CF4F4 !important;
 }
 
 table tr:nth-child(odd) {
-    background-color: #C8E9F0;
+    background-color: #C8E9F0 !important;
 }
 
 table th:first-child {
@@ -96,7 +107,7 @@ table tr:last-child td:last-child {
     height: auto !important;
 }
 
-body{
+body {
     margin: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -108,9 +119,11 @@ body{
     transform: translateX(-50%);
     background-color: lightpink;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
+
 .kpri-input {
     background-color: rgba(255, 255, 255, 1);
     width: 301px;
@@ -125,10 +138,12 @@ body::-webkit-scrollbar {
     font-size: 16px;
     letter-spacing: 0;
 }
+
 :focus-visible {
     outline: none;
 }
-.kpri-input-file{
+
+.kpri-input-file {
     width: 294px !important;
     height: fit-content !important;
     box-shadow: none !important;
@@ -136,6 +151,7 @@ body::-webkit-scrollbar {
     margin-left: 8px;
     border-radius: 0;
 }
+
 input[type="file" i] {
     appearance: none;
     background-color: rgba(255, 255, 255, 0);
@@ -150,14 +166,17 @@ input[type="file" i] {
     overflow: hidden !important;
     line-height: 42px;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type=number] {
     -moz-appearance: textfield;
 }
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -198,16 +217,16 @@ input[type=number] {
 }
 
 .kpri-submit {
-    background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 0);
-    width:100%;
-    height:26px;
-    position:absolute;
-    left:0px;
-    top:0px;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 0);
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .kpri-submit :hover {
@@ -215,24 +234,25 @@ input[type=number] {
 }
 
 .kpri-show {
-    display: block;
+    display: block !important;
 }
 
 .kpri-hide {
-    display: none;
+    display: none !important;
 }
 
-.kolom_header { 
-    width:484px;
-    height:101px;
-    position:absolute;
-    left:0px;
-    top:2px;
+.kolom_header {
+    width: 484px;
+    height: 101px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
 }
 
 .uppercased {
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
 .kpri-main-container {
     margin-left: 197px;
     margin-top: 194px;
@@ -243,12 +263,13 @@ input[type=number] {
     padding: 25px;
 }
 
-.halaman_utama_1_250 { 
-    background-color:rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
-    width:1360px;
-    height:666px;
-    position:absolute;
+.halaman_utama_1_250 {
+    background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width: 1360px;
+    height: 666px;
+    position: absolute;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -260,7 +281,7 @@ a:hover {
 }
 
 #aksi img {
-    width:25px;
+    width: 25px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -271,9 +292,9 @@ a:hover {
 }
 
 .kpri-profile-show-icon {
-    width:25px;
+    width: 25px;
     margin-left: 10px;
-    position:absolute;
+    position: absolute;
 }
 
 .kpri-search-bar-container {
@@ -332,25 +353,25 @@ a:hover {
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 1360px;
-    height: 793px; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    height: 793px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
+    width: 80%;
 }
 
 .close {
@@ -373,7 +394,9 @@ a:hover {
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
 
 .modal-body img {
     width: 300px;
@@ -392,19 +415,39 @@ a:hover {
     padding: 0;
     border: 1px solid #888;
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
 }
 
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+.pojok-kiri-atas {
+    text-align: center !important;
 }
+
+.pojok-kiri-atas div {
+    text-align: center !important;
+}
+
+table th:nth-child(2) {
+    text-align: center !important;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
 .modal-body img {
     margin-left: 50%;
     transform: translateX(-50%);
 }
+
 .rpassword {
     width: 263px;
 }

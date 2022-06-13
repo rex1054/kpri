@@ -1,0 +1,631 @@
+.mengubah_data_pengguna {
+    background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width: 1360px;
+    height: 666px;
+    position: absolute;
+}
+
+.main_container {
+    width: 1101px;
+    height: 465px;
+    position: absolute;
+    left: 210px;
+    top: 167px;
+}
+
+.container_background {
+    background-color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+    width: 1101px;
+    height: 465px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu_atas {
+    width: 574px;
+    height: 31px;
+    position: absolute;
+    left: 60px;
+    top: 28px;
+}
+
+.ubah_status {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 250px;
+    height: 31px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.status_background {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 250px;
+    height: 31px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.teks_status {
+    color: rgba(0, 0, 0, 1);
+    width: 58px;
+    height: 23px;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_status {
+    background-color: rgba(255, 255, 255, 1);
+    width: 132px;
+    height: 21px;
+    position: absolute;
+    left: 100px;
+    top: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pilihan {
+    transform: rotate(-180deg);
+    background-color: rgba(0, 0, 0, 1);
+    width: 10px;
+    height: 9px;
+    position: absolute;
+    left: 217px;
+    top: 19px;
+}
+
+.admin {
+    color: rgba(0, 0, 0, 1);
+    width: 44px;
+    height: 23px;
+    position: absolute;
+    left: 144px;
+    top: 4px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.ubah_level {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 250px;
+    height: 31px;
+    position: absolute;
+    left: 324px;
+    top: 0px;
+}
+
+.level_background {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 250px;
+    height: 31px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.teks_level {
+    color: rgba(0, 0, 0, 1);
+    width: 47px;
+    height: 23px;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_level {
+    background-color: rgba(255, 255, 255, 1);
+    width: 132px;
+    height: 21px;
+    position: absolute;
+    left: 100px;
+    top: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form_kiri_container {
+    width: 469px;
+    height: 277px;
+    position: absolute;
+    left: 59px;
+    top: 84px;
+}
+
+.nama {
+    width: 468px;
+    height: 30px;
+    position: absolute;
+    left: 1px;
+    top: 0px;
+}
+
+.teks_nama {
+    color: rgba(0, 0, 0, 1);
+    width: 54px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_nama {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 322px;
+    height: 30px;
+    position: absolute;
+    left: 146px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nip {
+    width: 468px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+}
+
+.teks_nip {
+    color: rgba(0, 0, 0, 1);
+    width: 33px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_nip {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 321px;
+    height: 30px;
+    position: absolute;
+    left: 147px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.kelamin {
+    width: 427px;
+    height: 23px;
+    position: absolute;
+    left: 1px;
+    top: 80px;
+}
+
+.teks_kelamin {
+    color: rgba(0, 0, 0, 1);
+    width: 123px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.laki_laki {
+    color: rgba(0, 0, 0, 1);
+    width: 85px;
+    height: 23px;
+    position: absolute;
+    left: 158px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.perempuan {
+    color: rgba(0, 0, 0, 1);
+    width: 110px;
+    height: 23px;
+    position: absolute;
+    left: 317px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.tempat_lahir {
+    width: 468px;
+    height: 30px;
+    position: absolute;
+    left: 1px;
+    top: 113px;
+}
+
+.teks_tempat_lahir {
+    color: rgba(0, 0, 0, 1);
+    width: 112px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_tempat_lahir {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 322px;
+    height: 30px;
+    position: absolute;
+    left: 146px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tanggal_lahir {
+    width: 468px;
+    height: 30px;
+    position: absolute;
+    left: 1px;
+    top: 154px;
+}
+
+.teks_tanggal_lahir {
+    color: rgba(0, 0, 0, 1);
+    width: 115px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_tanggal_lahir {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 322px;
+    height: 30px;
+    position: absolute;
+    left: 146px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.alamat_rumah {
+    width: 468px;
+    height: 83px;
+    position: absolute;
+    left: 1px;
+    top: 194px;
+}
+
+.teks_alamat_rumah {
+    color: rgba(0, 0, 0, 1);
+    width: 126px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.input_alamat_rumah {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 324px;
+    height: 83px;
+    position: absolute;
+    left: 144px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form_kanan_container {
+    width: 497px;
+    height: 221px;
+    position: absolute;
+    left: 561px;
+    top: 84px;
+}
+
+.pos {
+    width: 497px;
+    height: 36px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.kode_pos {
+    color: rgba(0, 0, 0, 1);
+    width: 84px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.kolom_kode_pos {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 36px;
+    position: absolute;
+    left: 196px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hp {
+    width: 497px;
+    height: 36px;
+    position: absolute;
+    left: 0px;
+    top: 46px;
+}
+
+.nomor_hp {
+    color: rgba(0, 0, 0, 1);
+    width: 94px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.kolom_nomor_hp {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 36px;
+    position: absolute;
+    left: 196px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.instansi {
+    width: 497px;
+    height: 36px;
+    position: absolute;
+    left: 0px;
+    top: 92px;
+}
+
+.nama_instansi {
+    color: rgba(0, 0, 0, 1);
+    width: 129px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.kolom_foto_ktp_suami {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 36px;
+    position: absolute;
+    left: 196px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.kolom_nama_isntansi {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 36px;
+    position: absolute;
+    left: 196px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.alamat_instansi {
+    width: 497px;
+    height: 83px;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: px;
+}
+
+.kolom_alamat_kantor {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 83px;
+    position: absolute;
+    left: 196px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tombol {
+    width: 329px;
+    height: 28px;
+    position: absolute;
+    left: 729px;
+    top: 412px;
+}
+
+.simpan {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 151px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.tombol_simpan {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 151px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.teks_simpan {
+    color: rgba(0, 0, 0, 1);
+    width: 67.01183319091797px;
+    height: 18.941177368164062px;
+    position: absolute;
+    left: 41.99995422363281px;
+    top: 5.000014305114746px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.kembali {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 151px;
+    height: 28px;
+    position: absolute;
+    left: 178px;
+    top: 0px;
+}
+
+.tombol_kembali {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 151px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.teks_kembali {
+    color: rgba(0, 0, 0, 1);
+    width: 67.01183319091797px;
+    height: 18.941177368164062px;
+    position: absolute;
+    left: 41.99995422363281px;
+    top: 5.000014305114746px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0;
+}

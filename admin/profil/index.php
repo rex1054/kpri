@@ -38,6 +38,7 @@ if($query->num_rows == 0){
 
 <!-- style -->
 <link href="<?php echo $siteurl; ?>assets/css/main.css" rel="stylesheet">
+<link href="<?php echo $siteurl; ?>assets/css/admin/main.css" rel="stylesheet">
 <link href="<?php echo $siteurl; ?>assets/css/admin/profil.css" rel="stylesheet">
 
 </head>
@@ -119,6 +120,9 @@ Telepon: (0336) 321386</span>
 </div>
 <div class=ubah_sandi>
 <button class="tombol_ubah" onclick="ubahsandi()"><span  class="teks_ubah">UBAH KATA SANDI</span></button>
+</div>
+<div class=rekening>
+<button class="tombol_rekening" onclick="menu('rekening/?nip=<?php echo $_SESSION['nip']; ?>')"><span  class="teks_rekening">REKENING</span></button>
 </div>
 </div>
 </div>

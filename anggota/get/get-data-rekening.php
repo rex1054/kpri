@@ -4,10 +4,17 @@ $pokokNominal;
 $wajibNominal;
 $sukarelaNominal;
 $tabunganNominal;
+
 $sql = "SELECT * FROM `rekening` WHERE pemilik = ".$_SESSION['nip'];
+$sqla = "SELECT nip, nama from akun where nip = ".$_SESSION['nip'];
+
 $query = $con->query($sql);
+$querya = $con->query($sqla);
+
 $data = $query->fetch_assoc();
-if($query->num_rows == 0) { echo "Data tidak ditemukan."; }
+$dataa = $querya->fetch_assoc();
+
+if($query->num_rows == 0) { echo "<p style='color: red;'>Data tidak ditemukan.</p>"; }
 else {
         $nominalPokok = str_split($data['pokok'], 1);
         $a = COUNT($nominalPokok);
@@ -65,20 +72,24 @@ else {
             }
         }
     ?>
-            <div class=simpanan_pokok_container>
-                <div class="simpanan_pokok_background"></div><span class="simpanan_pokok_text">SIMPANAN
-                    POKOK</span><span class="simpanan_pokok_nominal">Rp. <?php echo $pokokNominal; ?></span>
-            </div>
-            <div class=simpanan_wajib_container>
-                <div class="simpanan_wajib_background"></div><span class="simpanan_wajib_text">SIMPANAN
-                    WAJIB</span><span class="simpanan_wajib_nominal">Rp. <?php echo $wajibNominal; ?></span>
-            </div>
-            <div class=simpanan_sukarela_container>
-                <div class="simpanan_sukarela_background"></div><span class="simpanan_sukarela_text">SIMPANAN
-                    SUKARELA</span><span class="simpanan_sukarela_nominal">Rp. <?php echo $sukarelaNominal; ?></span>
-            </div>
-            <div class=tabungan_container>
-                <div class="tabungan_background"></div><span class="tabungan_text">TABUNGAN</span><span
-                    class="simpanan_tabungan_nominal">Rp. <?php echo $tabunganNominal; ?></span>
-            </div>
-            <?php } ?>
+<div class=detil_container>
+    <span class="nomor_rekening_text">Nomor Rekening </span><span class="nomor_rekening_value">: <?php echo $data['nomor']; ?></span>
+    <span class="nip_text">NIP</span><span class="nip_value">: <?php echo $dataa['nip']; ?></span>
+    <span class="nama_text">Nama</span><span class="nama_value">: <?php echo $dataa['nama']; ?></span></div>
+<div class=simpanan_pokok_container>
+    <div class="simpanan_pokok_background"></div><span class="simpanan_pokok_text">SIMPANAN
+        POKOK</span><span class="simpanan_pokok_nominal">Rp. <?php echo $pokokNominal; ?></span>
+</div>
+<div class=simpanan_wajib_container>
+    <div class="simpanan_wajib_background"></div><span class="simpanan_wajib_text">SIMPANAN
+        WAJIB</span><span class="simpanan_wajib_nominal">Rp. <?php echo $wajibNominal; ?></span>
+</div>
+<div class=simpanan_sukarela_container>
+    <div class="simpanan_sukarela_background"></div><span class="simpanan_sukarela_text">SIMPANAN
+        SUKARELA</span><span class="simpanan_sukarela_nominal">Rp. <?php echo $sukarelaNominal; ?></span>
+</div>
+<div class=tabungan_container>
+    <div class="tabungan_background"></div><span class="tabungan_text">TABUNGAN</span><span
+        class="simpanan_tabungan_nominal">Rp. <?php echo $tabunganNominal; ?></span>
+</div>
+<?php } ?>

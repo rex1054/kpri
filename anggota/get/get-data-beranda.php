@@ -8,7 +8,7 @@ if(isset($_GET['m'])){
 $sql;
 	$sql = "SELECT transaksi.id, transaksi.tanggal, akun.nama, instansi.instansi from transaksi join akun on transaksi.penyetor = akun.nip join instansi on akun.instansi = instansi.id ".$filter." order by transaksi.id ASC";
 $query = $con->query($sql);
-if($query->num_rows == 0) { echo "Data tidak ditemukan."; }
+if($query->num_rows == 0) { echo "<p style='color: red;'>Data tidak ditemukan.</p>"; }
 else {
 	if(mysqli_num_rows($query)>0) { 
 		while ($data = mysqli_fetch_array($query)) {

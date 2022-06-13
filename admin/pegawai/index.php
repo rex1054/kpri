@@ -24,7 +24,10 @@ $nick = $fullName[0];
 
     <!-- style -->
     <link href="<?php echo $siteurl; ?>assets/css/main.css" rel="stylesheet">
+    <link href="<?php echo $siteurl; ?>assets/css/admin/main.css" rel="stylesheet">
     <link href="<?php echo $siteurl; ?>assets/css/admin/pegawai.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/fh-3.2.3/r-2.3.0/sc-2.0.6/datatables.min.css" />
 
 </head>
 <body>
@@ -111,6 +114,8 @@ Telepon: (0336) 321386</span>
   </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="<?php echo $siteurl; ?>config.js"></script>
 <script src="<?php echo $siteurl; ?>assets/js/admin.js"></script>
+<script type="text/javascript" src="<?php echo $siteurl; ?>assets/DataTables/datatables.min.js"></script>
 </body>
