@@ -456,3 +456,6 @@ table th:nth-child(2) {
     top: 55px !important;
     text-decoration: underline !important;
 }
+.dataTables_filter input {
+    background: white !important;
+}

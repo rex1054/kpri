@@ -29,11 +29,12 @@ include('getData.php');
 <link href="<?php echo $siteurl; ?>assets/css/main.css" rel="stylesheet">
 <link href="<?php echo $siteurl;?>assets/css/admin/main.css" rel="stylesheet">
 <link href="<?php echo $siteurl;?>assets/css/admin/detil-transaksi.css" rel="stylesheet">
+<link rel="stylesheet" media="print" href="<?php echo $siteurl; ?>assets/css/setoran.print.css">
 </head>
 <body>
 <div class=melihat_detail_transaksi>
 <div class=header_container>
-<div class="logo"></div>
+<img class="logo" src="<?php echo $siteurl; ?>assets/logo.png">
 <span  class="teks_koperasi">KOPERASI PEGAWAI REPUBLIK INDONESIA</span>
 <span  class="teks_nama_koperasi">WIYATA USAHA</span>
 <span  class="teks_alamat_koperasi">Jl. Krakatau No.216, Kencong, Kabupaten Jember, Jawa Timur 68167 Telepon: (0336) 321386</span>
@@ -611,6 +612,7 @@ $total;
 </div>
 <div class=tombol >
 <button class="tombol_simpan" onclick="menu('beranda')"><span  class="teks_simpan">Kembali</span></button>
+<button class="tombol_cetak" onclick="window.print()"><span  class="teks_cetak">Cetak</span></button>
 </div>
 </div>
 

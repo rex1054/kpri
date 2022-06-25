@@ -101,9 +101,6 @@ $nick = $fullName[0];
                 <div class=filter_container_year>
                     <span class="teks_filter">Tampilkan berdasarkan tahun</span>
                     <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahun(this.value)" placeholder="Pilih Tahun"></select>
-                    <button class="tombol tombol_reset" onclick="reset('beranda')">
-                        Reset
-                    </button>
                 </div>
             </div>
             <div class=tabel_container>
@@ -143,7 +140,7 @@ $nick = $fullName[0];
 <script src="<?php echo $siteurl; ?>assets/js/admin.js"></script>
 <script type="text/javascript" src="<?php echo $siteurl; ?>assets/DataTables/datatables.min.js"></script>
 <script>
-  getYear(<?php if(isset($_GET['y'])){ echo $_GET['y']; } else { echo date('yyyy'); } ?>);
+  getYear(<?php if(isset($_GET['y'])){ echo $_GET['y']; } else { echo date('Y'); } ?>);
 </script>
 
 </html>

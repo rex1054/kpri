@@ -1,0 +1,35 @@
+@media print {
+
+    .sidebar {
+        display: none;
+    }
+
+    .header_container {
+        margin-left: 150px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 101px;
+        position: absolute;
+        left: 16px;
+        top: 0px;
+    }
+    
+    .main_container{
+        margin-left: -75px;
+    }
+
+    .teks_judul {
+        margin-left: 100px;
+    }
+
+    .user_data_container {
+        margin-left: -125px;
+    }
+
+    .tombol {
+        display: none;
+    }
+
+}
