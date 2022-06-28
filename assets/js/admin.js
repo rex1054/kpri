@@ -6,8 +6,8 @@ function menu(menu) {
     }
 }
 
-function addSetoran() {
-    window.open(siteurl + 'admin/tambah/setoran/', '_SELF');
+function add(what) {
+    window.open(siteurl + 'admin/tambah/' + what, '_SELF');
 }
 
 function laporan() {
@@ -44,9 +44,19 @@ function tahun(tahun) {
     window.open(siteurl + 'admin/?y=' + tahun, "_SELF");
 }
 
+function bulan(halaman, bulan) {
+    window.open(siteurl + 'admin/' + halaman + '/?m=' + bulan, "_SELF");
+}
+
+function tahun(halaman, tahun) {
+    window.open(siteurl + 'admin/' + halaman + '/?y=' + tahun, "_SELF");
+}
+
 function reset(page) {
     if (page == 'beranda') {
         window.open(siteurl + 'admin/', '_SELF');
+    } else {
+        window.open(siteurl + 'admin/' + page);
     }
 }
 

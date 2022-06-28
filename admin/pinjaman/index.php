@@ -1,5 +1,5 @@
 <?php
-include('../config.php');
+include('../../config.php');
 session_start();
 if(isset($_SESSION['nip'])){} else {header('location:'.$siteurl); }
 $fullName = explode(" ", $_SESSION['nama']);
@@ -45,7 +45,7 @@ $nick = $fullName[0];
         <div class=side_menu>
             <div class="side_menu_background"></div>
             <div class=beranda_menu>
-                <div class="menu menu_beranda aktif">
+                <div class="menu menu_beranda">
                     <span class="teks_beranda" onclick="menu('beranda')">Beranda</span>
                 </div>
             </div>
@@ -60,7 +60,7 @@ $nick = $fullName[0];
                 </div>
             </div>
             <div class=pinjaman_menu>
-                <div class="menu menu_pinjaman" onclick="menu('pinjaman')">
+                <div class="menu menu_pinjaman aktif" onclick="menu('pinjaman')">
                     <span class="teks_pinjaman">Pinjaman</span>
                 </div>
             </div>
@@ -88,19 +88,19 @@ $nick = $fullName[0];
         </div>
         <div class=main_container>
             <div class="container_background"></div>
-            <span class="main_teks">DAFTAR TRANSAKSI</span>
+            <span class="main_teks">DAFTAR PINJAMAN</span>
             <div class=seacrh_bar_container>
                 <div class=filter_container>
                     <span class="teks_filter">Tampilkan berdasarkan bulan</span>
                     <input class="kolom_bulan" <?php if(isset($_GET['m'])){echo 'value="'.$_GET['m'].'"'; } ?>
-                        type="month" onchange="bulan(this.value)" placeholder="Pilih Bulan">
-                    <button class="tombol tombol_reset" onclick="reset('beranda')">
+                        type="month" onchange="bulan('pinjaman', this.value)" placeholder="Pilih Bulan">
+                    <button class="tombol tombol_reset" onclick="reset('pinjaman')">
                         Reset
                     </button>
                 </div>
                 <div class=filter_container_year>
                     <span class="teks_filter">Tampilkan berdasarkan tahun</span>
-                    <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahun(this.value)" placeholder="Pilih Tahun"></select>
+                    <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahun('pinjaman', this.value)" placeholder="Pilih Tahun"></select>
                 </div>
             </div>
             <div class=tabel_container>
@@ -108,26 +108,27 @@ $nick = $fullName[0];
                     <thead>
                         <tr>
                             <th class="pojok-kiri-atas">No.</th>
-                            <th>Tanggal</th>
+                            <th>Jenis</th>
                             <th>Nama</th>
-                            <th>Instansi</th>
+                            <th>Tanggal</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php if(isset($_GET['m'])){
   $_GET['m'] = $_GET['m'];
-  include('get/get-data-beranda.php');
+  include('../get/get-data-pinjaman.php');
 } else if(isset($_GET['y'])){
   $_GET['y'] = $_GET['y'];
-  include('get/get-data-beranda.php');
-}else { include('get/get-data-beranda.php'); } ?>
+  include('../get/get-data-pinjaman.php');
+}else { include('../get/get-data-pinjaman.php'); } ?>
                     </tbody>
                 </table>
             </div>
             <div class=tombol_container>
                 <div class=tombol_tambah_simpanan>
-                    <button class="tombol_tambah_simpanan_background" onclick="add('setoran')">
-                        <span class="teks_tambah_simpanan">TAMBAH SETORAN</span>
+                    <button class="tombol_tambah_simpanan_background" onclick="add('pinjaman')">
+                        <span class="teks_tambah_simpanan">TAMBAH PINJAMAN</span>
                     </button>
                 </div>
             </div>
