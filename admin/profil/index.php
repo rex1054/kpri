@@ -116,7 +116,7 @@ Telepon: (0336) 321386</span>
 </div>
 <div class=tombol>
 <div class=update_profil>
-<button class="tombol_update"><span  class="teks_update">UPDATE PROFIL</span></button>
+<button class="tombol_update" onclick="updateProfil(<?php echo $_SESSION['nip']; ?>)"><span  class="teks_update">UPDATE PROFIL</span></button>
 </div>
 <div class=ubah_sandi>
 <button class="tombol_ubah" onclick="ubahsandi()"><span  class="teks_ubah">UBAH KATA SANDI</span></button>

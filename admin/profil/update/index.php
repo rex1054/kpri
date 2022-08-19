@@ -4,10 +4,16 @@ session_start();
 if(isset($_SESSION['nip'])){} else {header('location:'.$siteurl); }
 $fullName = explode(" ", $_SESSION['nama']);
 $nick = $fullName[0];
+$nip;
+if(isset($_GET['nip'])){
+  $nip = $_GET['nip'];
+} else {
+  $nip = 0;
+}
 
 $data;
 
-$sql = "SELECT akun.nama, akun.nip, kelamin.kelamin, akun.tempat_lahir, akun.tanggal_lahir, akun.alamat, akun.pos, akun.hp, instansi.instansi, instansi.alamat as alamat_instansi, akun.ktp_suami, akun.ktp_istri, akun.foto_3x4, status_akun.status, jabatan.jabatan, akun.gabung FROM akun join kelamin on akun.kelamin = kelamin.id join instansi on akun.instansi = instansi.id join status_akun on akun.status = status_akun.id join jabatan on akun.jabatan = jabatan.id WHERE akun.nip = ".$_SESSION['nip'];
+$sql = "SELECT akun.nama, akun.nip, kelamin.kelamin, akun.tempat_lahir, akun.tanggal_lahir, akun.alamat, akun.pos, akun.hp, instansi.instansi, instansi.alamat as alamat_instansi, akun.ktp_suami, akun.ktp_istri, akun.foto_3x4, status_akun.status, jabatan.jabatan, akun.gabung FROM akun join kelamin on akun.kelamin = kelamin.id join instansi on akun.instansi = instansi.id join status_akun on akun.status = status_akun.id join jabatan on akun.jabatan = jabatan.id WHERE akun.nip = ".$nip;
 
 $query = $con->query($sql);
 if($query->num_rows == 0){
@@ -55,81 +61,111 @@ Telepon: (0336) 321386</span>
     <div class="garis_header"></div>
   </div>
   <div class=side_menu>
-    <div class="side_menu_background"></div>
-    <div class=beranda_menu>
-      <div class="menu_beranda"></div><span  class="teks_beranda">Beranda</span>
-    </div>
-    <div class=pegawai_menu>
-      <div class="menu_pegawai"></div><span  class="teks_pegawai">Pegawai</span>
-    </div>
-    <div class=anggota_menu>
-      <div class="menu_daftar_nasabah"></div><span  class="teks_anggota">Anggota</span>
-    </div>
-    <div class=pinjaman_menu>
-      <div class="menu_pinjaman"></div><span  class="teks_pinjaman">Pinjaman</span>
-    </div>
-    <div class=simpanan_menu>
-      <div class="menu_simpanan"></div><span  class="teks_simpanan">Simpanan</span>
-    </div>
-    <div class=profil_menu>
-      <div class="menu_profil"></div><span  class="teks_profil">Profil</span>
-    </div>
-    <div class=main_menu>
-      <div class="main_menu_background"></div><span  class="teks_main_menu">Menu</span>
-    </div>
-    <div class=user_container><span  class="teks_selamat">Selamat datang</span><span  class="teks_user">Admin</span></div><span  class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
-  </div>
+            <div class="side_menu_background"></div>
+            <div class=beranda_menu>
+                <div class="menu menu_beranda">
+                    <span class="teks_beranda" onclick="menu('beranda')">Beranda</span>
+                </div>
+            </div>
+            <div class=pegawai_menu>
+                <div class="menu menu_pegawai" onclick="menu('pegawai')">
+                    <span class="teks_pegawai">Pegawai</span>
+                </div>
+            </div>
+            <div class=anggota_menu>
+                <div class="menu menu_daftar_nasabah" onclick="menu('anggota')">
+                    <span class="teks_anggota">Anggota</span>
+                </div>
+            </div>
+            <div class=pinjaman_menu>
+                <div class="menu menu_pinjaman" onclick="menu('pinjaman')">
+                    <span class="teks_pinjaman">Pinjaman</span>
+                </div>
+            </div>
+            <div class=simpanan_menu>
+                <div class="menu menu_simpanan aktif" onclick="menu('simpanan')">
+                    <span class="teks_simpanan">Simpanan</span>
+                </div>
+            </div>
+            <div class=profil_menu>
+                <div class="menu menu_profil" onclick="menu('profil')">
+                    <span class="teks_profil">Profil</span>
+                </div>
+            </div>
+            <div class=main_menu>
+                <div class="main_menu_background">
+                    <span class="teks_main_menu">Menu</span>
+                </div>
+            </div>
+            <div class=user_container>
+                <span class="teks_selamat">Selamat datang</span>
+                <span class="teks_user"><?php echo $nick; ?></span>
+                <span class="teks_selamat logout"><a href="<?php echo $siteurl; ?>" target="_SELF">Logout</a></span>
+            </div>
+            <span class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
+        </div>
   <div class=main_container>
     <div class="container_background"></div>
     <div class=menu_atas>
       <div class=ubah_status>
         <div class="status_background"></div><span  class="teks_status">Status</span>
-        <div class="input_status"></div><span  class="admin">Admin</span>
+        <select class="input_status">
+          <option disabled selected><?php echo $data['status']; ?></option>
+          <option value="1">Aktif</option>
+          <option value="2">Nonaktif</option>
+        </select>
       </div>
       <div class=ubah_level>
         <div class="level_background"></div><span  class="teks_level">Level</span>
-        <div class="input_level"></div><span  class="admin">Admin</span>
+        <select class="input_level">
+          <option disabled selected><?php echo $data['jabatan']; ?></option>
+          <option value="1">Anggota</option>
+          <option value="2">Pimpinan</option>
+          <option value="3">Admin</option>
+        </select>
       </div>
     </div>
     <div class=form_kiri_container>
       <div class=nama><span  class="teks_nama">Nama</span>
-        <div class="input_nama"></div>
+        <input class="input_nama input-profil" type="text" name="nama" value="<?php echo $data['nama']; ?>" placeholder="<?php echo $data['nama']; ?>" required>
       </div>
       <div class=nip><span  class="teks_nip">NIP</span>
-        <div class="input_nip"></div>
+        <input class="input_nip input-profil" type="number" maxlength="20" name="nip" value="<?php echo $data['nip']; ?>" placeholder="<?php echo $data['nip']; ?>" required>
       </div>
-      <div class=kelamin><span  class="teks_kelamin">Jenis kelamin</span><span  class="laki_laki">Laki-laki</span><span  class="perempuan">Perempuan</span></div>
+      <div class=kelamin>
+        <span class="teks_kelamin">Jenis kelamin</span>
+        <span class="laki_laki"><input type="radio" name="kelamin" value="1" <?php if($data['kelamin'] == "Pria") { echo "checked"; } ?>>Laki-laki</span>
+        <span class="perempuan"><input type="radio" name="kelamin" value="2" <?php if($data['kelamin'] == "Wanita") { echo "checked"; } ?>>Perempuan</span></div>
       <div class=tempat_lahir><span  class="teks_tempat_lahir">Tempat lahir</span>
-        <div class="input_tempat_lahir"></div>
+        <input class="input_tempat_lahir input-profil" type="text" name="tempat-lahir" value="<?php echo $data['tempat_lahir']; ?>" placeholder="<?php echo $data['tempat_lahir']; ?>" required>
       </div>
       <div class=tanggal_lahir><span  class="teks_tanggal_lahir">Tanggal lahir</span>
-        <div class="input_tanggal_lahir"></div>
+        <input class="input_tanggal_lahir input-profil" type="date" name="tanggal-lahir" value="<?php echo $data['tanggal_lahir']; ?>" placeholder="<?php echo $data['tanggal_lahir']; ?>" required>
       </div>
       <div class=alamat_rumah><span  class="teks_alamat_rumah">Alamat rumah</span>
-        <div class="input_alamat_rumah"></div>
+        <input class="input_alamat_rumah input-profil" type="text" name="alamat-rumah" value="<?php echo $data['alamat']; ?>" placeholder="<?php echo $data['alamat']; ?>">
       </div>
     </div>
     <div class=form_kanan_container>
       <div class=pos><span  class="kode_pos">Kode pos</span>
-        <div class="kolom_kode_pos"></div>
+        <input class="kolom_kode_pos input-profil" type="number" name="pos" maxlength="5" value="<?php echo $data['pos']; ?>" placeholder="<?php echo $data['pos']; ?>" required>
       </div>
       <div class=hp><span  class="nomor_hp">Nomor HP</span>
-        <div class="kolom_nomor_hp"></div>
+        <input class="kolom_nomor_hp input-profil" type="number" name="hp" value="<?php echo $data['hp']; ?>" placeholder="<?php echo $data['hp']; ?>" required>
       </div>
       <div class=instansi><span  class="nama_instansi">Nama instansi</span>
-        <div class="kolom_foto_ktp_suami"></div>
-        <div class="kolom_nama_isntansi"></div>
+        <input class="kolom_nama_isntansi input-profil" type="text" name="instansi" value="<?php echo $data['instansi']; ?>" placeholder="<?php echo $data['instansi']; ?>" required>
       </div>
-      <div class=alamat_instansi><span  class="alamat_instansi">Alamat instansi</span>
-        <div class="kolom_alamat_kantor"></div>
+      <div class=alamat><span  class="alamat_instansi">Alamat instansi</span>
+        <input class="kolom_alamat_kantor input-profil" type="text" name="alamat-instansi" value="<?php echo $data['alamat_instansi']; ?>" placeholder="<?php echo $data['alamat_instansi']; ?>" required>
       </div>
     </div>
     <div class=tombol>
       <div class=simpan>
-        <div class="tombol_simpan"></div><span  class="teks_simpan">SIMPAN</span>
+        <div class="tombol_simpan"><span  class="teks_simpan">SIMPAN</span></div>
       </div>
       <div class=kembali>
-        <div class="tombol_kembali"></div><span  class="teks_kembali">KEMBALI
+        <div class="tombol_kembali"><span  class="teks_kembali">KEMBALI</div>
 </span>
       </div>
     </div>

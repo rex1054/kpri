@@ -36,20 +36,20 @@ function filt(tabel, nama, x) {
 
 }
 
-function bulan(bulan) {
-    window.open(siteurl + 'admin/?m=' + bulan, "_SELF");
-}
-
-function tahun(tahun) {
-    window.open(siteurl + 'admin/?y=' + tahun, "_SELF");
-}
-
 function bulan(halaman, bulan) {
     window.open(siteurl + 'admin/' + halaman + '/?m=' + bulan, "_SELF");
 }
 
 function tahun(halaman, tahun) {
     window.open(siteurl + 'admin/' + halaman + '/?y=' + tahun, "_SELF");
+}
+
+function bulan(bulan) {
+    window.open(siteurl + 'admin/?m=' + bulan, "_SELF");
+}
+
+function tahun(tahun) {
+    window.open(siteurl + 'admin/?y=' + tahun, "_SELF");
 }
 
 function reset(page) {
@@ -182,3 +182,7 @@ $(document).ready(function() {
         ]
     });
 });
+
+function updateProfil(nip) {
+    window.open(siteurl + "admin/profil/update/?nip=" + nip, "_SELF");
+}
