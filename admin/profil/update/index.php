@@ -13,7 +13,7 @@ if(isset($_GET['nip'])){
 
 $data;
 
-$sql = "SELECT akun.nama, akun.nip, kelamin.kelamin, akun.tempat_lahir, akun.tanggal_lahir, akun.alamat, akun.pos, akun.hp, instansi.instansi, instansi.alamat as alamat_instansi, akun.ktp_suami, akun.ktp_istri, akun.foto_3x4, status_akun.status, jabatan.jabatan, akun.gabung FROM akun join kelamin on akun.kelamin = kelamin.id join instansi on akun.instansi = instansi.id join status_akun on akun.status = status_akun.id join jabatan on akun.jabatan = jabatan.id WHERE akun.nip = ".$nip;
+$sql = "SELECT akun.nama, akun.nip, kelamin.kelamin, akun.tempat_lahir, akun.tanggal_lahir, akun.alamat, akun.pos, akun.hp, akun.status as id_status, akun.jabatan as id_jabatan, instansi.instansi, instansi.alamat as alamat_instansi, akun.ktp_suami, akun.ktp_istri, akun.foto_3x4, status_akun.status, jabatan.jabatan, akun.gabung FROM akun join kelamin on akun.kelamin = kelamin.id join instansi on akun.instansi = instansi.id join status_akun on akun.status = status_akun.id join jabatan on akun.jabatan = jabatan.id WHERE akun.nip = ".$nip;
 
 $query = $con->query($sql);
 if($query->num_rows == 0){
@@ -83,12 +83,12 @@ Telepon: (0336) 321386</span>
                 </div>
             </div>
             <div class=simpanan_menu>
-                <div class="menu menu_simpanan aktif" onclick="menu('simpanan')">
+                <div class="menu menu_simpanan" onclick="menu('simpanan')">
                     <span class="teks_simpanan">Simpanan</span>
                 </div>
             </div>
             <div class=profil_menu>
-                <div class="menu menu_profil" onclick="menu('profil')">
+                <div class="menu menu_profil aktif" onclick="menu('profil')">
                     <span class="teks_profil">Profil</span>
                 </div>
             </div>
@@ -110,7 +110,7 @@ Telepon: (0336) 321386</span>
       <div class=ubah_status>
         <div class="status_background"></div><span  class="teks_status">Status</span>
         <select class="input_status">
-          <option disabled selected><?php echo $data['status']; ?></option>
+          <option disabled value="<?php echo $data['id_status']; ?>" selected><?php echo $data['status']; ?></option>
           <option value="1">Aktif</option>
           <option value="2">Nonaktif</option>
         </select>
@@ -118,7 +118,7 @@ Telepon: (0336) 321386</span>
       <div class=ubah_level>
         <div class="level_background"></div><span  class="teks_level">Level</span>
         <select class="input_level">
-          <option disabled selected><?php echo $data['jabatan']; ?></option>
+          <option disabled value="<?php echo $data['id_jabatan']; ?>" selected><?php echo $data['jabatan']; ?></option>
           <option value="1">Anggota</option>
           <option value="2">Pimpinan</option>
           <option value="3">Admin</option>

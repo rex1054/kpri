@@ -36,11 +36,11 @@ function filt(tabel, nama, x) {
 
 }
 
-function bulan(halaman, bulan) {
+function bulann(halaman, bulan) {
     window.open(siteurl + 'admin/' + halaman + '/?m=' + bulan, "_SELF");
 }
 
-function tahun(halaman, tahun) {
+function tahunn(halaman, tahun) {
     window.open(siteurl + 'admin/' + halaman + '/?y=' + tahun, "_SELF");
 }
 

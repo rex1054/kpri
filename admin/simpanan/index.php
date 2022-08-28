@@ -93,14 +93,14 @@ $nick = $fullName[0];
                 <div class=filter_container>
                     <span class="teks_filter">Tampilkan berdasarkan bulan</span>
                     <input class="kolom_bulan" <?php if(isset($_GET['m'])){echo 'value="'.$_GET['m'].'"'; } ?>
-                        type="month" onchange="bulan('simpanan', this.value)" placeholder="Pilih Bulan">
+                        type="month" onchange="bulann('simpanan', this.value)" placeholder="Pilih Bulan">
                     <button class="tombol tombol_reset" onclick="reset('simpanan')">
                         Reset
                     </button>
                 </div>
                 <div class=filter_container_year>
                     <span class="teks_filter">Tampilkan berdasarkan tahun</span>
-                    <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahun('simpanan', this.value)" placeholder="Pilih Tahun"></select>
+                    <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahunn('simpanan', this.value)" placeholder="Pilih Tahun"></select>
                 </div>
             </div>
             <div class=tabel_container>

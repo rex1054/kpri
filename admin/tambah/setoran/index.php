@@ -81,11 +81,11 @@ $nick = $fullName[0];
 </div>
 
 <div class=main_container>
+<form action="simpan.php" method="POST" enctype="multipart/form-data">
 <div class="container_background"></div><span  class="teks_judul">TAMBAH SETORAN ANGGOTA</span>
 <div class=user_data_container>
-<div class=nip><span  class="teks_nip">NIP</span><span  class="data_nip">: </span><input class="input-nip ajuan-input" name="nip" id="nip" type="number" placeholder="Masukkan NIP"><button class="tombol-cari" onclick="searchAkun()">Cari</button></div>
+<div class=nip><span  class="teks_nip">NIP</span><span  class="data_nip">: </span><input class="input-nip ajuan-input" name="nip" id="nip" type="number" placeholder="Masukkan NIP" onkeyup="searchAkun()"></div>
 <div class=nama><span  class="teks_nama">Nama</span><span  class="data_nama" id="data_nama">:</span></div>
-<form action="simpan.php" method="POST" enctype="multipart/form-data">
 <div class=bulan><span  class="teks_bulan">Bulan</span><span  class="data_bulan" id="data_bulan">:</span><input class="input-bulan ajuan-input" id="bulan" name="bulan" type="month"></div>
 <div class=tanggal_transaksi><span  class="teks_tanggal_transaksi">Tanggal Transaksi</span><span  class="data_tanggal_transaksi">: <?php echo date("d M Y"); ?></span></div>
 </div>
@@ -235,17 +235,17 @@ $nick = $fullName[0];
 </div>
 <div class=usp_pokok_ke>
 <div class="cell_usp_pokok_ke">
-<input class="input-data odd" id="usp-pokok-ke" type="text" name="usp-pokok-ke" value="-" disabled>
+<input class="input-data odd" id="usp-pokok-ke" type="number" name="usp-pokok-ke">
 </div>
 </div>
 <div class=usp_pokok_dr>
 <div class="cell_usp_pokok_dr">
-<input class="input-data odd" id="usp-pokok-dr" type="text" name="usp-pokok-dr" value="-" disabled>
+<input class="input-data odd" id="usp-pokok-dr" type="number" name="usp-pokok-dr">
 </div>
 </div>
 <div class=usp_pokok_nominal>
 <div class="cell_usp_pokok_nominal">
-<input class="input-data odd" id="usp-pokok-nominal" type="text" name="usp-pokok-nominal" onkeyup="jumlah()">
+<input class="input-data odd" id="usp-pokok-nominal" type="number" name="usp-pokok-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=usp_pokok_keterangan>
@@ -263,17 +263,17 @@ $nick = $fullName[0];
 </div>
 <div class=usp_jasa_ke>
 <div class="cell_usp_jasa_ke">
-<input class="input-data even" id="usp-jasa-ke" type="text" name="usp-jasa-ke" value="-" disabled>
+<input class="input-data even" id="usp-jasa-ke" type="number" name="usp-jasa-ke">
 </div>
 </div>
 <div class=usp_jasa_dr>
 <div class="cell_usp_jasa_dr">
-<input class="input-data even" id="usp-jasa-dr" type="text" name="usp-jasa-dr" value="-" disabled>
+<input class="input-data even" id="usp-jasa-dr" type="number" name="usp-jasa-dr">
 </div>
 </div>
 <div class=usp_jasa_nominal>
 <div class="cell_usp_jasa_nominal">
-<input class="input-data even" id="usp-jasa-nominal" type="text" name="usp-jasa-nominal" onkeyup="jumlah()">
+<input class="input-data even" id="usp-jasa-nominal" type="number" name="usp-jasa-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=usp_jasa_keterangan>
@@ -296,17 +296,17 @@ $nick = $fullName[0];
 </div>
 <div class=bke_pokok_ke>
 <div class="cell_bke_pokok_ke">
-<input class="input-data odd" id="bke-pokok-ke" type="text" name="bke-pokok-ke" value="-" disabled>
+<input class="input-data odd" id="bke-pokok-ke" type="number" name="bke-pokok-ke">
 </div>
 </div>
 <div class=bke_pokok_dr>
 <div class="cell_bke_pokok_dr">
-<input class="input-data odd" id="bke-pokok-dr" type="text" name="bke-pokok-dr" value="-" disabled>
+<input class="input-data odd" id="bke-pokok-dr" type="number" name="bke-pokok-dr">
 </div>
 </div>
 <div class=bke_pokok_nominal>
 <div class="cell_bke_pokok_nominal">
-<input class="input-data odd" id="bke-pokok-nominal" type="text" name="bke-pokok-nominal" onkeyup="jumlah()">
+<input class="input-data odd" id="bke-pokok-nominal" type="number" name="bke-pokok-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=bke_pokok_keterangan>
@@ -324,17 +324,17 @@ $nick = $fullName[0];
 </div>
 <div class=bke_jasa_ke>
 <div class="cell_bke_jasa_ke">
-<input class="input-data even" id="bke-jasa-ke" type="text" name="bke-jasa-ke" value="-" disabled>
+<input class="input-data even" id="bke-jasa-ke" type="number" name="bke-jasa-ke">
 </div>
 </div>
 <div class=bke_jasa_dr>
 <div class="cell_bke_jasa_dr">
-<input class="input-data even" id="bke-jasa-dr" type="text" name="bke-jasa-dr" value="-" disabled>
+<input class="input-data even" id="bke-jasa-dr" type="number" name="bke-jasa-dr">
 </div>
 </div>
 <div class=bke_jasa_nominal>
 <div class="cell_bke_jasa_nominal">
-<input class="input-data even" id="bke-jasa-nominal" type="text" name="bke-jasa-nominal" onkeyup="jumlah()">
+<input class="input-data even" id="bke-jasa-nominal" type="number" name="bke-jasa-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=bke_jasa_keterangan>
@@ -357,17 +357,17 @@ $nick = $fullName[0];
 </div>
 <div class=ekstra_pokok_ke>
 <div class="cell_ekstra_pokok_ke">
-<input class="input-data odd" id="ekstra-pokok-ke" type="text" name="ekstra-pokok-ke" value="-" disabled>
+<input class="input-data odd" id="ekstra-pokok-ke" type="number" name="ekstra-pokok-ke">
 </div>
 </div>
 <div class=ekstra_pokok_dr>
 <div class="cell_ekstra_pokok_dr">
-<input class="input-data odd" id="ekstra-pokok-dr" type="text" name="ekstra-pokok-dr" value="-" disabled>
+<input class="input-data odd" id="ekstra-pokok-dr" type="number" name="ekstra-pokok-dr">
 </div>
 </div>
 <div class=ekstra_pokok_nominal>
 <div class="cell_ekstra_pokok_nominal">
-<input class="input-data odd" id="ekstra-pokok-nominal" type="text" name="ekstra-pokok-nominal" onkeyup="jumlah()">
+<input class="input-data odd" id="ekstra-pokok-nominal" type="number" name="ekstra-pokok-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=ekstra_pokok_keterangan>
@@ -385,17 +385,17 @@ $nick = $fullName[0];
 </div>
 <div class=ekstra_jasa_ke>
 <div class="cell_ekstra_jasa_ke">
-<input class="input-data even" id="ekstra-jasa-ke" type="text" name="ekstra-jasa-ke" value="-" disabled>
+<input class="input-data even" id="ekstra-jasa-ke" type="number" name="ekstra-jasa-ke">
 </div>
 </div>
 <div class=ekstra_jasa_dr>
 <div class="cell_ekstra_jasa_dr">
-<input class="input-data even" id="ekstra-jasa-dr" type="text" name="ekstra-jasa-dr" value="-" disabled>
+<input class="input-data even" id="ekstra-jasa-dr" type="number" name="ekstra-jasa-dr">
 </div>
 </div>
 <div class=ekstra_jasa_nominal>
 <div class="cell_ekstra_jasa_nominal">
-<input class="input-data even" id="ekstra-jasa-nominal" type="text" name="ekstra-jasa-nominal" onkeyup="jumlah()">
+<input class="input-data even" id="ekstra-jasa-nominal" type="number" name="ekstra-jasa-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=ekstra_jasa_keterangan>
@@ -418,17 +418,17 @@ $nick = $fullName[0];
 </div>
 <div class=toko_pokok_ke>
 <div class="cell_toko_pokok_ke">
-<input class="input-data odd" id="toko-pokok-ke" type="text" name="toko-pokok-ke" value="-" disabled>
+<input class="input-data odd" id="toko-pokok-ke" type="number" name="toko-pokok-ke">
 </div>
 </div>
 <div class=toko_pokok_dr>
 <div class="cell_toko_pokok_dr">
-<input class="input-data odd" id="toko-pokok-dr" type="text" name="toko-pokok-dr" value="-" disabled>
+<input class="input-data odd" id="toko-pokok-dr" type="number" name="toko-pokok-dr">
 </div>
 </div>
 <div class=toko_pokok_nominal>
 <div class="cell_toko_pokok_nominal">
-<input class="input-data odd" id="toko-pokok-nominal" type="text" name="toko-pokok-nominal" onkeyup="jumlah()">
+<input class="input-data odd" id="toko-pokok-nominal" type="number" name="toko-pokok-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=toko_pokok_keterangan>
@@ -446,17 +446,17 @@ $nick = $fullName[0];
 </div>
 <div class=toko_jasa_ke>
 <div class="cell_toko_jasa_ke">
-<input class="input-data even" id="toko-jasa-ke" type="text" name="toko-jasa-ke" value="-" disabled>
+<input class="input-data even" id="toko-jasa-ke" type="number" name="toko-jasa-ke">
 </div>
 </div>
 <div class=toko_jasa_dr>
 <div class="cell_toko_jasa_dr">
-<input class="input-data even" id="toko-jasa-dr" type="text" name="toko-jasa-dr" value="-" disabled>
+<input class="input-data even" id="toko-jasa-dr" type="number" name="toko-jasa-dr">
 </div>
 </div>
 <div class=toko_jasa_nominal>
 <div class="cell_toko_jasa_nominal">
-<input class="input-data even" id="toko-jasa-nominal" type="text" name="toko-jasa-nominal" onkeyup="jumlah()">
+<input class="input-data even" id="toko-jasa-nominal" type="number" name="toko-jasa-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=toko_jasa_keterangan>
@@ -479,17 +479,17 @@ $nick = $fullName[0];
 </div>
 <div class=haji_pokok_ke>
 <div class="cell_haji_pokok_ke">
-<input class="input-data odd" id="haji-pokok-ke" type="text" name="haji-pokok-ke" value="-" disabled>
+<input class="input-data odd" id="haji-pokok-ke" type="number" name="haji-pokok-ke">
 </div>
 </div>
 <div class=haji_pokok_dr>
 <div class="cell_haji_pokok_dr">
-<input class="input-data odd" id="haji-pokok-dr" type="text" name="haji-pokok-dr" value="-" disabled>
+<input class="input-data odd" id="haji-pokok-dr" type="number" name="haji-pokok-dr">
 </div>
 </div>
 <div class=haji_pokok_nominal>
 <div class="cell_haji_pokok_nominal">
-<input class="input-data odd" id="haji-pokok-nominal" type="text" name="haji-pokok-nominal" onkeyup="jumlah()">
+<input class="input-data odd" id="haji-pokok-nominal" type="number" name="haji-pokok-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=haji_pokok_keterangan>
@@ -507,17 +507,17 @@ $nick = $fullName[0];
 </div>
 <div class=haji_jasa_ke>
 <div class="cell_haji_jasa_ke">
-<input class="input-data even" id="haji-jasa-ke" type="text" name="haji-jasa-ke" value="-" disabled>
+<input class="input-data even" id="haji-jasa-ke" type="number" name="haji-jasa-ke">
 </div>
 </div>
 <div class=haji_jasa_dr>
 <div class="cell_haji_jasa_dr">
-<input class="input-data even" id="haji-jasa-dr" type="text" name="haji-jasa-dr" value="-" disabled>
+<input class="input-data even" id="haji-jasa-dr" type="number" name="haji-jasa-dr">
 </div>
 </div>
 <div class=haji_jasa_nominal>
 <div class="cell_haji_jasa_nominal">
-<input class="input-data even" id="haji-jasa-nominal" type="text" name="haji-jasa-nominal" onkeyup="jumlah()">
+<input class="input-data even" id="haji-jasa-nominal" type="number" name="haji-jasa-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=haji_jasa_keterangan>
@@ -536,17 +536,17 @@ $nick = $fullName[0];
 </div>
 <div class=arisan_ke>
 <div class="cell_arisan_ke">
-<input class="input-data odd" id="arsisan-ke" type="text" name="arsisan-ke"  value="-" disabled>
+<input class="input-data odd" id="arsisan-ke" type="number" name="arsisan-ke" >
 </div>
 </div>
 <div class=arisan_dr>
 <div class="cell_arisan_dr">
-<input class="input-data odd" id="arsisan-dr" type="text" name="arsisan-dr"  value="-" disabled>
+<input class="input-data odd" id="arsisan-dr" type="number" name="arsisan-dr" >
 </div>
 </div>
 <div class=arisan_nominal>
 <div class="cell_arisan_nominal">
-<input class="input-data odd" id="arisan-nominal" type="text" name="arisan-nominal"  onkeyup="jumlah()">
+<input class="input-data odd" id="arisan-nominal" type="number" name="arisan-nominal"  onkeyup="jumlah()">
 </div>
 </div>
 <div class=arisan_keterangan>
@@ -564,17 +564,17 @@ $nick = $fullName[0];
 </div>
 <div class=seragam_ke>
 <div class="cell_seragam_ke">
-<input class="input-data even" id="seragam-ke" type="text" name="seragam-ke" value="-" disabled>
+<input class="input-data even" id="seragam-ke" type="number" name="seragam-ke">
 </div>
 </div>
 <div class=seragam_dr>
 <div class="cell_seragam_dr">
-<input class="input-data even" id="seragam-dr" type="text" name="seragam-dr" value="-" disabled>
+<input class="input-data even" id="seragam-dr" type="number" name="seragam-dr">
 </div>
 </div>
 <div class=seragam_nominal>
 <div class="cell_seragam_nominal">
-<input class="input-data even" id="seragam-nominal" type="text" name="seragam-nominal" onkeyup="jumlah()">
+<input class="input-data even" id="seragam-nominal" type="number" name="seragam-nominal" onkeyup="jumlah()">
 </div>
 </div>
 <div class=seragam_keterangan>
