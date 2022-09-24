@@ -6,6 +6,10 @@ function menu(menu) {
     }
 }
 
+function registrasi(){
+    window.open(siteurl + 'registrasi');
+}
+
 function add(what) {
     window.open(siteurl + 'admin/tambah/' + what, '_SELF');
 }

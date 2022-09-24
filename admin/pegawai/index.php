@@ -83,7 +83,7 @@ Telepon: (0336) 321386</span>
   </div>
   <div class=search_bar_container>
     <div class=tambah_pengguna>
-      <div class="tombol_tambah_background"></div><span  class="teks_tombol_tambah">MENAMBAH DATA PENGGUNA</span>
+      <button class="tombol_tambah_background" onclick="registrasi()"><span  class="teks_tombol_tambah">MENAMBAH DATA PENGGUNA</span></button>
     </div>
     <div class=cari>
       <input class="kolom_cari cari" type="text" name="cari-nama" onkeyup="filt('tabel-pegawai', 'cari-nama', 1)" id="cari-nama" placeholder="Cari Nama">

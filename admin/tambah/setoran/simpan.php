@@ -71,27 +71,27 @@ $latestid = $con->query($sqlidtransaksi)->fetch_assoc();
 $idtransaksi = $latestid + 1;
 
 // transaksi
-$sqltransaksi = `INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES (`.$nip.`,`.$bulan.`,`.$jumlah.`,"`.$tanggal.`",`.$admin.`)`;
+$sqltransaksi = 'INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES ('.$nip.','.$bulan.','.$jumlah.',"'.$tanggal.'",'.$admin.')';
 $con->query($sqltransaksi);
 
 // sp(3)
-$sqlsp = `INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES (`.$rekening.`, 3, `.$spnominal.`, `.$idtransaksi.`,"`.$spket.`")`;
+$sqlsp = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 3, '.$spnominal.', '.$idtransaksi.',"'.$spket.'")';
 $con->query($sqlsp);
 
 // sw(2)
-$sqlsw = `INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES (`.$rekening.`, 2, `.$swnominal.`, `.$idtransaksi.`,"`.$swket.`")`;
+$sqlsw = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 2, '.$swnominal.', '.$idtransaksi.',"'.$swket.'")';
 $con->query($sqlsw);
 
 // sr(1)
-$sqlsr = `INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES (`.$rekening.`, 1, `.$srnominal.`, `.$idtransaksi.`,"`.$srket.`")`;
+$sqlsr = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 1, '.$srnominal.', '.$idtransaksi.',"'.$srket.'")';
 $con->query($sqlsr);
 
 // tab(4)
-$sqltab = `INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES (`.$rekening.`, 4, `.$tabnominal.`, `.$idtransaksi.`,"`.$tabket.`")`;
+$sqltab = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 4, '.$tabnominal.', '.$idtransaksi.',"'.$tabket.'")';
 $con->query($sqltab);
 
 // bke
-$sqlbke = `INSERT INTO bke(id_transaksi, id_peminjaman, ke, pokok, jasa, keterangan) VALUES (`.$idtransaksi.`,`.$nip.`,[value-4],[value-5],[value-6],[value-7])`;
+$sqlbke = 'INSERT INTO bke(id_transaksi, id_peminjaman, ke, pokok, jasa, keterangan) VALUES ('.$idtransaksi.','.$nip.',[value-4],[value-5],[value-6],[value-7])';
 $con->query($sqlbke);
 
 

@@ -106,19 +106,20 @@ Telepon: (0336) 321386</span>
         </div>
   <div class=main_container>
     <div class="container_background"></div>
+    <form action="simpan.php" method="POST" enctype="multipart/form-data">
     <div class=menu_atas>
       <div class=ubah_status>
         <div class="status_background"></div><span  class="teks_status">Status</span>
-        <select class="input_status">
-          <option disabled value="<?php echo $data['id_status']; ?>" selected><?php echo $data['status']; ?></option>
+        <select class="input_status" name="status">
+          <option value="<?php echo $data['id_status']; ?>" selected><?php echo $data['status']; ?></option>
           <option value="1">Aktif</option>
           <option value="2">Nonaktif</option>
         </select>
       </div>
       <div class=ubah_level>
         <div class="level_background"></div><span  class="teks_level">Level</span>
-        <select class="input_level">
-          <option disabled value="<?php echo $data['id_jabatan']; ?>" selected><?php echo $data['jabatan']; ?></option>
+        <select class="input_level" name="level">
+          <option value="<?php echo $data['id_jabatan']; ?>" selected><?php echo $data['jabatan']; ?></option>
           <option value="1">Anggota</option>
           <option value="2">Pimpinan</option>
           <option value="3">Admin</option>
@@ -140,7 +141,10 @@ Telepon: (0336) 321386</span>
         <input class="input_tempat_lahir input-profil" type="text" name="tempat-lahir" value="<?php echo $data['tempat_lahir']; ?>" placeholder="<?php echo $data['tempat_lahir']; ?>" required>
       </div>
       <div class=tanggal_lahir><span  class="teks_tanggal_lahir">Tanggal lahir</span>
-        <input class="input_tanggal_lahir input-profil" type="date" name="tanggal-lahir" value="<?php echo $data['tanggal_lahir']; ?>" placeholder="<?php echo $data['tanggal_lahir']; ?>" required>
+      <?php
+      $date=date_create($data['tanggal_lahir']);
+      ?>
+        <input class="input_tanggal_lahir input-profil" type="date" name="tanggal-lahir" value="<?php echo date_format($date,"Y-m-d"); ?>" placeholder="<?php echo date_format($date,"Y-m-d"); ?>" required>
       </div>
       <div class=alamat_rumah><span  class="teks_alamat_rumah">Alamat rumah</span>
         <input class="input_alamat_rumah input-profil" type="text" name="alamat-rumah" value="<?php echo $data['alamat']; ?>" placeholder="<?php echo $data['alamat']; ?>">
@@ -162,13 +166,14 @@ Telepon: (0336) 321386</span>
     </div>
     <div class=tombol>
       <div class=simpan>
-        <div class="tombol_simpan"><span  class="teks_simpan">SIMPAN</span></div>
+        <button type="submit" class="tombol_simpan"><span  class="teks_simpan">SIMPAN</span></button>
       </div>
       <div class=kembali>
-        <div class="tombol_kembali"><span  class="teks_kembali">KEMBALI</div>
+        <div class="tombol_kembali" onclick="menu('profil')"><span  class="teks_kembali">KEMBALI</div>
 </span>
       </div>
     </div>
+</form>
   </div>
 </div>
 
