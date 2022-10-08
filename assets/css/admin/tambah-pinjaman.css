@@ -1,9 +1,18 @@
+.main_container {
+	height:510px !important;
+}
 .form_container { 
 	width:859px;
 	height:445px;
 	position:absolute;
 	left:45px;
 	top:4px;
+}
+.melihat_detail_transaksi {
+	height:666px !important;
+}
+.container_background {
+	height:489px !important;
 }
 .tambah_data_peminjaman { 
 	color:rgba(0, 0, 0, 1);
@@ -37,6 +46,7 @@
 	letter-spacing:0;
 }
 .input_nip { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -90,6 +100,7 @@
 	letter-spacing:0;
 }
 .input_nama { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -122,6 +133,7 @@
 	letter-spacing:0;
 }
 .input_hp { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -154,6 +166,7 @@
 	letter-spacing:0;
 }
 .input_instansi { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -167,7 +180,7 @@
 	border-bottom-right-radius:10px;
 }
 .jenis { 
-	width:599px;
+	width:983px;
 	height:23px;
 	position:absolute;
 	left:0px;
@@ -178,6 +191,7 @@
 	width:136px;
 	height:23px;
 	position:absolute;
+	padding-top:0px !important;
 	left:0px;
 	top:0px;
 	font-family:Roboto;
@@ -190,7 +204,19 @@
 	width:37px;
 	height:23px;
 	position:absolute;
-	left:244px;
+	left:262px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.haji { 
+	color:rgba(0, 0, 0, 1);
+	width:37px;
+	height:23px;
+	position:absolute;
+	left:353px;
 	top:0px;
 	font-family:Roboto;
 	text-align:left;
@@ -202,7 +228,7 @@
 	width:56px;
 	height:23px;
 	position:absolute;
-	left:341px;
+	left:450px;
 	top:0px;
 	font-family:Roboto;
 	text-align:left;
@@ -214,7 +240,7 @@
 	width:44px;
 	height:23px;
 	position:absolute;
-	left:457px;
+	left:565px;
 	top:0px;
 	font-family:Roboto;
 	text-align:left;
@@ -226,7 +252,7 @@
 	width:38px;
 	height:23px;
 	position:absolute;
-	left:561px;
+	left:670px;
 	top:0px;
 	font-family:Roboto;
 	text-align:left;
@@ -253,6 +279,7 @@
 	letter-spacing:0;
 }
 .input_jumlah { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -285,6 +312,7 @@
 	letter-spacing:0;
 }
 .input_tempo { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -317,6 +345,7 @@
 	letter-spacing:0;
 }
 .input_penghasilan { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -349,6 +378,7 @@
 	letter-spacing:0;
 }
 .input_diangsur { 
+	padding-left: 10px;
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color:rgba(255, 255, 255, 1);
 	width:301px;
@@ -361,16 +391,16 @@
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 }
-.tombol { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+.tombols { 
 	width:169px;
 	height:34px;
 	position:absolute;
 	left:690px;
-	top:406px;
+	top:412px;
 }
 .tombol_simpan { 
 	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 	width:169px;
 	height:34px;
 	position:absolute;
@@ -393,8 +423,36 @@
 	font-size:20px;
 	letter-spacing:0;
 }
+.tombol_batal { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:734px;
+	top:370px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.teks_batal { 
+	color:rgba(0, 0, 0, 1);
+	width:75px;
+	height:23px;
+	position:absolute;
+	left:50px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
 .bke-radio {
-    margin-left: 225px;
+    margin-left: 242px;
+}
+.haji-radio {
+    margin-left: 70px;
 }
 .ekstra-radio {
     margin-left: 77px;

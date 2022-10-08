@@ -152,7 +152,7 @@ function fetch_akun(id, val) {
             get_option: val
         },
         success: function(response) {
-            document.getElementById(id).innerHTML = response;
+            document.getElementById(id).innerHTML = $.trim(response);
         }
     });
 }

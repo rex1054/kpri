@@ -44,7 +44,7 @@ include('getData.php');
 <div class=side_menu>
 <div class="side_menu_background"></div>
 <div class=beranda_menu>
-<div class="menu menu_beranda aktif">
+<div class="menu menu_beranda">
 <span  class="menu-teks teks_beranda" onclick="menu('beranda')">Beranda</span>
 </div>
 </div>
@@ -59,7 +59,7 @@ include('getData.php');
 </div>
 </div>
 <div class=pinjaman_menu>
-<div class="menu menu_pinjaman" onclick="menu('pinjaman')">
+<div class="menu menu_pinjaman aktif" onclick="menu('pinjaman')">
 <span  class="menu-teks teks_pinjaman">Pinjaman</span>
 </div>
 </div>
@@ -87,6 +87,7 @@ include('getData.php');
 </div>
 
 <div class=main_container>
+  <div class="container_background"></div>
 <div class=kolom_profil>
     <div class="profil_background"></div>
     <div class=data_kiri_container>

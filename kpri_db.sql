@@ -3,10 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Agu 2022 pada 17.37
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.3
+-- Generation Time: Oct 08, 2022 at 06:24 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
+SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -25,7 +26,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ajuan`
+-- Table structure for table `ajuan`
 --
 
 CREATE TABLE `ajuan` (
@@ -37,13 +38,13 @@ CREATE TABLE `ajuan` (
   `diangsur` smallint(6) NOT NULL,
   `mulai` date NOT NULL,
   `penghasilan` bigint(20) NOT NULL,
-  `slip` varchar(200) NOT NULL,
+  `slip` varchar(200) DEFAULT NULL,
   `status` tinyint(4) NOT NULL,
   `admin` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `ajuan`
+-- Dumping data for table `ajuan`
 --
 
 INSERT INTO `ajuan` (`id`, `peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`, `mulai`, `penghasilan`, `slip`, `status`, `admin`) VALUES
@@ -346,12 +347,14 @@ INSERT INTO `ajuan` (`id`, `peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`,
 (297, 10, '2016-01-11', 5, 18599362, 5, '2017-04-08', 4116802, 'http://lorempixel.com/400/300/', 1, 51),
 (298, 54, '2008-05-26', 1, 13429091, 70, '2007-07-28', 3407841, 'http://lorempixel.com/400/300/', 1, 10),
 (299, 71, '1972-06-03', 2, 14742151, 15, '2000-02-04', 1185540, 'http://lorempixel.com/400/300/', 2, 27),
-(300, 87, '2011-10-23', 3, 22267606, 91, '2010-09-21', 4311191, 'http://lorempixel.com/400/300/', 2, 62);
+(300, 87, '2011-10-23', 3, 22267606, 91, '2010-09-21', 4311191, 'http://lorempixel.com/400/300/', 2, 62),
+(301, 1, '2022-10-08', 1, 2000000, 1, '2022-10-08', 1200000, 'null', 5, 1),
+(302, 1, '2022-10-08', 1, 2000000, 1, '2022-10-08', 1200000, 'null', 5, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `akun`
+-- Table structure for table `akun`
 --
 
 CREATE TABLE `akun` (
@@ -374,11 +377,11 @@ CREATE TABLE `akun` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `akun`
+-- Dumping data for table `akun`
 --
 
 INSERT INTO `akun` (`nip`, `nama`, `sandi`, `kelamin`, `tempat_lahir`, `tanggal_lahir`, `alamat`, `pos`, `hp`, `instansi`, `ktp_suami`, `ktp_istri`, `foto_3x4`, `status`, `jabatan`, `gabung`) VALUES
-(1, 'Nugroho Ari Ramadhan', 'admin', 1, 'JEMBER', '1998-01-05', 'bagorejo', 80112, '082144786352', 13, '1_KTP_SUAMI.jpg', '1_KTP_ISTRI.jpg', '1_3x4.jpg', 1, 3, '2022-05-11'),
+(1, 'Rama\'a', 'admin', 1, 'JEMBER', '1998-01-05', 'Bago', 69696, '81234567890', 1, '1_KTP_SUAMI.jpg', '1_KTP_ISTRI.jpg', '1_3x4.jpg', 1, 3, '2022-05-11'),
 (2, 'Luz Considine', 'ramadhan05', 1, 'Brooklynburgh', '1996-05-10', '433 Liana Meadow Apt. 127\nJessikaburgh, NE 29523', 14044, '35', 8, '2_KTP_SUAMI.jpg', '2_KTP_ISTRI.jpg', '2_3x4.jpg', 1, 3, '1984-02-15'),
 (4, 'Margaret Donnelly II', 'eius', 2, 'North Angelica', '2020-12-25', '6739 Harvey Ports Suite 309\nO\'Keefeshire, NJ 84264-5721', 51206, '90', 9, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 2, '2009-07-22'),
 (5, 'Eldon Kutch', 'anggota', 1, 'Sonyafurt', '1994-07-30', '9624 Sabrina Lodge Suite 590\nNorth Rivertown, WI 69134', 20446, '39', 8, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '2008-12-28'),
@@ -433,7 +436,7 @@ INSERT INTO `akun` (`nip`, `nama`, `sandi`, `kelamin`, `tempat_lahir`, `tanggal_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `arisan`
+-- Table structure for table `arisan`
 --
 
 CREATE TABLE `arisan` (
@@ -445,7 +448,7 @@ CREATE TABLE `arisan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `arisan`
+-- Dumping data for table `arisan`
 --
 
 INSERT INTO `arisan` (`id`, `bulan`, `saldo`, `pemenang`, `admin`) VALUES
@@ -503,7 +506,7 @@ INSERT INTO `arisan` (`id`, `bulan`, `saldo`, `pemenang`, `admin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `bke`
+-- Table structure for table `bke`
 --
 
 CREATE TABLE `bke` (
@@ -517,7 +520,7 @@ CREATE TABLE `bke` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `bke`
+-- Dumping data for table `bke`
 --
 
 INSERT INTO `bke` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`, `keterangan`) VALUES
@@ -555,7 +558,7 @@ INSERT INTO `bke` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ekstra`
+-- Table structure for table `ekstra`
 --
 
 CREATE TABLE `ekstra` (
@@ -569,7 +572,7 @@ CREATE TABLE `ekstra` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `ekstra`
+-- Dumping data for table `ekstra`
 --
 
 INSERT INTO `ekstra` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`, `keterangan`) VALUES
@@ -607,7 +610,7 @@ INSERT INTO `ekstra` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jas
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `haji`
+-- Table structure for table `haji`
 --
 
 CREATE TABLE `haji` (
@@ -621,7 +624,7 @@ CREATE TABLE `haji` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `haji`
+-- Dumping data for table `haji`
 --
 
 INSERT INTO `haji` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`, `keterangan`) VALUES
@@ -659,7 +662,7 @@ INSERT INTO `haji` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `instansi`
+-- Table structure for table `instansi`
 --
 
 CREATE TABLE `instansi` (
@@ -669,7 +672,7 @@ CREATE TABLE `instansi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `instansi`
+-- Dumping data for table `instansi`
 --
 
 INSERT INTO `instansi` (`id`, `instansi`, `alamat`) VALUES
@@ -688,7 +691,7 @@ INSERT INTO `instansi` (`id`, `instansi`, `alamat`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jabatan`
+-- Table structure for table `jabatan`
 --
 
 CREATE TABLE `jabatan` (
@@ -697,7 +700,7 @@ CREATE TABLE `jabatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `jabatan`
+-- Dumping data for table `jabatan`
 --
 
 INSERT INTO `jabatan` (`id`, `jabatan`) VALUES
@@ -708,7 +711,7 @@ INSERT INTO `jabatan` (`id`, `jabatan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jenis_pinjaman`
+-- Table structure for table `jenis_pinjaman`
 --
 
 CREATE TABLE `jenis_pinjaman` (
@@ -717,7 +720,7 @@ CREATE TABLE `jenis_pinjaman` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `jenis_pinjaman`
+-- Dumping data for table `jenis_pinjaman`
 --
 
 INSERT INTO `jenis_pinjaman` (`id`, `jenis`) VALUES
@@ -730,7 +733,7 @@ INSERT INTO `jenis_pinjaman` (`id`, `jenis`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jenis_simpanan`
+-- Table structure for table `jenis_simpanan`
 --
 
 CREATE TABLE `jenis_simpanan` (
@@ -739,7 +742,7 @@ CREATE TABLE `jenis_simpanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `jenis_simpanan`
+-- Dumping data for table `jenis_simpanan`
 --
 
 INSERT INTO `jenis_simpanan` (`id`, `jenis`) VALUES
@@ -751,7 +754,7 @@ INSERT INTO `jenis_simpanan` (`id`, `jenis`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kelamin`
+-- Table structure for table `kelamin`
 --
 
 CREATE TABLE `kelamin` (
@@ -760,7 +763,7 @@ CREATE TABLE `kelamin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `kelamin`
+-- Dumping data for table `kelamin`
 --
 
 INSERT INTO `kelamin` (`id`, `kelamin`) VALUES
@@ -770,7 +773,7 @@ INSERT INTO `kelamin` (`id`, `kelamin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `master`
+-- Table structure for table `master`
 --
 
 CREATE TABLE `master` (
@@ -783,7 +786,7 @@ CREATE TABLE `master` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `master`
+-- Dumping data for table `master`
 --
 
 INSERT INTO `master` (`sp`, `sw`, `tab`, `sr`, `kas`, `tanggal`) VALUES
@@ -841,7 +844,7 @@ INSERT INTO `master` (`sp`, `sw`, `tab`, `sr`, `kas`, `tanggal`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `peminjaman`
+-- Table structure for table `peminjaman`
 --
 
 CREATE TABLE `peminjaman` (
@@ -862,7 +865,7 @@ CREATE TABLE `peminjaman` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `peminjaman`
+-- Dumping data for table `peminjaman`
 --
 
 INSERT INTO `peminjaman` (`id`, `id_ajuan`, `jenis`, `jumlah`, `jasa`, `diangsur`, `angsuran`, `potongan`, `asuransi`, `diterima`, `mulai`, `admin`, `pimpinan`, `status`) VALUES
@@ -1070,7 +1073,7 @@ INSERT INTO `peminjaman` (`id`, `id_ajuan`, `jenis`, `jumlah`, `jasa`, `diangsur
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rekening`
+-- Table structure for table `rekening`
 --
 
 CREATE TABLE `rekening` (
@@ -1083,7 +1086,7 @@ CREATE TABLE `rekening` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `rekening`
+-- Dumping data for table `rekening`
 --
 
 INSERT INTO `rekening` (`nomor`, `pemilik`, `wajib`, `pokok`, `tabungan`, `sukarela`) VALUES
@@ -1143,7 +1146,7 @@ INSERT INTO `rekening` (`nomor`, `pemilik`, `wajib`, `pokok`, `tabungan`, `sukar
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `seragam`
+-- Table structure for table `seragam`
 --
 
 CREATE TABLE `seragam` (
@@ -1153,7 +1156,7 @@ CREATE TABLE `seragam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `seragam`
+-- Dumping data for table `seragam`
 --
 
 INSERT INTO `seragam` (`id`, `id_transaksi`, `jumlah`) VALUES
@@ -1211,7 +1214,7 @@ INSERT INTO `seragam` (`id`, `id_transaksi`, `jumlah`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `simpanan`
+-- Table structure for table `simpanan`
 --
 
 CREATE TABLE `simpanan` (
@@ -1224,7 +1227,7 @@ CREATE TABLE `simpanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `simpanan`
+-- Dumping data for table `simpanan`
 --
 
 INSERT INTO `simpanan` (`id`, `rekening`, `jenis`, `jumlah`, `id_transaksi`, `keterangan`) VALUES
@@ -1263,7 +1266,7 @@ INSERT INTO `simpanan` (`id`, `rekening`, `jenis`, `jumlah`, `id_transaksi`, `ke
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `status_akun`
+-- Table structure for table `status_akun`
 --
 
 CREATE TABLE `status_akun` (
@@ -1272,7 +1275,7 @@ CREATE TABLE `status_akun` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `status_akun`
+-- Dumping data for table `status_akun`
 --
 
 INSERT INTO `status_akun` (`id`, `status`) VALUES
@@ -1282,7 +1285,7 @@ INSERT INTO `status_akun` (`id`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `status_transaksi`
+-- Table structure for table `status_transaksi`
 --
 
 CREATE TABLE `status_transaksi` (
@@ -1291,7 +1294,7 @@ CREATE TABLE `status_transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `status_transaksi`
+-- Dumping data for table `status_transaksi`
 --
 
 INSERT INTO `status_transaksi` (`id`, `status`) VALUES
@@ -1304,7 +1307,7 @@ INSERT INTO `status_transaksi` (`id`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `toko`
+-- Table structure for table `toko`
 --
 
 CREATE TABLE `toko` (
@@ -1318,7 +1321,7 @@ CREATE TABLE `toko` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `toko`
+-- Dumping data for table `toko`
 --
 
 INSERT INTO `toko` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`, `keterangan`) VALUES
@@ -1356,7 +1359,7 @@ INSERT INTO `toko` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -1369,7 +1372,7 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`id`, `penyetor`, `bulan`, `jumlah`, `tanggal`, `admin`) VALUES
@@ -1677,7 +1680,7 @@ INSERT INTO `transaksi` (`id`, `penyetor`, `bulan`, `jumlah`, `tanggal`, `admin`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `trx_arisan`
+-- Table structure for table `trx_arisan`
 --
 
 CREATE TABLE `trx_arisan` (
@@ -1689,7 +1692,7 @@ CREATE TABLE `trx_arisan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `trx_arisan`
+-- Dumping data for table `trx_arisan`
 --
 
 INSERT INTO `trx_arisan` (`id`, `id_transaksi`, `bulan`, `jumlah`, `keterangan`) VALUES
@@ -1727,7 +1730,7 @@ INSERT INTO `trx_arisan` (`id`, `id_transaksi`, `bulan`, `jumlah`, `keterangan`)
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `usp`
+-- Table structure for table `usp`
 --
 
 CREATE TABLE `usp` (
@@ -1741,7 +1744,7 @@ CREATE TABLE `usp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data untuk tabel `usp`
+-- Dumping data for table `usp`
 --
 
 INSERT INTO `usp` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`, `keterangan`) VALUES
@@ -1781,16 +1784,17 @@ INSERT INTO `usp` (`id`, `id_transaksi`, `id_peminjaman`, `ke`, `pokok`, `jasa`,
 --
 
 --
--- Indeks untuk tabel `ajuan`
+-- Indexes for table `ajuan`
 --
 ALTER TABLE `ajuan`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_admin_ajuan` (`admin`),
-  ADD KEY `fk_status_ajuan` (`jenis`),
-  ADD KEY `fk_peminjam_ajuan` (`peminjam`);
+  ADD KEY `fk_peminjam_ajuan` (`peminjam`),
+  ADD KEY `fk_jenis_ajuan` (`jenis`) USING BTREE,
+  ADD KEY `fk_status` (`status`);
 
 --
--- Indeks untuk tabel `akun`
+-- Indexes for table `akun`
 --
 ALTER TABLE `akun`
   ADD PRIMARY KEY (`nip`),
@@ -1800,7 +1804,7 @@ ALTER TABLE `akun`
   ADD KEY `fk_kelamin` (`kelamin`);
 
 --
--- Indeks untuk tabel `arisan`
+-- Indexes for table `arisan`
 --
 ALTER TABLE `arisan`
   ADD PRIMARY KEY (`id`),
@@ -1808,7 +1812,7 @@ ALTER TABLE `arisan`
   ADD KEY `fk_pemenang_arisan` (`pemenang`);
 
 --
--- Indeks untuk tabel `bke`
+-- Indexes for table `bke`
 --
 ALTER TABLE `bke`
   ADD PRIMARY KEY (`id`),
@@ -1816,7 +1820,7 @@ ALTER TABLE `bke`
   ADD KEY `fk_peminjaman_bke` (`id_peminjaman`);
 
 --
--- Indeks untuk tabel `ekstra`
+-- Indexes for table `ekstra`
 --
 ALTER TABLE `ekstra`
   ADD PRIMARY KEY (`id`),
@@ -1824,7 +1828,7 @@ ALTER TABLE `ekstra`
   ADD KEY `fk_peminjaman_ekstra` (`id_peminjaman`);
 
 --
--- Indeks untuk tabel `haji`
+-- Indexes for table `haji`
 --
 ALTER TABLE `haji`
   ADD PRIMARY KEY (`id`),
@@ -1832,37 +1836,37 @@ ALTER TABLE `haji`
   ADD KEY `fk_peminjaman_haji` (`id_peminjaman`);
 
 --
--- Indeks untuk tabel `instansi`
+-- Indexes for table `instansi`
 --
 ALTER TABLE `instansi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jabatan`
+-- Indexes for table `jabatan`
 --
 ALTER TABLE `jabatan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jenis_pinjaman`
+-- Indexes for table `jenis_pinjaman`
 --
 ALTER TABLE `jenis_pinjaman`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jenis_simpanan`
+-- Indexes for table `jenis_simpanan`
 --
 ALTER TABLE `jenis_simpanan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kelamin`
+-- Indexes for table `kelamin`
 --
 ALTER TABLE `kelamin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `peminjaman`
+-- Indexes for table `peminjaman`
 --
 ALTER TABLE `peminjaman`
   ADD PRIMARY KEY (`id`),
@@ -1873,21 +1877,21 @@ ALTER TABLE `peminjaman`
   ADD KEY `fk_status_peminjaman` (`status`);
 
 --
--- Indeks untuk tabel `rekening`
+-- Indexes for table `rekening`
 --
 ALTER TABLE `rekening`
   ADD PRIMARY KEY (`nomor`),
   ADD KEY `fk_pemilik` (`pemilik`);
 
 --
--- Indeks untuk tabel `seragam`
+-- Indexes for table `seragam`
 --
 ALTER TABLE `seragam`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_transaksi_seragam` (`id_transaksi`);
 
 --
--- Indeks untuk tabel `simpanan`
+-- Indexes for table `simpanan`
 --
 ALTER TABLE `simpanan`
   ADD PRIMARY KEY (`id`),
@@ -1896,19 +1900,19 @@ ALTER TABLE `simpanan`
   ADD KEY `fk_rekening_simpanan` (`rekening`);
 
 --
--- Indeks untuk tabel `status_akun`
+-- Indexes for table `status_akun`
 --
 ALTER TABLE `status_akun`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `status_transaksi`
+-- Indexes for table `status_transaksi`
 --
 ALTER TABLE `status_transaksi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `toko`
+-- Indexes for table `toko`
 --
 ALTER TABLE `toko`
   ADD PRIMARY KEY (`id`),
@@ -1916,7 +1920,7 @@ ALTER TABLE `toko`
   ADD KEY `fk_peminjaman_toko` (`id_peminjaman`);
 
 --
--- Indeks untuk tabel `transaksi`
+-- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id`),
@@ -1924,14 +1928,14 @@ ALTER TABLE `transaksi`
   ADD KEY `fk_penyetor` (`penyetor`);
 
 --
--- Indeks untuk tabel `trx_arisan`
+-- Indexes for table `trx_arisan`
 --
 ALTER TABLE `trx_arisan`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_transaksi_arisan` (`id_transaksi`);
 
 --
--- Indeks untuk tabel `usp`
+-- Indexes for table `usp`
 --
 ALTER TABLE `usp`
   ADD PRIMARY KEY (`id`),
@@ -1939,143 +1943,144 @@ ALTER TABLE `usp`
   ADD KEY `fk_peminjaman_usp` (`id_peminjaman`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `ajuan`
+-- AUTO_INCREMENT for table `ajuan`
 --
 ALTER TABLE `ajuan`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=303;
 
 --
--- AUTO_INCREMENT untuk tabel `arisan`
+-- AUTO_INCREMENT for table `arisan`
 --
 ALTER TABLE `arisan`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
--- AUTO_INCREMENT untuk tabel `bke`
+-- AUTO_INCREMENT for table `bke`
 --
 ALTER TABLE `bke`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `ekstra`
+-- AUTO_INCREMENT for table `ekstra`
 --
 ALTER TABLE `ekstra`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `haji`
+-- AUTO_INCREMENT for table `haji`
 --
 ALTER TABLE `haji`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `instansi`
+-- AUTO_INCREMENT for table `instansi`
 --
 ALTER TABLE `instansi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT untuk tabel `jabatan`
+-- AUTO_INCREMENT for table `jabatan`
 --
 ALTER TABLE `jabatan`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `jenis_pinjaman`
+-- AUTO_INCREMENT for table `jenis_pinjaman`
 --
 ALTER TABLE `jenis_pinjaman`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `jenis_simpanan`
+-- AUTO_INCREMENT for table `jenis_simpanan`
 --
 ALTER TABLE `jenis_simpanan`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `kelamin`
+-- AUTO_INCREMENT for table `kelamin`
 --
 ALTER TABLE `kelamin`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `peminjaman`
+-- AUTO_INCREMENT for table `peminjaman`
 --
 ALTER TABLE `peminjaman`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
 
 --
--- AUTO_INCREMENT untuk tabel `rekening`
+-- AUTO_INCREMENT for table `rekening`
 --
 ALTER TABLE `rekening`
   MODIFY `nomor` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
--- AUTO_INCREMENT untuk tabel `seragam`
+-- AUTO_INCREMENT for table `seragam`
 --
 ALTER TABLE `seragam`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
--- AUTO_INCREMENT untuk tabel `simpanan`
+-- AUTO_INCREMENT for table `simpanan`
 --
 ALTER TABLE `simpanan`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
 
 --
--- AUTO_INCREMENT untuk tabel `status_akun`
+-- AUTO_INCREMENT for table `status_akun`
 --
 ALTER TABLE `status_akun`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `status_transaksi`
+-- AUTO_INCREMENT for table `status_transaksi`
 --
 ALTER TABLE `status_transaksi`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `toko`
+-- AUTO_INCREMENT for table `toko`
 --
 ALTER TABLE `toko`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `transaksi`
+-- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
 
 --
--- AUTO_INCREMENT untuk tabel `trx_arisan`
+-- AUTO_INCREMENT for table `trx_arisan`
 --
 ALTER TABLE `trx_arisan`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `usp`
+-- AUTO_INCREMENT for table `usp`
 --
 ALTER TABLE `usp`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `ajuan`
+-- Constraints for table `ajuan`
 --
 ALTER TABLE `ajuan`
   ADD CONSTRAINT `fk_admin_ajuan` FOREIGN KEY (`admin`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_jenis_ajuan` FOREIGN KEY (`jenis`) REFERENCES `jenis_pinjaman` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_peminjam_ajuan` FOREIGN KEY (`peminjam`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_status_ajuan` FOREIGN KEY (`jenis`) REFERENCES `status_transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk_status` FOREIGN KEY (`status`) REFERENCES `status_transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `akun`
+-- Constraints for table `akun`
 --
 ALTER TABLE `akun`
   ADD CONSTRAINT `fk_instansi` FOREIGN KEY (`instansi`) REFERENCES `instansi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -2084,35 +2089,35 @@ ALTER TABLE `akun`
   ADD CONSTRAINT `fk_status_akun` FOREIGN KEY (`status`) REFERENCES `status_akun` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `arisan`
+-- Constraints for table `arisan`
 --
 ALTER TABLE `arisan`
   ADD CONSTRAINT `fk_admin_arisan` FOREIGN KEY (`admin`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_pemenang_arisan` FOREIGN KEY (`pemenang`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `bke`
+-- Constraints for table `bke`
 --
 ALTER TABLE `bke`
   ADD CONSTRAINT `fk_bke` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_peminjaman_bke` FOREIGN KEY (`id_peminjaman`) REFERENCES `peminjaman` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `ekstra`
+-- Constraints for table `ekstra`
 --
 ALTER TABLE `ekstra`
   ADD CONSTRAINT `fk_ekstra` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_peminjaman_ekstra` FOREIGN KEY (`id_peminjaman`) REFERENCES `peminjaman` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `haji`
+-- Constraints for table `haji`
 --
 ALTER TABLE `haji`
   ADD CONSTRAINT `fk_haji` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_peminjaman_haji` FOREIGN KEY (`id_peminjaman`) REFERENCES `peminjaman` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `peminjaman`
+-- Constraints for table `peminjaman`
 --
 ALTER TABLE `peminjaman`
   ADD CONSTRAINT `fk_admin_peminjaman` FOREIGN KEY (`admin`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -2122,19 +2127,19 @@ ALTER TABLE `peminjaman`
   ADD CONSTRAINT `fk_status_peminjaman` FOREIGN KEY (`status`) REFERENCES `status_transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `rekening`
+-- Constraints for table `rekening`
 --
 ALTER TABLE `rekening`
   ADD CONSTRAINT `fk_pemilik` FOREIGN KEY (`pemilik`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `seragam`
+-- Constraints for table `seragam`
 --
 ALTER TABLE `seragam`
   ADD CONSTRAINT `fk_transaksi_seragam` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `simpanan`
+-- Constraints for table `simpanan`
 --
 ALTER TABLE `simpanan`
   ADD CONSTRAINT `fk_jenis_simpanan` FOREIGN KEY (`jenis`) REFERENCES `jenis_simpanan` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -2142,31 +2147,32 @@ ALTER TABLE `simpanan`
   ADD CONSTRAINT `fk_transaksi_simpanan` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `toko`
+-- Constraints for table `toko`
 --
 ALTER TABLE `toko`
   ADD CONSTRAINT `fk_peminjaman_toko` FOREIGN KEY (`id_peminjaman`) REFERENCES `peminjaman` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_toko` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `transaksi`
+-- Constraints for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `fk_admin_trx` FOREIGN KEY (`admin`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_penyetor` FOREIGN KEY (`penyetor`) REFERENCES `akun` (`nip`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `trx_arisan`
+-- Constraints for table `trx_arisan`
 --
 ALTER TABLE `trx_arisan`
   ADD CONSTRAINT `fk_transaksi_arisan` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `usp`
+-- Constraints for table `usp`
 --
 ALTER TABLE `usp`
   ADD CONSTRAINT `fk_peminjaman_usp` FOREIGN KEY (`id_peminjaman`) REFERENCES `peminjaman` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_usp` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

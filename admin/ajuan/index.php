@@ -88,19 +88,19 @@ $nick = $fullName[0];
         </div>
         <div class=main_container>
             <div class="container_background"></div>
-            <span class="main_teks">DAFTAR PINJAMAN</span>
+            <span class="main_teks">DAFTAR AJUAN</span>
             <div class=seacrh_bar_container>
                 <div class=filter_container>
                     <span class="teks_filter">Tampilkan berdasarkan bulan</span>
                     <input class="kolom_bulan" <?php if(isset($_GET['m'])){echo 'value="'.$_GET['m'].'"'; } ?>
-                        type="month" onchange="bulann('pinjaman', this.value)" placeholder="Pilih Bulan">
-                    <button class="tombol tombol_reset" onclick="reset('pinjaman')">
+                        type="month" onchange="bulann('ajuan', this.value)" placeholder="Pilih Bulan">
+                    <button class="tombol tombol_reset" onclick="reset('ajuan')">
                         Reset
                     </button>
                 </div>
                 <div class=filter_container_year>
                     <span class="teks_filter">Tampilkan berdasarkan tahun</span>
-                    <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahunn('pinjaman', this.value)" placeholder="Pilih Tahun"></select>
+                    <select class="kolom_bulan" name="yearpicker" id="yearpicker" onchange="tahunn('ajuan', this.value)" placeholder="Pilih Tahun"></select>
                 </div>
             </div>
             <div class=tabel_container>
@@ -117,18 +117,18 @@ $nick = $fullName[0];
                     <tbody>
                         <?php if(isset($_GET['m'])){
   $_GET['m'] = $_GET['m'];
-  include('../get/get-data-pinjaman.php');
+  include('../get/get-data-ajuan.php');
 } else if(isset($_GET['y'])){
   $_GET['y'] = $_GET['y'];
-  include('../get/get-data-pinjaman.php');
-}else { include('../get/get-data-pinjaman.php'); } ?>
+  include('../get/get-data-ajuan.php');
+}else { include('../get/get-data-ajuan.php'); } ?>
                     </tbody>
                 </table>
             </div>
             <div class=tombol_container>
                 <div class=tombol_tambah_simpanan>
-                    <button class="tombol_tambah_simpanan_background" onclick="menu('ajuan')">
-                        <span class="teks_tambah_simpanan">LIHAT AJUAN</span>
+                    <button class="tombol_tambah_simpanan_background" onclick="add('ajuan')">
+                        <span class="teks_tambah_simpanan">TAMBAH AJUAN</span>
                     </button>
                 </div>
             </div>

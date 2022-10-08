@@ -1,1 +1,1 @@
-var siteurl = "http://192.168.1.19:8080/kpri/";
+var siteurl = "http://192.168.1.76:8080/kpri/";

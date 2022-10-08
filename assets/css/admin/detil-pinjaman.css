@@ -1,3 +1,9 @@
+.melihat_detail_transaksi {
+	height:666px !important;
+}
+.container_background {
+	height:489px !important;
+}
 .data_kiri_container { 
 	width:499px;
 	height:209px;
@@ -443,13 +449,16 @@
 	line-height:px;
 }
 .detail_pinjaman { 
-	color:rgba(0, 0, 0, 1);
-	width:217px;
-	height:23px;
-	font-family:Roboto;
-	text-align:center;
-	font-size:25px;
-	letter-spacing:0;
-	line-height:px;
+	color: rgba(0, 0, 0, 1);
+    width: 217px;
+    height: 23px;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 1px;
     margin-left: 440px;
+    z-index: 99;
+    position: absolute;
+    top: 40px;
 }

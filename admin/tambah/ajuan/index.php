@@ -39,7 +39,7 @@ $nick = $fullName[0];
 <div class=side_menu>
 <div class="side_menu_background"></div>
 <div class=beranda_menu>
-<div class="menu menu_beranda aktif">
+<div class="menu menu_beranda">
 <span  class="menu-teks teks_beranda" onclick="menu('beranda')">Beranda</span>
 </div>
 </div>
@@ -49,7 +49,7 @@ $nick = $fullName[0];
 </div>
 </div>
 <div class=anggota_menu>
-<div class="menu menu_daftar_nasabah" onclick="menu('anggota')">
+<div class="menu menu_daftar_nasabah aktif" onclick="menu('anggota')">
 <span  class="menu-teks teks_anggota">Anggota</span>
 </div>
 </div>
@@ -82,47 +82,48 @@ $nick = $fullName[0];
 </div>
 
 <div class=main_container>
+<div class="container_background"></div>
 <form action="simpan.php" method="POST" enctype="multipart/form-data">
 <div class=form_container>
-<span  class="tambah_data_peminjaman">TAMBAH DATA PEMINJAMAN</span>
+<span  class="tambah_data_peminjaman">TAMBAH AJUAN PEMINJAMAN</span>
       <div class=nip><span  class="teks_nip">NIP</span>
-        <div class="input_nip"></div>
-        <div class="tombol_cari"></div>
-        <div class="icon"></div>
+        <input class="input_nip" id="nip" type="number" name="nip" onkeyup="searchAkun()" required></input>
       </div>
       <div class=nama><span  class="teks_nama">Nama</span>
-        <input class="input_nama" type="text">
+        <input class="input_nama" id="nama" name="nama" type="text" disabled>
       </div>
       <div class=hp><span  class="teks_hp">Nomer Hp</span>
-        <input class="input_hp" type="number">
+        <input class="input_hp" id="hp" name="hp" type="number" disabled>
       </div>
       <div class=instansi><span  class="teks_instansi">Instansi</span>
-        <input class="input_instansi" type="text">
+        <input class="input_instansi" id="instansi" name="instansi" type="text" disabled>
       </div>
       <div class=jenis>
         <span  class="teks_jenis">Jenis pinjaman</span>
-        <input class="bke-radio" type="radio" name="jenis"><span class=bke>BKE</span>
-        <input class="ekstra-radio" type="radio" name="jenis"><span  class="ekstra">Ekstra</span>
-        <input class="toko-radio" type="radio" name="jenis"><span  class="toko">Toko</span>
-        <input class="usp-radio" type="radio" name="jenis"><span  class="usp">USP</span>
+        <input class="bke-radio" type="radio" name="jenis" value="1" checked><span class=bke>BKE</span>
+        <input class="haji-radio" type="radio" name="jenis" value="2"><span class=haji>Haji</span>
+        <input class="ekstra-radio" type="radio" name="jenis" value="3"><span  class="ekstra">Ekstra</span>
+        <input class="toko-radio" type="radio" name="jenis" value="4"><span  class="toko">Toko</span>
+        <input class="usp-radio" type="radio" name="jenis" value="5"><span  class="usp">USP</span>
     </div>
       <div class=jumlah><span  class="teks_jumlah">Jumlah pinjaman</span>
-        <input class="input_jumlah" type="number">
+        <input class="input_jumlah" type="number" name="jumlah" required>
       </div>
       <div class=tempo><span  class="teks_tempo">Tempo angsuran</span>
-        <input class="input_tempo" type="number">
+        <input class="input_tempo" type="number" name="tempo" required>
       </div>
       <div class=penghasilan><span  class="teks_penghasilan">Penghasilan bersih</span>
-        <input class="input_penghasilan" type="number">
+        <input class="input_penghasilan" type="number" name="penghasilan" required>
       </div>
       <div class=diangsur><span  class="teks_diangsur">Diangsur</span>
-        <input class="input_diangsur" type="number">
+        <input class="input_diangsur" type="number" value="1" disabled>
       </div>
-      <div class=tombol>
+      <div class=tombols>
         <button class="tombol_simpan tombol"><span  class="teks_simpan">SIMPAN</span></button>
       </div>
     </div>
 </form>
+<button class="tombol_batal tombol" onclick="menu('pinjaman')"><span  class="teks_batal">BATAL</span></button>
 </div>
 
 <script src="<?php echo $siteurl; ?>config.js"></script>
@@ -133,7 +134,19 @@ function searchAkun(){
     var a = document.getElementById('nip').value;
     console.log('value : '+a);
     
-    fetch_akun('data_nama', a);
+    $.ajax({
+        type: 'post',
+        url: 'getAkun.php',
+        data: {
+            get_option: a
+        },
+        dataType: 'json',
+        success: function(data){
+          $('#nama').val(data[0]);
+          $('#hp').val(data[1]);
+          $('#instansi').val(data[2]);
+    }
+    });
 }
 </script>
 
