@@ -1,7 +1,7 @@
 <?php
 require_once("../config.php");
-if(isset($_POST['nip']) && isset($_POST['sandi'])) {
-  $nip = $_POST['nip'];
+if(isset($_POST['username']) && isset($_POST['sandi'])) {
+  $nip = $_POST['username'];
   $sandi = $_POST['sandi'];
 } else {
   ?>

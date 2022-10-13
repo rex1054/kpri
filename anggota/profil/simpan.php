@@ -51,7 +51,7 @@ if(isset($_GET['a'])){
                 <script>
                 console.log("<?php echo "Berkas ".htmlspecialchars(basename($_FILES["foto-ktp-suami"]["name"]))." telah diunggah.";?>");
                 alert("Berhasil menyimpan data.");
-                window.open('<?php echo $siteurl;?>anggota/profil', '_SELF');
+                window.open('<?php echo $siteurl;?>admin/profil', '_SELF');
                 </script>
                 <?php
             } else {
@@ -107,7 +107,7 @@ if(isset($_GET['a'])){
                 <script>
                 console.log("<?php echo "Berkas ".htmlspecialchars(basename($_FILES["foto-ktp-istri"]["name"]))." telah diunggah.";?>");
                 alert("Berhasil menyimpan data.");
-                window.open('<?php echo $siteurl;?>anggota/profil', '_SELF');
+                window.open('<?php echo $siteurl;?>admin/profil', '_SELF');
                 </script>
                 <?php
             } else {
@@ -162,7 +162,7 @@ if(isset($_GET['a'])){
                 <script>
                 console.log("<?php echo "Berkas ".htmlspecialchars(basename($_FILES["foto-3x4"]["name"]))." telah diunggah.";?>");
                 alert("Berhasil menyimpan data.");
-                window.open('<?php echo $siteurl;?>anggota/profil', '_SELF');
+                window.open('<?php echo $siteurl;?>admin/profil', '_SELF');
                 </script>
                 <?php
             } else {

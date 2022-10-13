@@ -18,11 +18,11 @@ try{
 require("../../../config.php");
 $con->query($sql);
 ?>
-<script>alert('Berhasil menyimpan data.');window.open('<?php echo $siteurl; ?>admin/tambah/pinjaman/', '_SELF');</script>
+<script>alert('Berhasil menyimpan data.');window.open('<?php echo $siteurl; ?>admin/ajuan/', '_SELF');</script>
 <?php
 } catch (Error $e) {
 ?>
-<script>alert('Gagal menambah data!');window.open('<?php echo $siteurl; ?>admin/tambah/pinjaman/', '_SELF');</script>
+<script>alert('Gagal menambah data!');window.open('<?php echo $siteurl; ?>admin/ajuan/', '_SELF');</script>
 <?php
 }
 ?>

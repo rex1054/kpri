@@ -4,11 +4,13 @@ $filter;
 if(isset($_GET['m'])){
 	$bulan = explode('-',$_GET['m']);
 	$filter = "WHERE YEAR(transaksi.tanggal) = '".$bulan[0]."' AND Month(transaksi.tanggal) = '".$bulan[1]."' and transaksi.penyetor = ".$_SESSION['nip'];
+} else if(isset($_GET['y'])){
+	$tahun = $_GET['y'];
+	$filter = "WHERE YEAR(transaksi.tanggal) = '".$tahun."'and transaksi.penyetor = ".$_SESSION['nip'];
 } else { $filter = "WHERE transaksi.penyetor = ".$_SESSION['nip']; }
-$sql;
 	$sql = "SELECT transaksi.id, transaksi.tanggal, akun.nama, instansi.instansi from transaksi join akun on transaksi.penyetor = akun.nip join instansi on akun.instansi = instansi.id ".$filter." order by transaksi.id ASC";
 $query = $con->query($sql);
-if($query->num_rows == 0) { echo "<p style='color: red;'>Data tidak ditemukan.</p>"; }
+if($query->num_rows == 0) {}
 else {
 	if(mysqli_num_rows($query)>0) { 
 		while ($data = mysqli_fetch_array($query)) {

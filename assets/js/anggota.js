@@ -1,5 +1,5 @@
 function menu(menu) {
-    if (menu == 'anggotaBeranda') {
+    if (menu == 'beranda') {
         window.open(siteurl + 'anggota', '_SELF');
     } else {
         window.open(siteurl + 'anggota/' + menu, '_SELF');
@@ -32,13 +32,37 @@ function filt(tabel, nama,x) {
 
 }
 
+function bulann(halaman, bulan) {
+    window.open(siteurl + 'anggota/' + halaman + '/?m=' + bulan, "_SELF");
+}
+
+function tahunn(halaman, tahun) {
+    window.open(siteurl + 'anggota/' + halaman + '/?y=' + tahun, "_SELF");
+}
+
 function bulan(bulan) {
-    window.open(siteurl+'anggota/?m='+bulan, "_SELF");
+    window.open(siteurl + 'anggota/?m=' + bulan, "_SELF");
+}
+
+function tahun(tahun) {
+    window.open(siteurl + 'anggota/?y=' + tahun, "_SELF");
 }
 
 function reset(page) {
-    if(page == 'beranda') {
-        window.open(siteurl+'anggota/', '_SELF');
+    if (page == 'beranda') {
+        window.open(siteurl + 'anggota/', '_SELF');
+    } else {
+        window.open(siteurl + 'anggota/' + page);
+    }
+}
+
+function getYear(year) {
+    for (i = new Date().getFullYear(); i > 1970; i--) {
+        if (year == i) {
+            $('#yearpicker').append($('<option />').val(i).attr("selected", "selected").html(i));
+        } else {
+            $('#yearpicker').append($('<option />').val(i).html(i));
+        }
     }
 }
 
@@ -112,3 +136,25 @@ function sortTable(id, n) {
     }
 }
 
+$(document).ready(function() {
+    $('#tabel-transaksi').DataTable({
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/id.json'
+        },
+        dom: 'Bfrtip',
+        paging: true,
+        "pageLength": 7,
+        buttons: [
+            'excelHtml5',
+            'pdfHtml5'
+        ]
+    });
+});
+
+function add(what) {
+    window.open(siteurl + 'anggota/tambah/' + what, '_SELF');
+}
+
+function updateProfil(nip) {
+    window.open(siteurl + "anggota/profil/update/?nip=" + nip, "_SELF");
+}

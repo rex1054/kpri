@@ -143,7 +143,7 @@ window.open('<?php echo $siteurl; ?>admin', '_SELF')
             </div>
             <div class=tombol>
                 <div class=update_profil>
-                    <button class="tombol_update"><span class="teks_update">UPDATE PROFIL</span></button>
+                    <button class="tombol_update" onclick="updateAnggota(<?php echo $data['nip']; ?>)"><span class="teks_update">UPDATE PROFIL</span></button>
                 </div>
                 <div class=ubah_sandi>
                     <button class="tombol_ubah" onclick="ubahsandi()"><span class="teks_ubah">UBAH KATA

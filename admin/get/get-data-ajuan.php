@@ -22,7 +22,7 @@ else {
 			<tr>
 			<td class="text-center"><?php echo $data["id"];?></td>
 			<td class="text-center"><?php echo $data["jenis"];?></td>
-			<td><a href="<?php echo $siteurl.'admin/detil-pinjaman/?id='.$data['id']; ?>"><u><?php echo $data["nama"];?></u></a></td>
+			<td><a href="<?php echo $siteurl.'admin/detil-ajuan/?id='.$data['id']; ?>"><u><?php echo $data["nama"];?></u></a></td>
 			<td><?php echo $data["tanggal"];?></td>
 			<td><?php echo $data["status"] ?></td>
 			</tr>

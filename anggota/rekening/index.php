@@ -41,45 +41,46 @@ $nick = $fullName[0];
                 (0336) 321386</span>
             <div class="garis_header"></div>
         </div>
+
         <div class=side_menu>
-            <div class="side_menu_background"></div>
-            <div class=beranda_menu>
-                <div class="menu menu_beranda">
-                    <span class="teks_beranda" onclick="menu('anggotaBeranda')">Beranda</span>
-                </div>
-            </div>
-            <div class=pegawai_menu>
-                <div class="menu menu_pegawai aktif" onclick="menu('rekening')">
-                    <span class="teks_pegawai">Rekening</span>
-                </div>
-            </div>
-            <div class=anggota_menu>
-                <div class="menu menu_daftar_nasabah" onclick="menu('anggotaPinjaman')">
-                    <span class="teks_anggota">Pinjaman</span>
-                </div>
-            </div>
-            <div class=pinjaman_menu>
-                <div class="menu menu_pinjaman" onclick="menu('anggotaSimpanan')">
-                    <span class="teks_pinjaman">Simpanan</span>
-                </div>
-            </div>
-            <div class=simpanan_menu>
-                <div class="menu menu_simpanan" onclick="menu('profil')">
-                    <span class="teks_simpanan">Profil</span>
-                </div>
-            </div>
-            <div class=main_menu>
-                <div class="main_menu_background">
-                    <span class="teks_main_menu">Menu</span>
-                </div>
-            </div>
-            <div class=user_container>
-                <span class="teks_selamat">Selamat datang</span>
-                <span class="teks_user"><?php echo $nick; ?></span>
-                <span class="teks_selamat logout"><a href="<?php echo $siteurl; ?>" target="_SELF">Logout</a></span>
-            </div>
-            <span class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
+    <div class="side_menu_background"></div>
+    <div class=beranda_menu>
+      <div class="menu menu_beranda">
+          <span  class="teks_beranda" onclick="menu('beranda')">Beranda</span>
         </div>
+    </div>
+    <div class=pegawai_menu>
+      <div class="menu menu_pegawai aktif" onclick="menu('rekening')">
+      <span  class="teks_pegawai">Rekening</span>
+      </div>
+    </div>
+    <div class=anggota_menu>
+      <div class="menu menu_daftar_nasabah" onclick="menu('pinjaman')">
+      <span  class="teks_anggota">Pinjaman</span>
+      </div>
+    </div>
+    <div class=pinjaman_menu>
+      <div class="menu menu_pinjaman" onclick="menu('simpanan')">
+      <span  class="teks_pinjaman">Simpanan</span>
+      </div>
+    </div>
+    <div class=simpanan_menu>
+      <div class="menu menu_simpanan" onclick="menu('profil')">
+      <span  class="teks_simpanan">Profil</span>
+      </div>
+    </div>
+    <div class=main_menu>
+      <div class="main_menu_background">
+      <span  class="teks_main_menu">Menu</span>
+    </div>
+    </div>
+    <div class=user_container>
+        <span  class="teks_selamat">Selamat datang</span>
+        <span  class="teks_user"><?php echo $nick; ?></span>
+        <span  class="teks_selamat logout"><a href="<?php echo $siteurl; ?>" target="_SELF">Logout</a></span>
+    </div>
+    <span  class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
+  </div>
 
         <div class=main_container>
             <div class="container_background"></div>

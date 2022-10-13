@@ -190,3 +190,6 @@ $(document).ready(function() {
 function updateProfil(nip) {
     window.open(siteurl + "admin/profil/update/?nip=" + nip, "_SELF");
 }
+function updateAnggota(nip) {
+    window.open(siteurl + "admin/detil-pengguna/update/?nip=" + nip, "_SELF");
+}

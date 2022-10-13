@@ -1,0 +1,75 @@
+.tombol_container {
+    width: 220.97222900390625px;
+    height: 133px;
+    position: absolute;
+    left: 918px;
+    top: 280px;
+}
+.tombol_tambah_pinjaman {
+    width: 220.97222900390625px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 96px;
+}
+
+.tombol_tambah_pinjaman_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 220.97222900390625px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.teks_tambah_pinjaman {
+    color: rgba(0, 0, 0, 1);
+    width: 144.9166717529297px;
+    height: 18.5px;
+    position: absolute;
+    left: 38.02783203125px;
+    top: 9.25px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+.tombol_kembali {
+    width: 220.97222900390625px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 96px;
+}
+
+.tombol_kembali_background {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 220.97222900390625px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.teks_kembali {
+    color: rgba(0, 0, 0, 1);
+    width: 144.9166717529297px;
+    height: 18.5px;
+    position: absolute;
+    left: 38.02783203125px;
+    top: 9.25px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0;
+}

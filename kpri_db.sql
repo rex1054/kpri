@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2022 at 06:24 PM
+-- Generation Time: Oct 13, 2022 at 05:57 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -40,7 +40,7 @@ CREATE TABLE `ajuan` (
   `penghasilan` bigint(20) NOT NULL,
   `slip` varchar(200) DEFAULT NULL,
   `status` tinyint(4) NOT NULL,
-  `admin` bigint(20) NOT NULL
+  `admin` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -141,7 +141,6 @@ INSERT INTO `ajuan` (`id`, `peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`,
 (91, 91, '2000-04-02', 4, 20928711, 42, '2019-04-30', 2486099, 'http://lorempixel.com/400/300/', 2, 29),
 (92, 73, '1978-06-21', 5, 21238187, 9, '1997-05-24', 3938121, 'http://lorempixel.com/400/300/', 3, 85),
 (93, 5, '2013-07-14', 4, 1534733, 5, '1974-12-18', 1075763, 'http://lorempixel.com/400/300/', 1, 84),
-(94, 5, '1988-06-30', 1, 35196484, 36, '2014-06-01', 4347834, 'http://lorempixel.com/400/300/', 4, 22),
 (95, 66, '1994-09-23', 5, 47889522, 99, '2005-10-14', 1604471, 'http://lorempixel.com/400/300/', 2, 49),
 (96, 27, '1988-05-18', 1, 24780869, 40, '2016-08-16', 4432688, 'http://lorempixel.com/400/300/', 2, 63),
 (97, 22, '2005-02-17', 2, 47156524, 55, '1970-06-05', 4861706, 'http://lorempixel.com/400/300/', 5, 22),
@@ -190,7 +189,6 @@ INSERT INTO `ajuan` (`id`, `peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`,
 (140, 49, '1980-04-02', 2, 3054133, 6, '2004-01-07', 4578838, 'http://lorempixel.com/400/300/', 4, 20),
 (141, 29, '2018-05-02', 4, 30123397, 102, '2020-08-14', 3294336, 'http://lorempixel.com/400/300/', 2, 71),
 (142, 62, '1973-01-21', 2, 20416596, 116, '2020-07-02', 4951356, 'http://lorempixel.com/400/300/', 3, 53),
-(143, 5, '2012-02-12', 4, 42303105, 63, '1980-08-15', 2789015, 'http://lorempixel.com/400/300/', 5, 87),
 (144, 43, '2015-08-10', 5, 29252216, 21, '1998-07-30', 1051439, 'http://lorempixel.com/400/300/', 4, 61),
 (145, 77, '1990-02-06', 4, 22714858, 61, '2005-10-19', 2404921, 'http://lorempixel.com/400/300/', 5, 77),
 (146, 58, '2019-03-27', 4, 28366488, 85, '1985-05-21', 4897716, 'http://lorempixel.com/400/300/', 1, 29),
@@ -305,7 +303,6 @@ INSERT INTO `ajuan` (`id`, `peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`,
 (255, 10, '1986-01-02', 4, 21733192, 33, '1977-08-30', 4164259, 'http://lorempixel.com/400/300/', 2, 62),
 (256, 19, '1980-05-03', 3, 20613989, 43, '1973-02-11', 2396560, 'http://lorempixel.com/400/300/', 2, 30),
 (257, 41, '1984-09-15', 3, 46432511, 112, '1982-11-21', 4002709, 'http://lorempixel.com/400/300/', 3, 62),
-(258, 30, '2007-02-03', 4, 34209773, 40, '1981-04-08', 4973070, 'http://lorempixel.com/400/300/', 5, 17),
 (259, 43, '2004-10-17', 3, 17445218, 3, '2016-05-13', 3918092, 'http://lorempixel.com/400/300/', 1, 14),
 (260, 52, '1994-05-02', 2, 22036715, 18, '2011-06-02', 2982832, 'http://lorempixel.com/400/300/', 3, 22),
 (261, 33, '1998-10-14', 5, 10258807, 74, '2012-12-07', 1601727, 'http://lorempixel.com/400/300/', 5, 93),
@@ -348,8 +345,10 @@ INSERT INTO `ajuan` (`id`, `peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`,
 (298, 54, '2008-05-26', 1, 13429091, 70, '2007-07-28', 3407841, 'http://lorempixel.com/400/300/', 1, 10),
 (299, 71, '1972-06-03', 2, 14742151, 15, '2000-02-04', 1185540, 'http://lorempixel.com/400/300/', 2, 27),
 (300, 87, '2011-10-23', 3, 22267606, 91, '2010-09-21', 4311191, 'http://lorempixel.com/400/300/', 2, 62),
-(301, 1, '2022-10-08', 1, 2000000, 1, '2022-10-08', 1200000, 'null', 5, 1),
-(302, 1, '2022-10-08', 1, 2000000, 1, '2022-10-08', 1200000, 'null', 5, 1);
+(304, 12345678, '2022-10-13', 3, 1000000, 1, '2022-10-13', 1500000, 'null', 5, 1),
+(305, 1, '2022-10-13', 3, 10000000, 1, '2022-10-13', 1500000, 'null', 5, 1),
+(306, 5, '2022-10-13', 1, 500000, 1, '2022-10-13', 1900000, 'null', 5, NULL),
+(307, 5, '2022-10-13', 2, 2323232, 1, '2022-10-13', 22424223, 'null', 5, NULL);
 
 -- --------------------------------------------------------
 
@@ -383,9 +382,9 @@ CREATE TABLE `akun` (
 INSERT INTO `akun` (`nip`, `nama`, `sandi`, `kelamin`, `tempat_lahir`, `tanggal_lahir`, `alamat`, `pos`, `hp`, `instansi`, `ktp_suami`, `ktp_istri`, `foto_3x4`, `status`, `jabatan`, `gabung`) VALUES
 (1, 'Rama\'a', 'admin', 1, 'JEMBER', '1998-01-05', 'Bago', 69696, '81234567890', 1, '1_KTP_SUAMI.jpg', '1_KTP_ISTRI.jpg', '1_3x4.jpg', 1, 3, '2022-05-11'),
 (2, 'Luz Considine', 'ramadhan05', 1, 'Brooklynburgh', '1996-05-10', '433 Liana Meadow Apt. 127\nJessikaburgh, NE 29523', 14044, '35', 8, '2_KTP_SUAMI.jpg', '2_KTP_ISTRI.jpg', '2_3x4.jpg', 1, 3, '1984-02-15'),
-(4, 'Margaret Donnelly II', 'eius', 2, 'North Angelica', '2020-12-25', '6739 Harvey Ports Suite 309\nO\'Keefeshire, NJ 84264-5721', 51206, '90', 9, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 2, '2009-07-22'),
-(5, 'Eldon Kutch', 'anggota', 1, 'Sonyafurt', '1994-07-30', '9624 Sabrina Lodge Suite 590\nNorth Rivertown, WI 69134', 20446, '39', 8, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '2008-12-28'),
-(7, 'Alize Funk', 'ez', 1, 'New Joesphchester', '1970-10-30', '98263 Haley Greens\nNicolasborough, MN 10149-9844', 24939, '56', 5, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '1998-09-28'),
+(4, 'Margaret Donnelly II', 'eius', 2, 'North Angelica', '2020-12-25', '6739 Harvey Ports Suite 309O\'Keefeshire, NJ 84264-5721', 51206, '90', 9, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 2, '2009-07-22'),
+(5, 'Eldon Kutch', 'user', 1, 'Sonyafurt', '1994-07-30', '9624 Sabrina Lodge Suite 590North Rivertown, WI 69134', 20446, '39', 8, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '2008-12-28'),
+(7, 'Alize Funk', 'ez', 1, 'New Joesphchester', '1970-10-30', '98263 Haley GreensNicolasborough, MN 10149-9844', 24939, '56', 5, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 1, '1998-09-28'),
 (8, 'Katrina Keeling', 'molestiae', 2, 'Dayanashire', '2004-04-08', '46313 Violette Vista\nWest Roger, NJ 56501-2378', 58730, '67', 3, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 2, '1992-02-08'),
 (10, 'Hailey Armstrong II', 'facilis', 1, 'North Howard', '1998-08-31', '35149 Miller Valley\nNew Ninahaven, MS 27772-8035', 87709, '13', 4, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 2, '1971-02-19'),
 (11, 'Dr. Jerome Johnston V', 'harum', 2, 'West Joaquinton', '1999-11-17', '4006 Lowe Viaduct Suite 465\nEast Traceyborough, GA 69017-4368', 61507, '9', 2, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 2, '2021-12-24'),
@@ -423,7 +422,7 @@ INSERT INTO `akun` (`nip`, `nama`, `sandi`, `kelamin`, `tempat_lahir`, `tanggal_
 (77, 'Dr. Angus Beatty', 'veniam', 2, 'Crookschester', '2007-05-01', '31907 Roderick Trail\nO\'Connellton, NV 51067', 10017, '68', 4, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 3, '2015-03-13'),
 (78, 'Greg Jakubowski Sr.', 'aperiam', 2, 'Armanistad', '2001-07-13', '98144 Freeman Creek\nStoltenbergton, MD 92315', 60369, '38', 2, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '2019-01-04'),
 (82, 'Prof. Schuyler Satterfield I', 'corporis', 2, 'Dawsonview', '1972-08-04', '6222 Berta Camp Apt. 103\nCorwinshire, MD 41618', 1140, '57', 1, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 2, '2000-04-17'),
-(84, 'Camylle Kuphal', 'quis', 2, 'Albinafurt', '1989-11-21', '6829 Eddie Creek Suite 146\nPort Christopher, OH 22271-6382', 16725, '47', 8, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '1995-06-27'),
+(84, 'Camylle Kuphal', 'quis', 2, 'Albinafurt', '1989-11-21', '6829 Eddie Creek Suite 146Port Christopher, OH 22271-6382', 16725, '47', 8, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 3, '1995-06-27'),
 (85, 'Destiny Sporer', 'distinctio', 1, 'Kubside', '1974-08-04', '649 Schultz Port Suite 747\nMillerborough, TN 30643-0040', 46670, '88', 4, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 1, '2003-03-28'),
 (87, 'Donna Anderson III', 'quaerat', 1, 'Harrisstad', '1979-08-28', '899 Fleta Mountains Apt. 363\nBlanchechester, DE 66622', 15801, '46', 5, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 1, '2021-12-29'),
 (91, 'Sally Sporer', 'repellat', 2, 'Donnyberg', '2012-02-05', '302 Jeromy Island\nWest Lyla, WA 35109-6059', 93285, '89', 4, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 3, '2013-02-03'),
@@ -431,7 +430,9 @@ INSERT INTO `akun` (`nip`, `nama`, `sandi`, `kelamin`, `tempat_lahir`, `tanggal_
 (95, 'Abigayle Steuber', 'architecto', 1, 'Jorgeburgh', '2017-05-12', '1092 Block Junctions Suite 224\nSouth Imeldaville, ME 26388-2504', 74007, '59', 6, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 1, '1995-08-11'),
 (96, 'Destinee Skiles V', 'ipsum', 2, 'Kreigerhaven', '1984-01-08', '5955 Wolf Freeway Apt. 314\nPort Mortimerborough, VT 29022', 55417, '79', 1, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 2, 3, '1991-07-18'),
 (98, 'Oswald Dooley DVM', 'qui', 2, 'Margarettaton', '2004-09-28', '57900 Kathryne Pine Suite 294\nKarleystad, OH 97393-0103', 71567, '72', 4, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 2, '1984-11-22'),
-(99, 'Mr. Rahul Weissnat', 'consequatur', 1, 'Lake Kade', '1977-10-08', '78883 Stiedemann Forges Suite 365\nSchillerburgh, DE 86034', 5337, '28', 2, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 1, '1980-02-24');
+(99, 'Mr. Rahul Weissnat', 'consequatur', 1, 'Lake Kade', '1977-10-08', '78883 Stiedemann Forges Suite 365\nSchillerburgh, DE 86034', 5337, '28', 2, 'http://lorempixel.com/400/300/', 'http://lorempixel.com/400/300/', 'http://lorempixel.com/300/400/', 1, 1, '1980-02-24'),
+(123456, 'poseidon', '25', 1, 'JEMBER', '1998-05-10', 'Jl Kartika Gg III Dauh Puri Denpasar Barat', 80112, '82144786352', 13, '123456_KTP_SUAMI.jpg', '123456_KTP_ISTRI.jpg', '123456_3x4.jpg', 2, 3, '2022-10-13'),
+(12345678, 'ramadhan', '25', 1, 'JEMBER', '1998-01-05', 'Jl Kartika Gg III Dauh Puri Denpasar Barat', 80112, '082144786352', 13, '12345678_KTP_SUAMI.jpg', '12345678_KTP_ISTRI.jpg', '12345678_3x4.jpg', 1, 1, '2022-10-13');
 
 -- --------------------------------------------------------
 
@@ -906,7 +907,6 @@ INSERT INTO `peminjaman` (`id`, `id_ajuan`, `jenis`, `jumlah`, `jasa`, `diangsur
 (35, 222, 4, 19132412, 225546, 103, 42273746, 961914, 112337, 27524201, '2013-06-04', 66, 20, 5),
 (36, 11, 2, 5206615, 240907, 17, 17116459, 67641, 530234, 42313511, '2004-08-18', 17, 23, 2),
 (37, 122, 2, 10475795, 395997, 28, 36116884, 617483, 386701, 4328239, '1972-01-27', 22, 71, 2),
-(38, 143, 5, 13507464, 203142, 109, 45971058, 974749, 78532, 34002066, '2020-07-22', 4, 7, 3),
 (39, 119, 1, 20614638, 440827, 111, 12506882, 228130, 282574, 47753916, '1983-07-31', 54, 7, 2),
 (40, 13, 4, 30128514, 481586, 29, 19503539, 608286, 866665, 22424359, '2012-10-20', 93, 16, 1),
 (41, 125, 5, 44657145, 474775, 75, 1768832, 906885, 885696, 3994962, '2008-07-31', 66, 8, 1),
@@ -980,7 +980,6 @@ INSERT INTO `peminjaman` (`id`, `id_ajuan`, `jenis`, `jumlah`, `jasa`, `diangsur
 (109, 229, 1, 45319150, 594012, 89, 21715332, 337449, 490093, 34062831, '1997-12-02', 33, 19, 1),
 (110, 161, 4, 31031845, 301188, 89, 34207525, 430305, 832586, 35232968, '2011-06-01', 54, 61, 5),
 (111, 241, 4, 45451440, 152175, 109, 5889430, 52918, 938773, 31775298, '2004-01-08', 85, 54, 3),
-(112, 94, 3, 10707913, 336845, 80, 49323613, 767616, 774389, 10673470, '2014-08-03', 33, 11, 3),
 (113, 266, 4, 27293240, 683837, 87, 44326640, 531039, 978573, 34194829, '1979-12-28', 43, 51, 4),
 (114, 97, 5, 13656649, 101373, 40, 10811140, 712704, 616112, 8134423, '1995-07-04', 49, 96, 5),
 (115, 298, 4, 38066455, 793254, 85, 48286743, 331396, 663431, 7542596, '2003-04-01', 2, 33, 5),
@@ -1950,7 +1949,7 @@ ALTER TABLE `usp`
 -- AUTO_INCREMENT for table `ajuan`
 --
 ALTER TABLE `ajuan`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=303;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=308;
 
 --
 -- AUTO_INCREMENT for table `arisan`

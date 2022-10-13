@@ -86,6 +86,7 @@ $nick = $fullName[0];
             </div>
             <span class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
         </div>
+        
         <div class=main_container>
             <div class="container_background"></div>
             <span class="main_teks">DAFTAR TRANSAKSI</span>

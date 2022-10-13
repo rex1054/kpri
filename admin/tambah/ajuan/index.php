@@ -49,12 +49,12 @@ $nick = $fullName[0];
 </div>
 </div>
 <div class=anggota_menu>
-<div class="menu menu_daftar_nasabah aktif" onclick="menu('anggota')">
+<div class="menu menu_daftar_nasabah" onclick="menu('anggota')">
 <span  class="menu-teks teks_anggota">Anggota</span>
 </div>
 </div>
 <div class=pinjaman_menu>
-<div class="menu menu_pinjaman" onclick="menu('pinjaman')">
+<div class="menu menu_pinjaman aktif" onclick="menu('pinjaman')">
 <span  class="menu-teks teks_pinjaman">Pinjaman</span>
 </div>
 </div>
@@ -123,7 +123,7 @@ $nick = $fullName[0];
       </div>
     </div>
 </form>
-<button class="tombol_batal tombol" onclick="menu('pinjaman')"><span  class="teks_batal">BATAL</span></button>
+<button class="tombol_batal tombol" onclick="menu('ajuan')"><span  class="teks_batal">BATAL</span></button>
 </div>
 
 <script src="<?php echo $siteurl; ?>config.js"></script>

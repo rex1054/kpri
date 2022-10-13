@@ -107,6 +107,13 @@ include('getData.php');
       <div class=pimpinan><span  class="teks_pimpinan">Pimpinan</span><span  class="data_ktp_istri">: <a href="<?php echo $siteurl.'admin/detil-pengguna/?nip='.$pimpinan; ?>"><?php echo $pimpinan; ?></a></span></div>
       <div class=status><span  class="teks_status">Status</span><span  class="data_3x4">: <?php echo $status; ?></span></div>
     </div><span  class="detail_pinjaman">DETAIL PINJAMAN</span>
+    <div class=tombol_container>
+                <div class=tombol_kembali>
+                    <button class="tombol_kembali_background" onclick="menu('pinjaman')">
+                        <span class="teks_kembali">KEMBALI</span>
+                    </button>
+                </div>
+            </div>
   </div>
 </div>
 

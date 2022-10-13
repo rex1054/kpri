@@ -36,7 +36,7 @@ Telepon: (0336) 321386</span>
     <div class="container_background"></div>
     <span  class="teks_masuk">MASUK</span>
     <div class=nip>
-    <input type="number" class="kolom_nip text-center" name="nip" required autofocus placeholder="199805012016011003">
+    <input type="number" class="kolom_nip text-center" name="username" required autofocus placeholder="199805012016011003">
       <span  class="teks_nip">NIP</span>
     </div>
     <div class=kata_sandi>

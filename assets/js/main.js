@@ -223,3 +223,7 @@ function ubahsandi(){
 function resetsandi(){
   window.open('../../m/kpri.model.profile-updater.php?a=10');
 }
+
+function hapus(who, what, id) {
+  window.open(siteurl + 'hapus/' + what + '/?u=' + who + '&id=' + id, '_SELF');
+}

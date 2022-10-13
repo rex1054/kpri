@@ -43,8 +43,8 @@ include('getData.php');
 <div class=side_menu>
     <div class="side_menu_background"></div>
     <div class=beranda_menu>
-      <div class="menu menu_beranda">
-          <span  class="teks_beranda" onclick="menu('anggotaBeranda')">Beranda</span>
+      <div class="menu menu_beranda aktif">
+          <span  class="teks_beranda" onclick="menu('beranda')">Beranda</span>
         </div>
     </div>
     <div class=pegawai_menu>
@@ -53,12 +53,12 @@ include('getData.php');
       </div>
     </div>
     <div class=anggota_menu>
-      <div class="menu menu_daftar_nasabah" onclick="menu('anggotaPinjaman')">
+      <div class="menu menu_daftar_nasabah" onclick="menu('pinjaman')">
       <span  class="teks_anggota">Pinjaman</span>
       </div>
     </div>
     <div class=pinjaman_menu>
-      <div class="menu menu_pinjaman" onclick="menu('anggotaSimpanan')">
+      <div class="menu menu_pinjaman" onclick="menu('simpanan')">
       <span  class="teks_pinjaman">Simpanan</span>
       </div>
     </div>
