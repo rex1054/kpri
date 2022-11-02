@@ -1,0 +1,21 @@
+.tombol_acc{
+    width: 140px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.tombol_tolak{
+    width: 140px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 48px;
+}
+.tombol_kembali{
+    width: 140px;
+    height: 37px;
+    position: absolute;
+    left: 0px;
+    top: 96px;
+}

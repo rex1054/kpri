@@ -3,6 +3,5 @@ error[] = [
 ];
 
 ongoing[] = [
-    'tambah transaksi',
-    
-]
+    'tambah transaksi'
+];
