@@ -1,6 +1,5 @@
 <?php
 require_once('../../config.php');
-$jabatan = $_SESSION['jabatan'];
 $filter;
 if(isset($_GET['m'])){
 	$bulan = explode('-',$_GET['m']);
@@ -9,10 +8,9 @@ if(isset($_GET['m'])){
 	$tahun = $_GET['y'];
 	$filter = "WHERE YEAR(transaksi.`tanggal`) = '".$tahun."'";
 } else { $filter = "WHERE YEAR(transaksi.`tanggal`) = '".date("Y")."'"; }
-$sql;
-if($jabatan=='Admin'){
-	$sql = "SELECT simpanan.`id`, jenis_simpanan.`jenis`, akun.`nama`, transaksi.`tanggal` FROM simpanan join transaksi on simpanan.id_transaksi = transaksi.id join akun on transaksi.penyetor = akun.nip join jenis_simpanan on simpanan.jenis = jenis_simpanan.id ".$filter;
-}
+
+$sql = "SELECT simpanan.`id`, jenis_simpanan.`jenis`, akun.`nama`, transaksi.`tanggal` FROM simpanan join transaksi on simpanan.id_transaksi = transaksi.id join akun on transaksi.penyetor = akun.nip join jenis_simpanan on simpanan.jenis = jenis_simpanan.id ".$filter;
+
 $query = $con->query($sql);
 if($query->num_rows == 0) {}
 else {

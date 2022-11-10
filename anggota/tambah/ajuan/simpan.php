@@ -11,7 +11,7 @@ $penghasilan = $_POST['penghasilan'];
 $diangsur = 1;
 $status = 5;
 
-$sql = 'INSERT INTO `ajuan`(`peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`, `mulai`, `penghasilan`, `slip`, `status`) VALUES ('.$nip.',"'.$tanggal.'",'.$jenis.','.$jumlah.','.$diangsur.',"'.$tanggal.'",'.$penghasilan.',"null",'.$status.')';
+$sql = 'INSERT INTO `ajuan`(`peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`, `mulai`, `penghasilan`, `slip`,`status`) VALUES ('.$nip.',"'.$tanggal.'",'.$jenis.','.$jumlah.','.$diangsur.',"'.$tanggal.'",'.$penghasilan.', null, '.$status.')';
 
 try{
 require("../../../config.php");

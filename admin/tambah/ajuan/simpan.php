@@ -9,10 +9,9 @@ $jenis = $_POST['jenis'];
 $jumlah = $_POST['jumlah'];
 $tempo = $_POST['tempo'];
 $penghasilan = $_POST['penghasilan'];
-$diangsur = 1;
 $status = 5;
 
-$sql = 'INSERT INTO `ajuan`(`peminjam`, `tanggal`, `jenis`, `jumlah`, `diangsur`, `mulai`, `penghasilan`, `slip`, `status`, `admin`) VALUES ('.$nip.',"'.$tanggal.'",'.$jenis.','.$jumlah.','.$diangsur.',"'.$tanggal.'",'.$penghasilan.',"null",'.$status.','.$admin.')';
+$sql = 'INSERT INTO `ajuan`(`peminjam`, `tanggal`, `jenis`, `jumlah`, `tempo`, `mulai`, `penghasilan`, `slip`, `status`, `admin`) VALUES ('.$nip.',"'.$tanggal.'",'.$jenis.','.$jumlah.','.$tempo.',"'.$tanggal.'",'.$penghasilan.',"null",'.$status.','.$admin.')';
 
 try{
 require("../../../config.php");

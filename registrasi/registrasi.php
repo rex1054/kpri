@@ -16,7 +16,6 @@ $alamatInstansi = $_POST['alamat-instansi'];
 $ktpSuami = $_FILES['ktp-suami'];
 $ktpIstri = $_FILES['ktp-istri'];
 $foto3x4 = $_FILES['foto-3x4'];
-$rekening = 0;
 
 //  start up data foto
 $target_dira = "../assets/i/user_ktp_suami/";
@@ -233,18 +232,9 @@ try {
                 </script>
                 <?php
             }
-
-            $sqla = "SELECT nomor FROM `rekening` order by nomor DESC limit 1";
-            $querya = $con->query($sqla);
-            $hasil = $querya->fetch_assoc();
-            if($querya->num_rows == 0) {
-                $rekening = 0;
-            } else {
-                $rekening = $hasil['nomor']+1;
-            }
             
-            $sqlb = "INSERT INTO `rekening` (`nomor`, `pemilik`, `wajib`, `pokok`, `tabungan`, `sukarela`) 
-            VALUES (".$rekening.", ".$nip.", 0, 0, 0, 0,)";
+            $sqlb = "INSERT INTO `rekening` (`pemilik`, `wajib`, `pokok`, `tabungan`, `sukarela`) 
+            VALUES (".$nip.", 0, 0, 0, 0)";
             
             if ($con->query($sqlb) === TRUE) {
                 $overallstatus = 1;

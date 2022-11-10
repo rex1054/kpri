@@ -1,6 +1,5 @@
 <?php
 require_once('../../config.php');
-$jabatan = $_SESSION['jabatan'];
 $filter;
 if(isset($_GET['m'])){
 	$bulan = explode('-',$_GET['m']);
@@ -9,10 +8,9 @@ if(isset($_GET['m'])){
 	$tahun = $_GET['y'];
 	$filter = "WHERE YEAR(peminjaman.`mulai`) = '".$tahun."'";
 } else { $filter = "WHERE YEAR(peminjaman.`mulai`) = '".date("Y")."'"; }
-$sql;
-if($jabatan=='Admin'){
-	$sql = "SELECT peminjaman.`id`, akun.nama, jenis_pinjaman.`jenis`, peminjaman.`jumlah`, peminjaman.`mulai`, status_transaksi.status FROM peminjaman join jenis_pinjaman on peminjaman.jenis = jenis_pinjaman.id join ajuan on peminjaman.id_ajuan = ajuan.id join akun on ajuan.peminjam = akun.nip join status_transaksi on peminjaman.status = status_transaksi.id ".$filter;
-}
+
+$sql = "SELECT peminjaman.`id`, akun.nama, jenis_pinjaman.`jenis`, peminjaman.`jumlah`, peminjaman.`mulai`, status_transaksi.status FROM peminjaman join jenis_pinjaman on peminjaman.jenis = jenis_pinjaman.id join ajuan on peminjaman.id_ajuan = ajuan.id join akun on ajuan.peminjam = akun.nip join status_transaksi on peminjaman.status = status_transaksi.id ".$filter;
+
 $query = $con->query($sql);
 if($query->num_rows == 0) {}
 else {

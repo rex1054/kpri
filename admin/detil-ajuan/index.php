@@ -98,7 +98,7 @@ include('getData.php');
       <div class=tanggal><span  class="teks_tanggal">Tanggal</span><span  class="data_tanggal">: <?php echo $tanggal; ?></span></div>
       <div class=jenis><span  class="teks_jenis">Jenis </span><span  class="data_jenis">: <?php echo $jenis; ?></span></div>
       <div class=jumlah><span  class="teks_jumlah">Jumlah</span><span  class="data_jumlah">: <?php echo $jumlah; ?></span></div>
-      <div class=diangsur><span  class="teks_diangsur">Diangsur</span><span  class="data_diangsur">: <?php echo $diangsur; ?></span></div>
+      <div class=diangsur><span  class="teks_diangsur">Tempo</span><span  class="data_diangsur">: <?php echo $tempo; ?></span></div>
     </div>
     <div class=data_kanan_container>
       <div class=penghasilan><span  class="teks_penghasilan">Penghasilan</span><span  class="data_penghasilan">: <?php echo $penghasilan; ?></span></div>

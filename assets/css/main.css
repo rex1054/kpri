@@ -109,8 +109,8 @@ table tr:last-child td:last-child {
 
 body {
     margin: 0;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
     position: absolute;
     width: 1360px;
     height: 666px;
@@ -120,9 +120,9 @@ body {
     background-color: lightpink;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .kpri-input {
     background-color: rgba(255, 255, 255, 1);

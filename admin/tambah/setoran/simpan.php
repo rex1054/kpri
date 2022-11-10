@@ -1,104 +1,70 @@
 <?php
 session_start();
+require_once('../../../config.php');
 // info dasar
 $admin = $_SESSION['nip'];
 $nip = $_POST['nip'];
 $bulan = $_POST['bulan'];
 $tanggal = date("Y-m-d");
 
-// simpanan
-$spnominal = $_POST['sp-nominal'];
-$spket = $_POST['sp-keterangan'];
-$swnominal = $_POST['sw-nominal'];
-$swket = $_POST['sw-keterangan'];
-$tabnominal = $_POST['tab-nominal'];
-$tabket = $_POST['tab-keterangan'];
-$srnominal = $_POST['sr-nominal'];
-$srket = $_POST['sr-keterangan'];
+$sql;
+$jasa;
+$ke;
+$dari;
+$jumlah;
 
-// usp
-$pokokUSPNom = $_POST['usp-pokok-nominal'];
-$pokokUSPKet = $_POST['usp-pokok-keterangan'];
-$jasaUSPNom = $_POST['usp-jasa-nominal'];
-$jasaUSPKet = $_POST['usp-jasa-keterangan'];
+if(isset($_POST['jenis'])){
+    $jenis = $_POST['jenis'];
 
-// bke
-$pokokBKENom = $_POST['bke-pokok-nominal'];
-$pokokBKEKet = $_POST['bke-pokok-keterangan'];
-$jasaBKENom = $_POST['bke-jasa-nominal'];
-$jasaBKEKet = $_POST['bke-jasa-keterangan'];
+    $gettrxid = 'SELECT id FROM transaksi ORDER BY id DESC LIMIT 1';
+    $datatrx = $con->query($gettrxid)->fetch_assoc();
+    $trxid = $datatrx['id']+1;
 
-// ekstra
-$pokokEkstraNom = $_POST['ekstra-pokok-nominal'];
-$pokokEkstraKet = $_POST['ekstra-pokok-keterangan'];
-$jasaEkstraNom = $_POST['ekstra-jasa-nominal'];
-$jasaEkstraKet = $_POST['ekstra-jasa-keterangan'];
+    $getrek = 'SELECT nomor FROM rekening WHERE pemilik = '.$_POST['nip'];
+    $datarek = $con->query($getrek)->fetch_assoc();
+    $rek = $datarek['nomor'];
 
-// toko
-$pokokTokoNom = $_POST['toko-pokok-nominal'];
-$pokokTokoKet = $_POST['toko-pokok-keterangan'];
-$jasaTokoNom = $_POST['toko-jasa-nominal'];
-$jasaTokoKet = $_POST['toko-jasa-keterangan'];
+    $sqlsetor = 'INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES (
+        '.$_POST['nip'].',
+        '.$_POST['bulan'].',
+        '.$jumlah.',
+        '.$tanggal.',
+        '.$_SESSION['nip'].'
+        )';
 
-// haji
-$pokokHajiNom = $_POST['haji-pokok-nominal'];
-$pokokHajiKet = $_POST['haji-pokok-keterangan'];
-$jasaHajiNom = $_POST['haji-jasa-nominal'];
-$jasaHajiKet = $_POST['haji-jasa-keterangan'];
+    if($jenis < 5){
+        $jumlah = $_POST['pokok'];
+        $sql = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES (
+            '.$rek.',
+            '.$jenis.',
+            '.$jumlah.',
+            '.$trxid.',
+            "'.$_POST['ket'].'"
+        )';
+    } else if($jenis == 5){
+        $ke = $_POST['ke'];
+        $dari = $_POST['dari'];
+        $pokok = $_POST['pokok'];
+        $jasa = $_POST['jasa'];
+        $jumlah = $pokok+$jasa;
+        $ket = $_POST['ket'];
 
-// arisan
-$arisanNominal = $_POST['arisan-nominal'];
-$arisanKet = $_POST['arisan-keterangan'];
+        $getpinjam = 'SELECT peminjaman.id FROM ajuan
+        JOIN peminjaman ON peminjaman.id_ajuan = ajuan.id
+        WHERE ajuan.peminjam = '.$_POST['nip'].' AND ajuan.status = 3';
 
-// seragam
-$seragamNominal = $_POST['seragam-nominal'];
-$seragamKet = $_POST['seragam-keterangan'];
-
-// jumlah
-$jumlah = $_POST['jumlah-nominal'];
-
-try{
-require("../../../config.php");
-
-// dapatkan rekening
-$sqlgetrekening = "SELECT * FROM rekening WHERE pemilik = ".$nip;
-$queryrekening = $con->query($sqlgetrekening)->fetch_assoc();
-$rekening = $queryrekening['nomor'];
-
-// dapatkan id transaksi terakhir
-$sqlidtransaksi = "SELECT id FROM `transaksi` ORDER BY id DESC LIMIT 1";
-$latestid = $con->query($sqlidtransaksi)->fetch_assoc();
-$idtransaksi = $latestid + 1;
-
-// transaksi
-$sqltransaksi = 'INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES ('.$nip.','.$bulan.','.$jumlah.',"'.$tanggal.'",'.$admin.')';
-$con->query($sqltransaksi);
-
-// sp(3)
-$sqlsp = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 3, '.$spnominal.', '.$idtransaksi.',"'.$spket.'")';
-$con->query($sqlsp);
-
-// sw(2)
-$sqlsw = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 2, '.$swnominal.', '.$idtransaksi.',"'.$swket.'")';
-$con->query($sqlsw);
-
-// sr(1)
-$sqlsr = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 1, '.$srnominal.', '.$idtransaksi.',"'.$srket.'")';
-$con->query($sqlsr);
-
-// tab(4)
-$sqltab = 'INSERT INTO simpanan(rekening, jenis, jumlah, id_transaksi, keterangan) VALUES ('.$rekening.', 4, '.$tabnominal.', '.$idtransaksi.',"'.$tabket.'")';
-$con->query($sqltab);
-
-// bke
-$sqlbke = 'INSERT INTO bke(id_transaksi, id_peminjaman, ke, pokok, jasa, keterangan) VALUES ('.$idtransaksi.','.$nip.',[value-4],[value-5],[value-6],[value-7])';
-$con->query($sqlbke);
-
-
-
-} catch (Error) {
-
-} finally {
-
+        $sql = 'INSERT INTO setor_pinjam(
+            id_transaksi, 
+            id_peminjaman, 
+            jenis, 
+            ke, 
+            dari, 
+            pokok, 
+            jasa, 
+            keterangan) VALUES (
+                '.$trxid.',
+                
+            )';
+    }
 }
 ?>

@@ -96,12 +96,12 @@ include('getData.php');
       <div class=jenis><span  class="teks_jenis">Jenis </span><span  class="data_kelamin">: <?php echo $jenis; ?></span></div>
       <div class=jumlah><span  class="teks_jumlah">Jumlah</span><span  class="data_tempat_lahir">: <?php echo $jumlah; ?></span></div>
       <div class=jasa><span  class="teks_jasa">Jasa</span><span  class="data_tanggal_lahir">: <?php echo $jasa; ?></span></div>
-      <div class=diangsur><span  class="teks_diangsur">Diangsur</span><span  class="data_alamat_rumah">: <?php echo $diangsur; ?></span></div>
+      <div class=diangsur><span  class="teks_diangsur">Tempo</span><span  class="data_alamat_rumah">: <?php echo $tempo; ?></span></div>
       <div class=angsuran><span  class="teks_angsuran">Angsuran</span><span  class="data_pos">: <?php echo $angsuran; ?></span></div>
     </div>
     <div class=data_kanan_container>
       <div class=potongan><span  class="teks_potongan">Potongan</span><span  class="data_hp">: <?php echo $potongan; ?></span></div>
-      <div class=asuransi><span  class="teks_asuransi">Asuransi</span><span  class="data_instansi">: <?php echo $angsuran; ?></span></div>
+      <div class=asuransi><span  class="teks_asuransi">Asuransi</span><span  class="data_instansi">: <?php echo $asuransi; ?></span></div>
       <div class=diterima><span  class="teks_diterima">Diterima</span><span  class="data_alamat_instansi">: <?php echo $diterima; ?></span></div>
       <div class=mulai_mengangsur><span  class="teks_mulai_mengangsur">Mulai mengangsur</span><span  class="data_ktp_suami">: <?php echo $mulai; ?></span></div>
       <div class=pimpinan><span  class="teks_pimpinan">Pimpinan</span><span  class="data_ktp_istri">: <a href="<?php echo $siteurl.'admin/detil-pengguna/?nip='.$pimpinan; ?>"><?php echo $pimpinan; ?></a></span></div>

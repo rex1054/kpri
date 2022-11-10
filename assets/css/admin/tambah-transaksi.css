@@ -1,0 +1,440 @@
+.melihat_detail_transaksi {
+    background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+    width: 1360px;
+    height: 666px;
+    position: absolute;
+}
+.main_container_810_36 { 
+	width:934px;
+	height:492px;
+	position:absolute;
+	left:293px;
+	top:161px;
+}
+.container_background_810_37 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
+	width:934px;
+	height:492px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.form_container_810_38 { 
+	width:851px;
+	height:452px;
+	position:absolute;
+	left:45px;
+	top:15px;
+}
+.tambah_setoran_810_39 { 
+	color:rgba(0, 0, 0, 1);
+	width:223px;
+	height:29px;
+	position:absolute;
+	left:311px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:25px;
+	letter-spacing:0;
+}
+.nip_810_40 { 
+	width:771px;
+	height:53px;
+	position:absolute;
+	left:0px;
+	top:51px;
+}
+.teks_nip_810_41 { 
+	color:rgba(0, 0, 0, 1);
+	width:33px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.teks_total_810_78 { 
+	color:rgba(0, 0, 0, 1);
+	width:167px;
+	height:23px;
+	position:absolute;
+	left:604px;
+	top: 200px;;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.teks_nominal_813_92 { 
+	color:rgba(0, 0, 0, 1);
+	width:168px;
+	height:23px;
+	position:absolute;
+	left:604px;
+	top: 226px;;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_nip_810_42 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.nama_810_45 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:96px;
+}
+.teks_nama_810_46 { 
+	color:rgba(0, 0, 0, 1);
+	width:54px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_nama_810_47 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.hp_810_48 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:141px;
+}
+.teks_hp_810_49 { 
+	color:rgba(0, 0, 0, 1);
+	width:92px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_hp_810_50 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.instansi_810_51 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:186px;
+}
+.teks_instansi_810_52 { 
+	color:rgba(0, 0, 0, 1);
+	width:71px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_instansi_810_53 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.jenis_810_54 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:231px;
+}
+.input_jenis_810_75 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.teks_jenis_810_55 { 
+	color:rgba(0, 0, 0, 1);
+	width:122px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.angsuran_810_60 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:276px;
+}
+.teks_angsuran_810_61 { 
+	color:rgba(0, 0, 0, 1);
+	width:167px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_ke_810_62 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:118px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.input_dari_810_76 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:118px;
+	height:36px;
+	position:absolute;
+	left:426px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.teks_slash_810_77 { 
+	color:rgba(0, 0, 0, 1);
+	width:9px;
+	height:23px;
+	position:absolute;
+	left:390px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.pokok_810_63 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:321px;
+}
+.teks_jasa_810_64 { 
+	color:rgba(0, 0, 0, 1);
+	width:56px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_pokok_810_65 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.jasa_810_66 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:366px;
+}
+.teks_jasa_810_67 { 
+	color:rgba(0, 0, 0, 1);
+	width:44px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_jasa_810_68 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.keterangan_810_69 { 
+	width:544px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:411px;
+}
+.teks_keterangan_810_70 { 
+	color:rgba(0, 0, 0, 1);
+	width:102px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:7px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.input_keterangan_810_71 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:243px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tombol_810_72 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:682px;
+	top:418px;
+}
+.tombol_tambah_810_73 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:34px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.teks_tambah_810_74 { 
+	color:rgba(0, 0, 0, 1);
+	width:83px;
+	height:23px;
+	position:absolute;
+	left:43px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.bulan {
+    width: 264px;
+    height: 60px;
+    position: absolute;
+    left: 602px;
+    top: 57px;
+}
+.teks_bulan {
+    color: rgba(0, 0, 0, 1);
+    width: 179px;
+    height: 23px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: Roboto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+.ajuan-input {
+	position: absolute;
+    left: 0;
+    top: 25px;
+    height: 25px;
+    border-radius: 5px;
+}

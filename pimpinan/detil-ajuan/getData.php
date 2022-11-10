@@ -9,12 +9,12 @@ $instansi;
 $tanggal;
 $jenis;
 $jumlah;
-$diangsur;
+$tempo;
 $penghasilan;
 $status;
 $admin;
 
-$sql = "SELECT ajuan.id, ajuan.peminjam, akun.nama, instansi.instansi, ajuan.tanggal, jenis_pinjaman.jenis, ajuan.jumlah, ajuan.diangsur, ajuan.penghasilan, status_transaksi.status, ajuan.admin FROM ajuan join akun on ajuan.peminjam = akun.nip join instansi on akun.instansi = instansi.id join jenis_pinjaman on ajuan.jenis = jenis_pinjaman.id join status_transaksi on ajuan.status = status_transaksi.id WHERE ajuan.id =  ".$id_ajuan;
+$sql = "SELECT ajuan.id, ajuan.peminjam, akun.nama, instansi.instansi, ajuan.tanggal, jenis_pinjaman.jenis, ajuan.jumlah, ajuan.tempo, ajuan.penghasilan, status_transaksi.status, ajuan.admin FROM ajuan join akun on ajuan.peminjam = akun.nip join instansi on akun.instansi = instansi.id join jenis_pinjaman on ajuan.jenis = jenis_pinjaman.id join status_transaksi on ajuan.status = status_transaksi.id WHERE ajuan.id =  ".$id_ajuan;
 $sqladmin = 'SELECT akun.nama FROM ajuan join akun on ajuan.admin = akun.nip WHERE ajuan.id = '.$id_ajuan;
 
 $query = $con->query($sql);
@@ -29,7 +29,7 @@ $instansi = $data['instansi'];
 $tanggal = $data['tanggal'];
 $jenis = $data['jenis'];
 $jumlah = $data['jumlah'];
-$diangsur = $data['diangsur'];
+$tempo = $data['tempo'];
 $penghasilan = $data['penghasilan'];
 $status = $data['status'];
 $admin = $admins['nama'];

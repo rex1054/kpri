@@ -1,9 +1,13 @@
 <?php
-$host = "127.0.0.1";
-$username = "root";
-$pass = "";
-$db = "kpri";
-$siteurl = "http://127.0.0.1:80/kpri/";
+// $host = "127.0.0.1";
+// $username = "root";
+// $pass = "";
+// $db = "wiyata";
+$host = "ini-undangan.online";
+$username = "iniunda1_rexyst";
+$pass = "tjVfEZXLm3";
+$db = "iniunda1_wp203";
+$siteurl = "http://127.0.0.1/kpri/";
 $author = "RAMA";
 
 $con = mysqli_connect($host, $username, $pass, $db);
