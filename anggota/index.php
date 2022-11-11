@@ -117,13 +117,6 @@ $nick = $fullName[0];
                     </tbody>
                 </table>
             </div>
-            <div class=tombol_container>
-                <div class=tombol_tambah_simpanan>
-                    <button class="tombol_tambah_simpanan_background" onclick="add('setoran')">
-                        <span class="teks_tambah_simpanan">TAMBAH SETORAN</span>
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 </body>

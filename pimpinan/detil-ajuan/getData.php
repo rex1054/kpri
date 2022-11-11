@@ -32,7 +32,12 @@ $jumlah = $data['jumlah'];
 $tempo = $data['tempo'];
 $penghasilan = $data['penghasilan'];
 $status = $data['status'];
-$admin = $admins['nama'];
+$admin;
+if(isset($admins['nama'])){
+    $admin = $admins['nama'];
+} else {
+    $admin = '';
+}
 
 
 ?>

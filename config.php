@@ -1,13 +1,18 @@
 <?php
-// $host = "127.0.0.1";
-// $username = "root";
-// $pass = "";
-// $db = "wiyata";
-$host = "ini-undangan.online";
+$siteurl;
+$host;
+$domain = $_SERVER['SERVER_NAME'];
+if($domain == '127.0.0.1'){
+    $siteurl = 'http://'.$domain.'/kpri'.'/';
+    $host = "ini-undangan.online";
+} else {
+    $siteurl = 'https://'.$domain.'/';
+    $host = "localhost";
+}
+
 $username = "iniunda1_rexyst";
 $pass = "tjVfEZXLm3";
 $db = "iniunda1_wp203";
-$siteurl = "http://127.0.0.1/kpri/";
 $author = "RAMA";
 
 $con = mysqli_connect($host, $username, $pass, $db);

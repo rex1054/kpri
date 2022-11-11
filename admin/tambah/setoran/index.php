@@ -85,7 +85,7 @@ $nick = $fullName[0];
 <div class=form_container_810_38>
     <span  class="tambah_setoran_810_39">TAMBAH SETORAN</span>
 <form action="simpan.php" method="POST" enctype="multipart/form-data">
-<div class=bulan><span  class="teks_bulan">Setoran bulan:</span>
+<div class=bulan style="z-index: 999;"><span  class="teks_bulan">Setoran bulan:</span>
 <input class="input-bulan ajuan-input" id="bulan" name="bulan" type="month"></div>
 <span  class="teks_tanggal">Tanggal Transaksi:</span>
 <span  class="value_tanggal"><?php echo date("d-m-Y"); ?></span>
@@ -123,16 +123,16 @@ $nick = $fullName[0];
 <span  class="teks_slash_810_77">/</span>
 </div>
 <div class=pokok_810_63><span  class="teks_jasa_810_64">Pokok</span>
-<input class="input_pokok_810_65 kpri-input" name="pokok" id="pokok" type="number" onkeyup="jumlah()">
+<input class="input_pokok_810_65 kpri-input" name="pokok" id="pokok" type="number" onkeyup="jumlah()" onchange="jumlah()">
 </div>
 <div class=jasa_810_66><span  class="teks_jasa_810_67">Jasa</span>
-<input class="input_jasa_810_68 kpri-input" name="jasa" id="jasa" type="number" onkeyup="jumlah()">
+<input class="input_jasa_810_68 kpri-input" name="jasa" id="jasa" type="number" onkeyup="jumlah()" onchange="jumlah()">
 </div>
 <div class=keterangan_810_69><span  class="teks_keterangan_810_70">Keterangan</span>
 <input class="input_keterangan_810_71 kpri-input" name="ket" id="ket" type="text">
 </div>
 <div class=tombol_810_72>
-<div class="tombol_tambah_810_73"></div><span  class="teks_tambah_810_74">TAMBAH</span>
+<button type="submit" class="tombol_tambah_810_73 tombol"><span  class="teks_tambah_810_74">TAMBAH</span></button>
 </div>
 </form>
 </div>
@@ -147,6 +147,7 @@ function ceksetoran(a){
     var ke = document.getElementById('ke');
     var dari = document.getElementById('dari');
     var jasa = document.getElementById('jasa');
+    var id = document.getElementById('nip').value;
     if(a < 5 || a > 9){
         ke.setAttribute('disabled', '');
         dari.setAttribute('disabled', '');
@@ -155,6 +156,21 @@ function ceksetoran(a){
         ke.removeAttribute('disabled')
         dari.removeAttribute('disabled')
         jasa.removeAttribute('disabled')
+
+        $.ajax({
+        type: 'post',
+        url: 'getpinjaman.php',
+        data: {
+            get_option: id
+        },
+        dataType: 'json',
+        success: function(data){
+          $('#ke').val(data[0]);
+          $('#dari').val(data[1]);
+          $('#pokok').val(data[2]);
+          $('#jasa').val(data[3]);
+    }
+    });
     }
     
 }
