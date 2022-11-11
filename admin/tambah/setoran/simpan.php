@@ -44,6 +44,12 @@ if(isset($_POST['jenis'])){
                 '.$trxid.',
                 "'.$_POST['ket'].'"
                 )';
+
+                if($con->query($sqlsetor)){
+                    if($con->query($sql)){
+                        
+                    }
+                }
             } else if($jenis == 5){
                 $ke = $_POST['ke'];
                 $dari = $_POST['dari'];

@@ -100,11 +100,11 @@ $nick = $fullName[0];
       </div>
       <div class=jenis>
         <span  class="teks_jenis">Jenis pinjaman</span>
-        <input class="bke-radio" type="radio" name="jenis" value="1" checked><span class=bke>BKE</span>
-        <input class="haji-radio" type="radio" name="jenis" value="2"><span class=haji>Haji</span>
+        <input class="bke-radio" type="radio" name="jenis" value="1" checked><span class=bke>USP</span>
+        <input class="haji-radio" type="radio" name="jenis" value="2"><span class=haji>BKE</span>
         <input class="ekstra-radio" type="radio" name="jenis" value="3"><span  class="ekstra">Ekstra</span>
         <input class="toko-radio" type="radio" name="jenis" value="4"><span  class="toko">Toko</span>
-        <input class="usp-radio" type="radio" name="jenis" value="5"><span  class="usp">USP</span>
+        <input class="usp-radio" type="radio" name="jenis" value="5"><span  class="usp">Haji</span>
     </div>
       <div class=jumlah><span  class="teks_jumlah">Jumlah pinjaman</span>
         <input class="input_jumlah" type="number" name="jumlah" required>

@@ -16,6 +16,7 @@ $totaljasa;
 $totalasuransi;
 $total;
 $angsuran;
+$pokok;
 $diterima;
 if($acc == 3){
     $sql = 'UPDATE ajuan SET mulai = "'.date('Y-m-d').'", status='.$acc.' WHERE id = '.$id;
@@ -38,6 +39,7 @@ if($con->query($sql)){
     $totalasuransi = $asuransi*$tempo;
     $total = $data['jumlah']+$totalasuransi+$totaljasa+$totalpotongan;
     $angsuran = $total/$tempo;
+    $pokok = $angsuran - $jasa;
     $diterima = $data['jumlah']-$angsuran;
     
     $sqlInsert = 'INSERT INTO peminjaman(
@@ -99,7 +101,7 @@ if($con->query($sql)){
                                 '.$jenispinjam.',
                                 1,
                                 '.$tempo.',
-                                '.$angsuran.',
+                                '.$pokok.',
                                 '.$jasa.',
                                 "Angsuran pertama"
                                 )';

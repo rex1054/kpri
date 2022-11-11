@@ -550,12 +550,12 @@ include('getData.php');
 </div>
 <div class=arisan_nominal>
 <div class="cell_arisan_nominal">
-<input disabled class="input-data odd" id="arsisan-nominal" type="text" name="arsisan-nominal" value="<?php echo 'Rp. '.$arisanNominal; ?>">
+<input disabled class="input-data odd" id="arsisan-nominal" type="text" name="arsisan-nominal" value="<?php echo 'Rp. '; ?>">
 </div>
 </div>
 <div class=arisan_keterangan>
 <div class="cell_arisan_keterangan">
-<input disabled class="input-data odd" id="arsisan-keterangan" type="text" name="arsisan-keterangan" value="<?php echo $arisanBulan; ?>">
+<input disabled class="input-data odd" id="arsisan-keterangan" type="text" name="arsisan-keterangan" value="<?php echo ''; ?>">
 </div>
 </div>
 </div>
@@ -578,7 +578,7 @@ include('getData.php');
 </div>
 <div class=seragam_nominal>
 <div class="cell_seragam_nominal">
-<input disabled class="input-data even" id="seragam-nominal" type="text" name="seragam-nominal" value="<?php echo 'Rp. '.$seragamNominal; ?>">
+<input disabled class="input-data even" id="seragam-nominal" type="text" name="seragam-nominal" value="<?php echo 'Rp. '; ?>">
 </div>
 </div>
 <div class=seragam_keterangan>
@@ -600,7 +600,7 @@ $total;
 </div>
 <div class=jumlah_nominal>
 <div class="cell_jumlah_nominal">
-<input disabled class="input-data odd" id="jumlah-nominal" type="text" name="jumlah-nominal" value="<?php echo 'Rp. '.$totalNominal; ?>">
+<input disabled class="input-data odd" id="jumlah-nominal" type="text" name="jumlah-nominal" value="<?php echo 'Rp. '.$jumlahTotal; ?>">
 </div>
 </div>
 <div class=jumlah_keterangan>
