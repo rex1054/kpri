@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("../config.php");
 if(isset($_POST['username']) && isset($_POST['sandi'])) {
   $nip = $_POST['username'];
@@ -65,7 +66,6 @@ if($query->num_rows == 0) {
     </script>
     <?php
   } else {
-    session_start();
     $_SESSION['nama'] = $hasil['nama'];
     $_SESSION['nip'] = $hasil['nip'];
     $_SESSION['jenis-kelamin'] = $hasil['kelamin'];
@@ -83,13 +83,19 @@ if($query->num_rows == 0) {
     
     switch($hasil['jabatan']){
       case 'Admin':
-        header('location:'.$siteurl.'admin/');
+        ?>
+        <script>window.open('<?php echo $siteurl.'admin/'; ?>', '_SELF');</script>
+        <?php
         break;
         case 'Anggota':
-          header('location:'.$siteurl.'anggota/');
+          ?>
+        <script>window.open('<?php echo $siteurl.'anggota'; ?>', '_SELF');</script>
+          <?php
           break;
           case 'Pimpinan':
-            header('location:'.$siteurl.'pimpinan/');
+            ?>
+        <script>window.open('<?php echo $siteurl.'pimpinan'; ?>', '_SELF');</script>
+            <?php
             break;
             default:
             

@@ -8,7 +8,7 @@ if(isset($_GET['a'])){
     
     // ubah foto ktp suami
     if($act == 1){
-        $target_dir = $_SERVER['DOCUMENT_ROOT']."/kpri/assets/i/user_ktp_suami/";
+        $target_dir = "../../assets/i/user_ktp_suami/";
         $target_file = $target_dir . $nip . "_KTP_SUAMI.jpg";
         $ftKTPSuami = $nip . "_KTP_SUAMI.jpg";
         $uploadOk = 1;
@@ -64,7 +64,7 @@ if(isset($_GET['a'])){
     
     // ubah foto KTP istri
     else if($act == 2){
-        $target_dir = $_SERVER['DOCUMENT_ROOT']."/kpri/assets/i/user_ktp_istri/";
+        $target_dir = "../../assets/i/user_ktp_istri/";
         $target_file = $target_dir . $nip . "_KTP_ISTRI.jpg";
         $ftKTPIstri = $nip . "_KTP_ISTRI.jpg";
         $uploadOk = 1;
@@ -120,7 +120,7 @@ if(isset($_GET['a'])){
     
     // ubah foto 3x4
     else if($act == 3) {
-        $target_dir = $_SERVER['DOCUMENT_ROOT']."/kpri/assets/i/user_3x4/";
+        $target_dir = "../../assets/i/user_3x4/";
         $target_file = $target_dir . $nip . "_3x4.jpg";
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

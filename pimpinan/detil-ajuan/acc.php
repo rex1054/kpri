@@ -37,7 +37,7 @@ if($con->query($sql)){
     $totalpotongan = $potongan*$tempo;
     $totaljasa = $jasa*$tempo;
     $totalasuransi = $asuransi*$tempo;
-    $total = $data['jumlah']+$totalasuransi+$totaljasa+$totalpotongan;
+    $total = $data['jumlah']-$totalasuransi-$totaljasa+$totalpotongan;
     $angsuran = $total/$tempo;
     $pokok = $angsuran - $jasa;
     $diterima = $data['jumlah']-$angsuran;

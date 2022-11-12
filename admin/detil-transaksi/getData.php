@@ -12,8 +12,10 @@ setlocale(LC_ALL, 'ID');
 $akun = $con->query($getAkunQuery)->fetch_assoc();
 $tgl = $con->query($getTransaksiQuery)->fetch_assoc();
 $xTgl = date_create($tgl['bulan']);
-$yTgl = date_format($xTgl, 'Y-m-d h:i:sA');
-$bulan = strftime('%B', strtotime($yTgl));
+// $yTgl = date_format($xTgl, 'Y-m-d h:i:sA');
+$bulan = date_format($xTgl, 'F Y');
+// $bulan = strftime('%B %G', strtotime($yTgl));
+// $bulan = $tgl['bulan'];
 
 $jumlahSimpanan;
 $jenisSimpanan;

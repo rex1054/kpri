@@ -1,6 +1,6 @@
 <?php
-include('../../config.php');
 session_start();
+include('../../config.php');
 if(isset($_SESSION['nip'])){} else {header('location:'.$siteurl); }
 $fullName = explode(" ", $_SESSION['nama']);
 $nick = $fullName[0];
@@ -80,14 +80,6 @@ Telepon: (0336) 321386</span>
         <span  class="teks_selamat logout"><a href="<?php echo $siteurl; ?>" target="_SELF">Logout</a></span>
     </div>
     <span  class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
-  </div>
-  <div class=search_bar_container>
-    <div class=tambah_pengguna>
-      <button class="tombol_tambah_background" onclick="registrasi()"><span  class="teks_tombol_tambah">MENAMBAH DATA PENGGUNA</span></button>
-    </div>
-    <div class=cari>
-      <input class="kolom_cari cari" type="text" name="cari-nama" onkeyup="filt('tabel-pegawai', 'cari-nama', 1)" id="cari-nama" placeholder="Cari Nama">
-    </div>
   </div>
   <div class=main_container>
     <div class="container_background">

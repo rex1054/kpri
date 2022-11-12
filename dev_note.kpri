@@ -5,3 +5,16 @@ error[] = [
 ongoing[] = [
     'tambah transaksi'
 ];
+
+fixed['admin'] = [
+    'profil admin',
+    'profil pengguna',
+    'pegawai',
+    'anggota',
+    'ajuan',
+    'setoran pinjaman'
+]
+
+fixed['pimpinan'] = [
+    'acc'
+]

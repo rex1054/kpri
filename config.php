@@ -4,16 +4,17 @@ $host;
 $domain = $_SERVER['SERVER_NAME'];
 if($domain == '127.0.0.1'){
     $siteurl = 'http://'.$domain.'/kpri'.'/';
-    $host = "ini-undangan.online";
+    $host = "soj.my.id";
 } else {
     $siteurl = 'https://'.$domain.'/';
     $host = "localhost";
 }
 
-$username = "iniunda1_rexyst";
-$pass = "tjVfEZXLm3";
-$db = "iniunda1_wp203";
+$username = "sojy3165_kpri";
+$pass = "qIwp7B]rq7^m";
+$db = "sojy3165_kpri";
 $author = "RAMA";
+// Vomi_3FCRXYt ftp
 
 $con = mysqli_connect($host, $username, $pass, $db);
 

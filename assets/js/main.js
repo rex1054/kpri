@@ -47,27 +47,6 @@ spanc.onclick = function() {
 }
 // end modal 3x4
 
-window.onclick = function(event) {
-  if (event.target == modala) {
-    modala.style.display = "none";
-  } else if (event.target == modalb) {
-    modalb.style.display = "none";
-  } else if (event.target == modalc) {
-    modalc.style.display = "none";
-  } else if (event.target == modalz) {
-    modalz.style.display = "none";
-  } else if (event.target == modalzz) {
-    modalzz.style.display = "none";
-  } else if (event.target == modalzzz) {
-    modalzzz.style.display = "none";
-  } else if (event.target == modalzzzz) {
-    modalzzzz.style.display = "none";
-  } else if (event.target == moda) {
-    moda.style.display = "none";
-  }
-}
-// end modal listener
-
 function tampilsandi(){
   var a = document.getElementById("tampilkan-sandi");
   var b = document.getElementById("kpri-kata-sandi");
@@ -152,25 +131,12 @@ function masuk(){
   window.open(siteurl, '_SELF');
 }
 
-function ubahFotoProfil(){
-  var modalz = document.getElementById("modal-ubah-foto-profil");
-  modalz.style.display = "block";
-}
-
 var moda = document.getElementById("modal-ubah-sandi");
 
 var spanmoda = document.getElementById("closesandi");
 
 spanmoda.onclick = function() {
   moda.style.display = "none";
-}
-
-var modalz = document.getElementById("modal-ubah-foto-profil");
-
-var spanz = document.getElementById("closez");
-
-spanz.onclick = function() {
-  modalz.style.display = "none";
 }
 
 function ubahFotoKTPSuami(){
@@ -226,4 +192,24 @@ function resetsandi(){
 
 function hapus(who, what, id) {
   window.open(siteurl + 'hapus/' + what + '/?u=' + who + '&id=' + id, '_SELF');
+}
+
+window.onclick = function(event) {
+  if (event.target == modala) {
+    modala.style.display = "none";
+  } else if (event.target == modalb) {
+    modalb.style.display = "none";
+  } else if (event.target == modalc) {
+    modalc.style.display = "none";
+  } else if (event.target == modalz) {
+    modalz.style.display = "none";
+  } else if (event.target == modalzz) {
+    modalzz.style.display = "none";
+  } else if (event.target == modalzzz) {
+    modalzzz.style.display = "none";
+  } else if (event.target == modalzzzz) {
+    modalzzzz.style.display = "none";
+  } else if (event.target == moda) {
+    moda.style.display = "none";
+  }
 }

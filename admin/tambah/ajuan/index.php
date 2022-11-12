@@ -1,6 +1,6 @@
 <?php
-include('../../../config.php');
 session_start();
+include('../../../config.php');
 if(isset($_SESSION['nip'])){} else {header('location:'.$siteurl); }
 $fullName = explode(" ", $_SESSION['nama']);
 $nick = $fullName[0];
