@@ -1,7 +1,7 @@
 .melihat_detail_transaksi {
     background-color: rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
     width: 1360px;
-    height: 1215px;
+    height: 1473px;
     position: absolute;
 }
 
@@ -16,7 +16,7 @@
 .container_background {
     background-color: rgba(229.00000154972076, 229.00000154972076, 229.00000154972076, 1);
     width: 1131px;
-    height: 1029px;
+    height: 1278px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -3818,12 +3818,75 @@
     letter-spacing: 0;
 }
 
+.penyetor { 
+	width:314px;
+	height:127px;
+	position:absolute;
+	left:126px;
+	top:1003px;
+}
+.teks_penyetor { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.teks_nama_penyetor { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:104px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.penerima { 
+	width:314px;
+	height:127px;
+	position:absolute;
+	left:683px;
+	top:1003px;
+}
+.teks_penerima { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.teks_nama_penerima { 
+	color:rgba(0, 0, 0, 1);
+	width:314px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:104px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+
 .tombol {
     width: 169px;
     height: 34px;
     position: absolute;
     left: 723px;
-    top: 976px;
+    top: 1213px;
 }
 
 .tombol_simpan {

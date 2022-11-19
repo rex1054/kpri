@@ -12,7 +12,8 @@ fixed['admin'] = [
     'pegawai',
     'anggota',
     'ajuan',
-    'setoran pinjaman'
+    'setoran pinjaman',
+    'detil setoran'
 ]
 
 fixed['pimpinan'] = [

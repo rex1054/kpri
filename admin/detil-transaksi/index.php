@@ -610,6 +610,14 @@ $total;
 </div>
 </div>
 </div>
+<div class=penyetor>
+<span  class="teks_penyetor">Penyetor,</span>
+<span  class="teks_nama_penyetor"><?php echo $penyetor; ?></span>
+</div>
+<div class=penerima>
+<span  class="teks_penerima">Penerima/Karyawan</span>
+<span  class="teks_nama_penerima"><?php echo $admin; ?></span>
+</div>
 <div class=tombol >
 <button class="tombol_simpan" onclick="menu('beranda')"><span  class="teks_simpan">Kembali</span></button>
 <button class="tombol_cetak" onclick="window.print()"><span  class="teks_cetak">Cetak</span></button>

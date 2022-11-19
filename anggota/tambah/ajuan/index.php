@@ -1,9 +1,22 @@
 <?php
-include('../../../config.php');
 session_start();
+include('../../../config.php');
 if(isset($_SESSION['nip'])){} else {header('location:'.$siteurl); }
 $fullName = explode(" ", $_SESSION['nama']);
 $nick = $fullName[0];
+$nama;
+$hp;
+$instansi;
+
+$getakun = "SELECT akun.nama, akun.hp, instansi.instansi FROM akun join instansi on akun.instansi = instansi.id WHERE akun.nip = ".$_SESSION['nip'];
+        $getData = $con->query($getakun);
+        if($getData->num_rows > 0) {
+          $data = $getData->fetch_assoc();
+          $nama = $data['nama'];
+          $hp = $data['hp'];
+          $instansi = $data['instansi'];
+        }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,13 +98,16 @@ $nick = $fullName[0];
         <input class="input_nip" id="nip" type="number" name="nip" value="<?php echo $_SESSION['nip']; ?>" disabled></input>
       </div>
       <div class=nama><span  class="teks_nama">Nama</span>
-        <input class="input_nama" id="nama" name="nama" type="text" disabled>
+        <input class="input_nama" type="text" value="<?php echo $nama; ?>" disabled>
+        <input class="input_nama" id="nama" name="nama" type="text" value="<?php echo $nama; ?>" hidden>
       </div>
       <div class=hp><span  class="teks_hp">Nomer Hp</span>
-        <input class="input_hp" id="hp" name="hp" type="number" disabled>
+        <input class="input_hp" value="<?php echo $hp; ?>" disabled>
+        <input class="input_hp" id="hp" name="hp" type="number" value="<?php echo $hp; ?>" hidden>
       </div>
       <div class=instansi><span  class="teks_instansi">Instansi</span>
-        <input class="input_instansi" id="instansi" name="instansi" type="text" disabled>
+        <input class="input_instansi" type="text" value="<?php echo $instansi; ?>" disabled>
+        <input class="input_instansi" id="instansi" name="instansi" type="text" value="<?php echo $instansi; ?>" hidden>
       </div>
       <div class=jenis>
         <span  class="teks_jenis">Jenis pinjaman</span>
@@ -109,9 +125,6 @@ $nick = $fullName[0];
       </div>
       <div class=penghasilan><span  class="teks_penghasilan">Penghasilan bersih</span>
         <input class="input_penghasilan" type="number" name="penghasilan" required>
-      </div>
-      <div class=diangsur><span  class="teks_diangsur">Diangsur</span>
-        <input class="input_diangsur" type="number" value="1" disabled>
       </div>
       <div class=tombols>
         <button class="tombol_simpan tombol"><span  class="teks_simpan">SIMPAN</span></button>

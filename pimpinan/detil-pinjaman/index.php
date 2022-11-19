@@ -42,44 +42,49 @@ include('getData.php');
 <div class="garis_header"></div>
 </div>
 <div class=side_menu>
-    <div class="side_menu_background"></div>
-    <div class=beranda_menu>
-      <div class="menu menu_beranda">
-          <span  class="teks_beranda" onclick="menu('beranda')">Beranda</span>
-        </div>
-    </div>
-    <div class=pegawai_menu>
-      <div class="menu menu_pegawai" onclick="menu('rekening')">
-      <span  class="teks_pegawai">Rekening</span>
-      </div>
-    </div>
-    <div class=anggota_menu>
-      <div class="menu menu_daftar_nasabah aktif" onclick="menu('pinjaman')">
-      <span  class="teks_anggota">Pinjaman</span>
-      </div>
-    </div>
-    <div class=pinjaman_menu>
-      <div class="menu menu_pinjaman" onclick="menu('simpanan')">
-      <span  class="teks_pinjaman">Simpanan</span>
-      </div>
-    </div>
-    <div class=simpanan_menu>
-      <div class="menu menu_simpanan" onclick="menu('profil')">
-      <span  class="teks_simpanan">Profil</span>
-      </div>
-    </div>
-    <div class=main_menu>
-      <div class="main_menu_background">
-      <span  class="teks_main_menu">Menu</span>
-    </div>
-    </div>
-    <div class=user_container>
-        <span  class="teks_selamat">Selamat datang</span>
-        <span  class="teks_user"><?php echo $nick; ?></span>
-        <span  class="teks_selamat logout"><a href="<?php echo $siteurl; ?>" target="_SELF">Logout</a></span>
-    </div>
-    <span  class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
-  </div>
+<div class="side_menu_background"></div>
+<div class=beranda_menu>
+<div class="menu menu_beranda">
+<span  class="menu-teks teks_beranda" onclick="menu('beranda')">Beranda</span>
+</div>
+</div>
+<div class=pegawai_menu>
+<div class="menu menu_pegawai" onclick="menu('pegawai')">
+<span  class="menu-teks teks_pegawai">Pegawai</span>
+</div>
+</div>
+<div class=anggota_menu>
+<div class="menu menu_daftar_nasabah" onclick="menu('anggota')">
+<span  class="menu-teks teks_anggota">Anggota</span>
+</div>
+</div>
+<div class=pinjaman_menu>
+<div class="menu menu_pinjaman aktif" onclick="menu('pinjaman')">
+<span  class="menu-teks teks_pinjaman">Pinjaman</span>
+</div>
+</div>
+<div class=simpanan_menu>
+<div class="menu menu_simpanan" onclick="menu('simpanan')">
+<span  class="menu-teks teks_simpanan">Simpanan</span>
+</div>
+</div>
+<div class=profil_menu>
+<div class="menu menu_profil" onclick="menu('profil')">
+<span  class="menu-teks teks_profil">Profil</span>
+</div>
+</div>
+<div class=main_menu>
+<div class="main_menu_background">
+<span  class="menu-teks teks_main_menu">Menu</span>
+</div>
+</div>
+<div class=user_container>
+<span  class="teks_selamat">Selamat datang</span>
+<span  class="teks_user"><?php echo $nick; ?></span>
+<span  class="teks_selamat logout"><a href="<?php echo $siteurl; ?>" target="_SELF">Logout</a></span>
+</div>
+<span  class="teks_menu">©KPRI-Wiyata Usaha 2021</span>
+</div>
 
 <div class=main_container>
   <div class="container_background"></div>
@@ -91,12 +96,12 @@ include('getData.php');
       <div class=jenis><span  class="teks_jenis">Jenis </span><span  class="data_kelamin">: <?php echo $jenis; ?></span></div>
       <div class=jumlah><span  class="teks_jumlah">Jumlah</span><span  class="data_tempat_lahir">: <?php echo $jumlah; ?></span></div>
       <div class=jasa><span  class="teks_jasa">Jasa</span><span  class="data_tanggal_lahir">: <?php echo $jasa; ?></span></div>
-      <div class=diangsur><span  class="teks_diangsur">Diangsur</span><span  class="data_alamat_rumah">: <?php echo $diangsur; ?></span></div>
+      <div class=diangsur><span  class="teks_diangsur">Tempo</span><span  class="data_alamat_rumah">: <?php echo $tempo; ?></span></div>
       <div class=angsuran><span  class="teks_angsuran">Angsuran</span><span  class="data_pos">: <?php echo $angsuran; ?></span></div>
     </div>
     <div class=data_kanan_container>
       <div class=potongan><span  class="teks_potongan">Potongan</span><span  class="data_hp">: <?php echo $potongan; ?></span></div>
-      <div class=asuransi><span  class="teks_asuransi">Asuransi</span><span  class="data_instansi">: <?php echo $angsuran; ?></span></div>
+      <div class=asuransi><span  class="teks_asuransi">Asuransi</span><span  class="data_instansi">: <?php echo $asuransi; ?></span></div>
       <div class=diterima><span  class="teks_diterima">Diterima</span><span  class="data_alamat_instansi">: <?php echo $diterima; ?></span></div>
       <div class=mulai_mengangsur><span  class="teks_mulai_mengangsur">Mulai mengangsur</span><span  class="data_ktp_suami">: <?php echo $mulai; ?></span></div>
       <div class=pimpinan><span  class="teks_pimpinan">Pimpinan</span><span  class="data_ktp_istri">: <a href="<?php echo $siteurl.'admin/detil-pengguna/?nip='.$pimpinan; ?>"><?php echo $pimpinan; ?></a></span></div>
@@ -112,8 +117,8 @@ include('getData.php');
   </div>
 </div>
 
-<script src="../../config.js"></script>
-<script src="../../assets/js/anggota.js"></script>
+<script src="<?php echo $siteurl; ?>config.js"></script>
+<script src="<?php echo $siteurl; ?>assets/js/pimpinan.js"></script>
 
 </body>
 </html>

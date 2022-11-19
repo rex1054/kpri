@@ -148,8 +148,53 @@ $nick = $fullName[0];
 <script src="<?php echo $siteurl; ?>assets/js/admin.js"></script>
 <script>
 function ceksetoran(a){
+    var id = document.getElementById('nip').value;
+    if(a == 1){
+        $('#ke').val(null);
+        $('#kee').val(null);
+        $('#dari').val(null);
+        $('#darii').val(null);
+        $('#pokok').val(500000);
+        $('#pokok').prop('disabled', true);
+        $('#pokokk').val(500000);
+        $('#jasa').val(0);
+        $('#jasaa').val(0);
+        jumlah();
+    } else if (a == 2){
+        $('#ke').val(null);
+        $('#kee').val(null);
+        $('#dari').val(null);
+        $('#darii').val(null);
+        $('#pokok').val(100000);
+        $('#pokok').prop('disabled', true);
+        $('#pokokk').val(100000);
+        $('#jasa').val(0);
+        $('#jasaa').val(0);
+        jumlah();
+    } else if(a == 3){
+        $('#ke').val(null);
+        $('#kee').val(null);
+        $('#dari').val(null);
+        $('#darii').val(null);
+        $('#pokok').val(50000);
+        $('#pokok').prop('disabled', true);
+        $('#pokokk').val(50000);
+        $('#jasa').val(0);
+        $('#jasaa').val(0);
+        jumlah();
+    } else if(a == 4 || a == 6){
+        $('#ke').val(null);
+        $('#kee').val(null);
+        $('#dari').val(null);
+        $('#darii').val(null);
+        $('#pokok').val(0);
+        $('#pokok').prop('disabled', false);
+        $('#pokokk').val(0);
+        $('#jasa').val(0);
+        $('#jasaa').val(0);
+        jumlah();
+    } else
     if(a == 5){
-        var id = document.getElementById('nip').value;
         $.ajax({
             type: 'post',
             url: 'getpinjaman.php',
@@ -163,11 +208,25 @@ function ceksetoran(a){
                 $('#dari').val(data[1]);
                 $('#darii').val(data[1]);
                 $('#pokok').val(data[2]);
+                $('#pokok').prop('disabled', true);
                 $('#pokokk').val(data[2]);
                 $('#jasa').val(data[3]);
                 $('#jasaa').val(data[3]);
+                jumlah();
             }
         });
+    } else 
+    if(a == 7){
+        $('#ke').val(null);
+        $('#kee').val(null);
+        $('#dari').val(null);
+        $('#darii').val(null);
+        $('#pokok').val(175000);
+        $('#pokok').prop('disabled', true);
+        $('#pokokk').val(175000);
+        $('#jasa').val(0);
+        $('#jasaa').val(0);
+        jumlah();
     }
 }
 
@@ -195,6 +254,9 @@ function jumlah(){
     var moneyFormatter  = new Intl.NumberFormat();
     var a = document.getElementById('pokok').value;
     var b = document.getElementById('jasa').value;
+    var c = document.getElementById('pokokk');
+
+    c.value = a;
     
     if(a == null) {
         a=0;

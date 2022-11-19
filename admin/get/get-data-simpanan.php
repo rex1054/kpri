@@ -9,7 +9,7 @@ if(isset($_GET['m'])){
 	$filter = "WHERE YEAR(transaksi.`tanggal`) = '".$tahun."'";
 } else { $filter = "WHERE YEAR(transaksi.`tanggal`) = '".date("Y")."'"; }
 
-$sql = "SELECT simpanan.`id`, jenis_simpanan.`jenis`, akun.`nama`, transaksi.`tanggal` FROM simpanan join transaksi on simpanan.id_transaksi = transaksi.id join akun on transaksi.penyetor = akun.nip join jenis_simpanan on simpanan.jenis = jenis_simpanan.id ".$filter;
+$sql = "SELECT simpanan.`id`, simpanan.`id_transaksi`, jenis_simpanan.`jenis`, akun.`nama`, transaksi.`tanggal` FROM simpanan join transaksi on simpanan.id_transaksi = transaksi.id join akun on transaksi.penyetor = akun.nip join jenis_simpanan on simpanan.jenis = jenis_simpanan.id ".$filter;
 
 $query = $con->query($sql);
 if($query->num_rows == 0) {}
@@ -20,7 +20,7 @@ else {
 			<tr>
 			<td class="text-center"><?php echo $data["id"];?></td>
 			<td class="text-center"><?php echo $data["jenis"];?></td>
-			<td><a href="<?php echo $siteurl.'admin/detil-transaksi/?id='.$data['id']; ?>"><u><?php echo $data["nama"];?></u></a></td>
+			<td><a href="<?php echo $siteurl.'admin/detil-transaksi/?id='.$data['id_transaksi']; ?>"><u><?php echo $data["nama"];?></u></a></td>
 			<td><?php echo $data["tanggal"];?></td>
 			</tr>
 			<?php }} ?>
