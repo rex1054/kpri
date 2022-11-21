@@ -182,7 +182,7 @@ function ceksetoran(a){
         $('#jasa').val(0);
         $('#jasaa').val(0);
         jumlah();
-    } else if(a == 4 || a == 6){
+    } else if(a == 4){
         $('#ke').val(null);
         $('#kee').val(null);
         $('#dari').val(null);
@@ -192,7 +192,6 @@ function ceksetoran(a){
         $('#pokokk').val(0);
         $('#jasa').val(0);
         $('#jasaa').val(0);
-        jumlah();
     } else
     if(a == 5){
         $.ajax({
@@ -215,6 +214,17 @@ function ceksetoran(a){
                 jumlah();
             }
         });
+    } else 
+    if(a == 6){
+        $('#ke').val(null);
+        $('#kee').val(null);
+        $('#dari').val(null);
+        $('#darii').val(null);
+        $('#pokok').val(175000);
+        $('#pokok').prop('disabled', false);
+        $('#pokokk').val(175000);
+        $('#jasa').val(0);
+        $('#jasaa').val(0);
     } else 
     if(a == 7){
         $('#ke').val(null);

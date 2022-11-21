@@ -120,8 +120,9 @@ include('getData.php');
   </div>
 </div>
 
-<script src="../../config.js"></script>
-<script src="../../assets/js/admin.js"></script>
+<script src="<?php echo $siteurl; ?>config.js"></script>
+<script src="<?php echo $siteurl; ?>assets/js/main.js"></script>
+<script src="<?php echo $siteurl; ?>assets/js/admin.js"></script>
 
 </body>
 </html>

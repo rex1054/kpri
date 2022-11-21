@@ -142,6 +142,7 @@ $(document).ready(function() {
             url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/id.json'
         },
         dom: 'Bfrtip',
+        order: [[0, 'desc']],
         paging: true,
         "pageLength": 7,
         buttons: [

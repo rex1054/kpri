@@ -550,7 +550,7 @@ include('getData.php');
 </div>
 <div class=arisan_keterangan>
 <div class="cell_arisan_keterangan">
-<input disabled class="input-data odd" id="arsisan-keterangan" type="text" name="arsisan-keterangan" value="<?php echo $arisanBulan; ?>">
+<input disabled class="input-data odd" id="arsisan-keterangan" type="text" name="arsisan-keterangan" value="<?php echo $arisanKeterangan; ?>">
 </div>
 </div>
 </div>
@@ -595,7 +595,7 @@ $total;
 </div>
 <div class=jumlah_nominal>
 <div class="cell_jumlah_nominal">
-<input disabled class="input-data odd" id="jumlah-nominal" type="text" name="jumlah-nominal" value="<?php echo 'Rp. '.$totalNominal; ?>">
+<input disabled class="input-data odd" id="jumlah-nominal" type="text" name="jumlah-nominal" value="<?php echo 'Rp. '.$jumlahTotal; ?>">
 </div>
 </div>
 <div class=jumlah_keterangan>
@@ -606,7 +606,7 @@ $total;
 </div>
 </div>
 <div class=tombol >
-<button class="tombol_simpan" onclick="menu('anggotaBeranda')"><span  class="teks_simpan">Kembali</span></button>
+<button class="tombol_simpan" onclick="menu('beranda')"><span  class="teks_simpan">Kembali</span></button>
 </div>
 </div>
 

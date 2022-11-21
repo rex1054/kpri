@@ -550,12 +550,12 @@ include('getData.php');
 </div>
 <div class=arisan_nominal>
 <div class="cell_arisan_nominal">
-<input disabled class="input-data odd" id="arsisan-nominal" type="text" name="arsisan-nominal" value="<?php echo 'Rp. '; ?>">
+<input disabled class="input-data odd" id="arsisan-nominal" type="text" name="arsisan-nominal" value="<?php echo $arisanNominal; ?>">
 </div>
 </div>
 <div class=arisan_keterangan>
 <div class="cell_arisan_keterangan">
-<input disabled class="input-data odd" id="arsisan-keterangan" type="text" name="arsisan-keterangan" value="<?php echo ''; ?>">
+<input disabled class="input-data odd" id="arsisan-keterangan" type="text" name="arsisan-keterangan" value="<?php echo $arisanKeterangan; ?>">
 </div>
 </div>
 </div>
@@ -578,7 +578,7 @@ include('getData.php');
 </div>
 <div class=seragam_nominal>
 <div class="cell_seragam_nominal">
-<input disabled class="input-data even" id="seragam-nominal" type="text" name="seragam-nominal" value="<?php echo 'Rp. '; ?>">
+<input disabled class="input-data even" id="seragam-nominal" type="text" name="seragam-nominal" value="<?php echo $seragamNominal; ?>">
 </div>
 </div>
 <div class=seragam_keterangan>

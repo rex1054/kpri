@@ -11,7 +11,7 @@ if(isset($_GET['m'])){
 } else { $filter = "WHERE YEAR(transaksi.tanggal) = '".date("Y")."'"; }
 $sql;
 if($jabatan=='Admin'){
-	$sql = "SELECT transaksi.id, transaksi.tanggal, akun.nama, instansi.instansi from transaksi join akun on transaksi.penyetor = akun.nip join instansi on akun.instansi = instansi.id ".$filter." order by transaksi.id ASC";
+	$sql = "SELECT transaksi.id, transaksi.tanggal, akun.nama, instansi.instansi from transaksi join akun on transaksi.penyetor = akun.nip join instansi on akun.instansi = instansi.id ".$filter." order by transaksi.id DESC";
 }
 $query = $con->query($sql);
 if($query->num_rows == 0) {}

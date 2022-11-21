@@ -236,16 +236,16 @@ try {
             $sqla = "SELECT nomor FROM `rekening` order by nomor DESC limit 1";
             $querya = $con->query($sqla);
             $hasil = $querya->fetch_assoc();
-            if($querya->num_rows == 0) {
+            if($querya->num_rows < 1) {
                 $rekening = 1;
             } else {
                 $rekening = $hasil['nomor']+1;
             }
             
             $sqlb = "INSERT INTO `rekening` (`pemilik`, `wajib`, `pokok`, `tabungan`, `sukarela`) 
-            VALUES (".$nip.", 0, 0, 0, 0,)";
+            VALUES (".$nip.", 0, 0, 0, 0)";
             
-            if ($con->query($sqlb) === TRUE) {
+            if ($con->query($sqlb)) {
                 $overallstatus = 1;
                 ?>
                 <script>

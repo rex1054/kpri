@@ -8,6 +8,8 @@ $getSimpananQuery = "SELECT simpanan.jumlah, jenis_simpanan.jenis, simpanan.kete
 $getsetoran = 'SELECT setor_pinjam.*, transaksi.penyetor, transaksi.bulan, transaksi.jumlah, transaksi.tanggal, transaksi.admin FROM setor_pinjam
 JOIN transaksi ON setor_pinjam.id_transaksi = transaksi.id
 WHERE setor_pinjam.id_transaksi = '.$_GET['id'];
+$getArisan = 'SELECT * FROM arisan WHERE id_transaksi = '.$_GET['id'];
+$getSeragam = 'SELECT * FROM seragam WHERE id_transaksi = '.$_GET['id'];
 
 setlocale(LC_ALL, 'ID');
 $akun = $con->query($getAkunQuery)->fetch_assoc();
@@ -21,10 +23,7 @@ if(isset($akunadmin['nama']) || $akunadmin['nama'] != ''){
 }
 $tgl = $con->query($getTransaksiQuery)->fetch_assoc();
 $xTgl = date_create($tgl['bulan']);
-// $yTgl = date_format($xTgl, 'Y-m-d h:i:sA');
 $bulan = date_format($xTgl, 'F Y');
-// $bulan = strftime('%B %G', strtotime($yTgl));
-// $bulan = $tgl['bulan'];
 
 $jumlahSimpanan = '-';
 $jenisSimpanan = '-';
@@ -61,9 +60,10 @@ $hajijasanominal = '-';
 $hajiketerangan = '-';
 
 $arisanBulan;
-$arisanNominal = '';
+$arisanNominal = 0;
+$arisaKeteragan = '';
 
-$seragamNominal = '';
+$seragamNominal = 0;
 
 try {
     $simpanan = $con->query($getSimpananQuery);
@@ -138,19 +138,34 @@ try{
                         <script>console.log('error : <?php echo $e; ?>');</script>
                         <?php
                     }
-                    
-                    $nominalTotal = str_split($jumlahTotal, 1);
-                    $z = COUNT($nominalTotal);
-                    for($i=0; $i < $z; $i++) {
-                        if($i == ($z-3) || $i == ($z-6) || $i == ($z-9)) {
-                            if($i == 0) {
-                                $totalNominal .= strval($nominalTotal[$i]);
-                            } else {
-                                $totalNominal .= '.'.strval($nominalTotal[$i]);
-                            }
-                        } else {
-                            $totalNominal .= strval($nominalTotal[$i]);
-                        }
-                    }
-                    
+
+try{
+$arisan = $con->query($getArisan);
+if($arisan->num_rows > 0){
+    $data = $arisan->fetch_assoc();
+    $bulanArisan = date_create($data['bulan']);
+    $arisanBulan = date_format($bulanArisan, 'm');
+    $arisanNominal = $data['jumlah'];
+    $arisanKeterangan = $data['keterangan'];
+    $jumlahTotal = $arisanNominal;
+}
+} catch(Exception $e){
+    ?>
+    <script>console.log('error : <?php echo $e; ?>');</script>
+    <?php
+}
+
+try{
+    $seragam = $con->query($getSeragam);
+    if($seragam->num_rows > 0){
+        $data = $seragam->fetch_assoc();
+        $seragamNominal = $data['jumlah'];
+        $jumlahTotal = $seragamNominal;
+    }
+    } catch(Exception $e){
+        ?>
+        <script>console.log('error : <?php echo $e; ?>');</script>
+        <?php
+                        
+    }      
                     ?>

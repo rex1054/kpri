@@ -90,6 +90,7 @@ $(document).ready(function() {
         },
         dom: 'Bfrtip',
         paging: true,
+        order: [[0, 'desc']],
         "pageLength": 7,
         buttons: [
             'excelHtml5',

@@ -76,16 +76,19 @@ if(isset($_POST['jenis'])){
                                             <script>alert('Berhasil menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
                                             <?php
                                         } else {
+                                            echo $sqlrekening;
                                             ?>
                                             <script>alert('Gagal menyimpan data. Error: <?php echo $sql; ?>');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
                                             <?php
                                         }
                                     } else {
+                                        echo $sql;
                                         ?>
                                         <script>alert('Gagal menyimpan data. Error: <?php echo $sql; ?>');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
                                         <?php
                                     }
                                 } else {
+                                    echo $sqlsetor;
                                     ?>
                                     <script>alert('Gagal menyimpan data. Error: <?php echo $sqlsetor; ?>');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
                                     <?php
@@ -102,7 +105,7 @@ if(isset($_POST['jenis'])){
                                 } else {
                                     $ket = '';
                                 }
-                                
+
                                 $sqlsetor = 'INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES (
                                     '.$_POST['nip'].',
                                     "'.$_POST['bulan'].'-01",
@@ -118,8 +121,14 @@ if(isset($_POST['jenis'])){
                                         $datapinjam = $con->query($getpinjam)->fetch_assoc();
                                         $idpinjam = $datapinjam['id'];
                                         $jenispinjam = $datapinjam['jenis'];
+
+                                        if($ke == $dari) {
+                                            $sqlupdate = 'UPDATE `peminjaman` SET `status`=1 WHERE id = '.$idpinjam;
+                                            $con->query($sqlupdate);
+                                        }
                                         
-                                        $getsetoran = 'SELECT * FROM `setor_pinjam` WHERE id_peminjaman = '.$idpinjam.' ORDER BY id DESC LIMIT 1';
+                                        
+                                        $getsetoran = 'SELECT * FROM setor_pinjam WHERE id_peminjaman = '.$idpinjam.' ORDER BY id DESC LIMIT 1';
                                         if($con->query($getsetoran)->num_rows > 0){
                                             $datasetor = $con->query($getsetoran)->fetch_assoc();
                                             $ke = $datasetor['ke']+1;
@@ -162,13 +171,14 @@ if(isset($_POST['jenis'])){
                                             
                                             
                                         } else
-                                        if($jenis == 6){
+                                        if($jenis == 6){ // arisan
                                             $ket;
                                             if(isset($_POST['ket']) || $_POST['ket'] != ''){
                                                 $ket = $_POST['ket'];
                                             } else {
                                                 $ket = '';
                                             }
+                                            $jumlah = $_POST['pokok'];
                                             
                                             $sqlsetor = 'INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES (
                                                 '.$_POST['nip'].',
@@ -177,8 +187,66 @@ if(isset($_POST['jenis'])){
                                                 "'.$tanggal.'",
                                                 '.$_SESSION['nip'].'
                                                 )';
+                                                
+                                                $sqlarisan = 'INSERT INTO arisan(id_transaksi, bulan, jumlah, keterangan) VALUES (
+                                                    '.$trxid.',
+                                                    "'.$_POST['bulan'].'-01",
+                                                    '.$jumlah.',
+                                                    "'.$ket.'")';
+                                                    
+                                                    if($con->query($sqlsetor)){
+                                                        if($con->query($sqlarisan)){
+                                                            ?>
+                                                            <script>alert('Berhasil menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
+                                                            <?php
+                                                        } else {
+                                                            ?>
+                                                            <script>alert('Gagal menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
+                                                            <?php
+                                                        }
+                                                    } else {
+                                                        ?>
+                                                        <script>alert('Gagal menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
+                                                        <?php
+                                                    }
+                                                } else
+                                                if ($jenis == 7){ //seragam
+                                                    $ket;
+                                                    if(isset($_POST['ket']) || $_POST['ket'] != ''){
+                                                        $ket = $_POST['ket'];
+                                                    } else {
+                                                        $ket = '';
+                                                    }
 
-                                            $sqlarisan = '';
-                                            }
-                                        }
-                                        ?>
+                                                    $jumlah = $_POST['pokok'];
+                                                    
+                                                    $sqlsetor = 'INSERT INTO transaksi(penyetor, bulan, jumlah, tanggal, admin) VALUES (
+                                                        '.$_POST['nip'].',
+                                                        "'.$_POST['bulan'].'-01",
+                                                        '.$jumlah.',
+                                                        "'.$tanggal.'",
+                                                        '.$_SESSION['nip'].'
+                                                        )';
+                                                        
+                                                        $sqlseragam = 'INSERT INTO seragam(id_transaksi, jumlah) VALUES (
+                                                            '.$trxid.',
+                                                            '.$jumlah.')';
+                                                            
+                                                            if($con->query($sqlsetor)){
+                                                                if($con->query($sqlseragam)){
+                                                                    ?>
+                                                                    <script>alert('Berhasil menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
+                                                                    <?php
+                                                                } else {
+                                                                    ?>
+                                                                    <script>alert('Gagal menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
+                                                                    <?php
+                                                                }
+                                                            } else {
+                                                                ?>
+                                                                <script>alert('Gagal menyimpan data.');window.open('<?php echo $siteurl; ?>admin/', '_SELF');</script>
+                                                                <?php
+                                                            }
+                                                        }
+                                                    }
+                                                    ?>

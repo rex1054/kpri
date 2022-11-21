@@ -1,0 +1,20 @@
+[21-Nov-2022 21:10:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php:22
+Stack trace:
+#0 /home/sojy3165/public_html/kpri/anggota/detil-ajuan/index.php(9): include()
+#1 {main}
+  thrown in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php on line 22
+[21-Nov-2022 21:10:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php:22
+Stack trace:
+#0 /home/sojy3165/public_html/kpri/anggota/detil-ajuan/index.php(9): include()
+#1 {main}
+  thrown in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php on line 22
+[21-Nov-2022 21:13:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php:22
+Stack trace:
+#0 /home/sojy3165/public_html/kpri/anggota/detil-ajuan/index.php(9): include()
+#1 {main}
+  thrown in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php on line 22
+[21-Nov-2022 21:13:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php:22
+Stack trace:
+#0 /home/sojy3165/public_html/kpri/anggota/detil-ajuan/index.php(9): include()
+#1 {main}
+  thrown in /home/sojy3165/public_html/kpri/anggota/detil-ajuan/getData.php on line 22
